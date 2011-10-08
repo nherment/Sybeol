@@ -1,0 +1,565 @@
+[2011-10-06 22:28:38.230] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:34:29.538] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:36:54.381] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:38:27.291] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 22:38:31.468] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 22:38:33.969] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 22:39:28.128] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:39:30.767] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 22:39:30.767] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 22:39:30.768] [INFO] sybeol - Not yet authenticated
+[2011-10-06 22:39:30.768] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 22:39:30.768] [INFO] sybeol - authenticating...
+[2011-10-06 22:40:33.347] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 22:40:33.348] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 22:40:37.210] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 22:40:37.210] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 22:40:45.277] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 22:40:45.278] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 22:40:45.278] [INFO] sybeol - Not yet authenticated
+[2011-10-06 22:40:45.278] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 22:40:45.278] [INFO] sybeol - authenticating...
+[2011-10-06 22:42:45.279] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 22:42:45.291] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 22:42:45.292] [INFO] sybeol - Not yet authenticated
+[2011-10-06 22:42:45.292] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 22:42:45.292] [INFO] sybeol - authenticating...
+[2011-10-06 22:47:12.284] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:47:39.263] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:50:22.278] [INFO] sybeol - receive put request on /user
+[2011-10-06 22:50:22.280] [INFO] sybeol - Creating user with email[nherment@gmail.com]
+[2011-10-06 22:57:16.332] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:57:26.987] [INFO] sybeol - receive put request on /user
+[2011-10-06 22:57:26.988] [INFO] sybeol - Creating user with email[nherment@gmail.com]
+[2011-10-06 22:57:32.385] [INFO] sybeol - receive put request on /user
+[2011-10-06 22:57:32.385] [INFO] sybeol - Creating user with email[nherment@gmail.com]
+[2011-10-06 22:58:07.575] [INFO] sybeol - listening on port 4100
+[2011-10-06 22:58:09.921] [INFO] sybeol - receive put request on /user
+[2011-10-06 22:58:09.922] [INFO] sybeol - Creating user with email[nherment@gmail.com]
+[2011-10-06 22:58:13.305] [INFO] sybeol - receive put request on /user
+[2011-10-06 22:58:13.306] [INFO] sybeol - Creating user with email[nherment@gmail.com]
+[2011-10-06 22:58:13.414] [INFO] sybeol - receive put request on /user
+[2011-10-06 22:58:13.415] [INFO] sybeol - Creating user with email[nherment@gmail.com]
+[2011-10-06 22:59:14.251] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 22:59:14.252] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 22:59:14.253] [INFO] sybeol - Not yet authenticated
+[2011-10-06 22:59:14.253] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 22:59:14.253] [INFO] sybeol - authenticating...
+[2011-10-06 22:59:14.259] [INFO] sybeol - processing...
+[2011-10-06 22:59:14.259] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-06 22:59:25.899] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 22:59:25.900] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 22:59:37.053] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 22:59:37.053] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:01:26.886] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:01:26.887] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:01:29.916] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:01:29.916] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:01:39.603] [INFO] sybeol - listening on port 4100
+[2011-10-06 23:01:42.641] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:01:42.642] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:01:46.849] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:01:46.850] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:01:46.850] [INFO] sybeol - Not yet authenticated
+[2011-10-06 23:01:46.850] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 23:01:46.850] [INFO] sybeol - authenticating...
+[2011-10-06 23:01:46.854] [INFO] sybeol - processing...
+[2011-10-06 23:01:46.855] [INFO] sybeol - Could not find user with email[nherment@gmail.comsdsd]
+[2011-10-06 23:01:57.168] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:01:57.168] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:01:57.168] [INFO] sybeol - Not yet authenticated
+[2011-10-06 23:01:57.168] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 23:01:57.169] [INFO] sybeol - authenticating...
+[2011-10-06 23:01:57.173] [INFO] sybeol - processing...
+[2011-10-06 23:01:57.174] [INFO] sybeol - Failed authentication attempt for user with email[nherment@gmail.com]
+[2011-10-06 23:02:02.779] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:02:02.780] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:02:02.780] [INFO] sybeol - Not yet authenticated
+[2011-10-06 23:02:02.780] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 23:02:02.780] [INFO] sybeol - authenticating...
+[2011-10-06 23:02:02.802] [INFO] sybeol - processing...
+[2011-10-06 23:02:02.803] [INFO] sybeol - Failed authentication attempt for user with email[nherment@gmail.com]
+[2011-10-06 23:02:10.222] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:02:10.223] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:02:10.224] [INFO] sybeol - Not yet authenticated
+[2011-10-06 23:02:10.224] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 23:02:10.224] [INFO] sybeol - authenticating...
+[2011-10-06 23:02:10.230] [INFO] sybeol - processing...
+[2011-10-06 23:02:10.230] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-06 23:02:16.463] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:02:16.464] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:05:03.099] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:05:03.099] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:05:03.150] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:06:12.332] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:06:12.333] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:06:12.358] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:06:13.749] [INFO] sybeol - login attempt for user[undefined]
+[2011-10-06 23:06:13.749] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:06:13.764] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:07:05.791] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:08:13.073] [INFO] sybeol - receive get request on /user
+[2011-10-06 23:08:52.487] [INFO] sybeol - receive put request on /user
+[2011-10-06 23:08:52.488] [INFO] sybeol - Creating user with email[nherment@gmail3.com]
+[2011-10-06 23:08:55.788] [INFO] sybeol - receive get request on /user
+[2011-10-06 23:19:00.159] [INFO] sybeol - listening on port 4100
+[2011-10-06 23:19:02.627] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:19:02.628] [INFO] sybeol - Creating new measure for user [nherment@gmail3.com]
+[2011-10-06 23:19:02.769] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:19:02.769] [INFO] sybeol - Creating new measure for user [nherment@gmail3.com]
+[2011-10-06 23:19:11.396] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:19:11.397] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:20:56.815] [INFO] sybeol - listening on port 4100
+[2011-10-06 23:21:06.784] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:21:06.785] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:22:49.240] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:23:05.935] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:23:05.936] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:23:09.607] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:23:09.607] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:23:12.807] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:23:12.808] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:23:17.213] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:23:17.215] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:23:20.286] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:23:20.286] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:23:24.298] [INFO] sybeol - receive put request on /measure
+[2011-10-06 23:23:24.298] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-06 23:23:26.308] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:23:41.839] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:23:41.840] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:24:09.219] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:24:09.220] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:24:16.816] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:24:16.817] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:24:38.179] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:24:38.180] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:24:55.437] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:24:55.438] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:25:06.592] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:25:06.594] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:25:15.941] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:25:15.941] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:25:40.670] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:25:40.670] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:26:52.108] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:26:52.108] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:26:53.479] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:26:53.479] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:26:55.314] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:26:55.315] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:27:36.686] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:27:36.688] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:27:47.141] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:27:47.142] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:28:00.363] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:28:00.363] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:28:19.253] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:28:19.254] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:28:25.553] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:28:25.553] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-06 23:28:25.553] [INFO] sybeol - Not yet authenticated
+[2011-10-06 23:28:25.554] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-06 23:28:25.554] [INFO] sybeol - authenticating...
+[2011-10-06 23:28:25.571] [INFO] sybeol - processing...
+[2011-10-06 23:28:25.572] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-06 23:28:29.576] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:28:29.577] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:28:29.577] [INFO] sybeol - Already authenticated
+[2011-10-06 23:28:37.158] [INFO] sybeol - Login attempt trough POST
+[2011-10-06 23:28:37.159] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:28:37.159] [INFO] sybeol - Already authenticated
+[2011-10-06 23:28:40.910] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:28:40.911] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:28:41.040] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:28:55.978] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:28:55.979] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:28:55.997] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:29:33.540] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:29:33.541] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:29:33.580] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:29:56.890] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:29:56.890] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:29:56.910] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:37:15.512] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:37:15.514] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:37:15.534] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:37:31.976] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:37:31.976] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:37:31.994] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:40:18.725] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:40:18.726] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:40:18.743] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:42:57.320] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:42:57.320] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:42:57.336] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:50:46.888] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:50:46.889] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:50:46.922] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:51:18.790] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:51:18.790] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:51:18.808] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:54:17.771] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:54:17.773] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:54:17.799] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:54:34.276] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:54:34.276] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:54:34.309] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:54:35.613] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:54:35.614] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:54:35.631] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:54:36.312] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:54:36.312] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:54:36.472] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:54:36.836] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:54:36.837] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:54:36.855] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:05.592] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:05.593] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:05.611] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:22.288] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:22.288] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:22.303] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:29.406] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:29.407] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:29.424] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:30.866] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:30.866] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:30.881] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:31.217] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:31.218] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:31.241] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:31.569] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:31.569] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:31.585] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:32.030] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:32.031] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:32.046] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:32.391] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:32.392] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:32.426] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:32.735] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:32.754] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:32.867] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:34.491] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:34.491] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:34.506] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:34.976] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:34.978] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:34.997] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:35.324] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:35.324] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:35.491] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:35.491] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:35.513] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:58.551] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:58.552] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:58.570] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:55:59.867] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:55:59.868] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:55:59.883] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:56:07.619] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:56:07.620] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:56:07.638] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:57:50.539] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:57:50.539] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:57:50.556] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:58:21.702] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:58:21.703] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:58:21.724] [INFO] sybeol - receive get request on /measure
+[2011-10-06 23:58:23.279] [INFO] sybeol - login verification for user[undefined]
+[2011-10-06 23:58:23.280] [INFO] sybeol - isAuthenticated: true
+[2011-10-06 23:58:23.295] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:00:07.806] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:00:07.808] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:00:07.844] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:00:41.275] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:00:41.275] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:00:41.292] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:02:46.242] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:02:46.244] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:02:46.286] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:02:54.912] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:02:54.912] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:02:54.929] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:02:55.849] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:02:55.850] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:02:56.002] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:02:56.311] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:02:56.312] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:02:56.326] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:02:56.832] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:02:56.833] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:02:56.850] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:02:58.361] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:02:58.361] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:02:58.378] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:05:08.903] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:05:08.905] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:05:08.922] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:05:48.568] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:05:48.568] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:05:48.741] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:06:08.595] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:06:08.597] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:06:08.695] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:08:00.334] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:08:00.334] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:08:00.353] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:08:32.555] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:08:32.557] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:08:32.724] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:10:23.292] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:10:23.293] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:10:23.416] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:12:01.670] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:12:01.671] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:12:01.765] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:12:51.039] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:12:51.040] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:12:51.057] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:13:21.870] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:13:21.871] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:13:21.889] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:13:34.178] [INFO] sybeol - receive put request on /measure
+[2011-10-07 00:13:34.179] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-07 00:13:37.571] [INFO] sybeol - receive put request on /measure
+[2011-10-07 00:13:37.573] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-07 00:13:49.953] [INFO] sybeol - receive put request on /measure
+[2011-10-07 00:13:49.955] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-07 00:13:55.047] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:13:55.047] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:13:55.065] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:15:07.698] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:15:07.698] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:15:08.037] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:15:29.635] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:15:29.636] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:15:29.652] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:15:46.779] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:15:46.781] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:15:46.800] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:15:54.188] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:15:54.188] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:15:54.204] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:16:35.600] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:16:35.601] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:16:35.621] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:17:35.946] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:17:35.947] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:17:35.962] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:18:03.543] [INFO] sybeol - receive put request on /measure
+[2011-10-07 00:18:03.543] [INFO] sybeol - Creating new measure for user [nherment@gmail.com]
+[2011-10-07 00:18:10.831] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:18:10.831] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:18:10.971] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:18:41.199] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:18:41.200] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:18:41.213] [INFO] sybeol - receive get request on /measure
+[2011-10-07 00:19:15.500] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 00:19:15.501] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 00:19:15.517] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:36:17.923] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:36:17.923] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 08:36:24.881] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 08:36:24.882] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 08:36:24.883] [INFO] sybeol - Not yet authenticated
+[2011-10-07 08:36:24.883] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 08:36:24.883] [INFO] sybeol - authenticating...
+[2011-10-07 08:36:24.943] [INFO] sybeol - processing...
+[2011-10-07 08:36:24.944] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 08:36:28.310] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:36:28.311] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:36:28.326] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:45:00.172] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:45:00.172] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:45:00.263] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:45:02.250] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:45:02.252] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:45:02.272] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:45:54.416] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:45:54.417] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:45:54.547] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:48:40.724] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:48:40.725] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:48:40.743] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:49:10.514] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:49:10.515] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:49:10.563] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:51:59.898] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:51:59.899] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:51:59.952] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:54:41.255] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:54:41.256] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:54:41.272] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:55:01.371] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:55:01.372] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:55:01.397] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:55:41.132] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:55:41.132] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:55:41.772] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:55:58.778] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:55:58.779] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:55:58.809] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:56:23.689] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:56:23.689] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:56:23.817] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:56:39.139] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:56:39.140] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:56:39.324] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:57:02.748] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:57:02.749] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:57:02.886] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:59:27.606] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 08:59:27.606] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 08:59:27.621] [INFO] sybeol - receive get request on /measure
+[2011-10-07 08:59:34.063] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 08:59:34.064] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 08:59:34.064] [INFO] sybeol - Not yet authenticated
+[2011-10-07 08:59:34.064] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 08:59:34.065] [INFO] sybeol - authenticating...
+[2011-10-07 08:59:34.106] [INFO] sybeol - processing...
+[2011-10-07 08:59:34.107] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 09:00:19.079] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:00:19.096] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 09:00:21.714] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 09:00:21.715] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 09:00:21.715] [INFO] sybeol - Not yet authenticated
+[2011-10-07 09:00:21.715] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 09:00:21.715] [INFO] sybeol - authenticating...
+[2011-10-07 09:00:21.737] [INFO] sybeol - processing...
+[2011-10-07 09:00:21.737] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 09:00:22.545] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 09:00:22.545] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 09:00:22.545] [INFO] sybeol - Already authenticated
+[2011-10-07 09:00:26.119] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:00:26.120] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 09:00:26.139] [INFO] sybeol - receive get request on /measure
+[2011-10-07 09:01:23.600] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:01:23.601] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 09:01:27.171] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 09:01:27.172] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 09:01:27.172] [INFO] sybeol - Not yet authenticated
+[2011-10-07 09:01:27.172] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 09:01:27.172] [INFO] sybeol - authenticating...
+[2011-10-07 09:01:27.210] [INFO] sybeol - processing...
+[2011-10-07 09:01:27.210] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 09:01:35.367] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:01:35.367] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 09:01:35.382] [INFO] sybeol - receive get request on /measure
+[2011-10-07 09:04:39.776] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:04:39.777] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 09:04:41.311] [INFO] sybeol - receive get request on /measure
+[2011-10-07 09:04:48.820] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:04:48.822] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 09:04:56.967] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 09:04:56.968] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 09:04:56.968] [INFO] sybeol - Not yet authenticated
+[2011-10-07 09:04:56.968] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 09:04:56.968] [INFO] sybeol - authenticating...
+[2011-10-07 09:04:56.993] [INFO] sybeol - processing...
+[2011-10-07 09:04:56.993] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 09:05:11.126] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 09:05:11.126] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 09:05:11.126] [INFO] sybeol - Already authenticated
+[2011-10-07 09:05:48.683] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:05:48.683] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 09:05:50.153] [INFO] sybeol - receive get request on /measure
+[2011-10-07 09:05:54.258] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 09:05:54.260] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:23:51.068] [INFO] sybeol - listening on port 4100
+[2011-10-07 17:23:53.127] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:23:53.128] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:23:56.127] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:23:56.127] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:23:56.128] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:23:56.128] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:23:56.128] [INFO] sybeol - authenticating...
+[2011-10-07 17:23:56.169] [INFO] sybeol - processing...
+[2011-10-07 17:23:56.169] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:24:03.794] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:24:03.794] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 17:24:05.326] [INFO] sybeol - receive get request on /measure
+[2011-10-07 17:24:13.987] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:24:13.988] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:25:49.692] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:25:49.692] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:28:29.010] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:28:29.011] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:28:29.011] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:28:29.011] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:28:29.011] [INFO] sybeol - authenticating...
+[2011-10-07 17:28:29.016] [INFO] sybeol - processing...
+[2011-10-07 17:28:29.016] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:28:31.805] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:28:31.806] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 17:29:03.396] [INFO] sybeol - receive get request on /measure
+[2011-10-07 17:29:12.526] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:29:12.526] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:30:06.840] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:30:06.841] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:30:06.841] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:30:06.841] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:30:06.842] [INFO] sybeol - authenticating...
+[2011-10-07 17:30:06.847] [INFO] sybeol - processing...
+[2011-10-07 17:30:06.847] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:32:40.902] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:32:40.903] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 17:32:53.160] [INFO] sybeol - receive get request on /measure
+[2011-10-07 17:32:57.132] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:32:57.132] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:33:06.985] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:33:06.986] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:33:06.986] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:33:06.986] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:33:06.986] [INFO] sybeol - authenticating...
+[2011-10-07 17:33:07.007] [INFO] sybeol - processing...
+[2011-10-07 17:33:07.008] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:33:24.860] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:33:24.861] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:33:24.862] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:33:24.862] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:33:24.862] [INFO] sybeol - authenticating...
+[2011-10-07 17:33:24.868] [INFO] sybeol - processing...
+[2011-10-07 17:33:24.869] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:33:53.328] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:33:53.328] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 17:33:54.562] [INFO] sybeol - receive get request on /measure
+[2011-10-07 17:34:08.820] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:34:08.822] [INFO] sybeol - isAuthenticated: true
+[2011-10-07 17:34:08.849] [INFO] sybeol - receive get request on /measure
+[2011-10-07 17:38:57.701] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:38:57.702] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:39:00.283] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:39:00.283] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:39:00.283] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:39:00.284] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:39:00.284] [INFO] sybeol - authenticating...
+[2011-10-07 17:39:00.289] [INFO] sybeol - processing...
+[2011-10-07 17:39:00.289] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:40:49.818] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:40:49.819] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:40:53.577] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:40:53.578] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:40:53.579] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:40:53.579] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:40:53.579] [INFO] sybeol - authenticating...
+[2011-10-07 17:40:53.585] [INFO] sybeol - processing...
+[2011-10-07 17:40:53.585] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:41:53.580] [INFO] sybeol - login verification for user[undefined]
+[2011-10-07 17:41:53.585] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:41:55.536] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:41:55.537] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:41:55.537] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:41:55.537] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:41:55.537] [INFO] sybeol - authenticating...
+[2011-10-07 17:41:55.542] [INFO] sybeol - processing...
+[2011-10-07 17:41:55.542] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-07 17:41:55.550] [INFO] sybeol - receive get request on /measure
+[2011-10-07 17:52:09.789] [INFO] sybeol - Login attempt trough POST
+[2011-10-07 17:52:09.790] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-07 17:52:09.790] [INFO] sybeol - Not yet authenticated
+[2011-10-07 17:52:09.790] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-07 17:52:09.791] [INFO] sybeol - authenticating...
+[2011-10-07 17:52:09.796] [INFO] sybeol - processing...
+[2011-10-07 17:52:09.797] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
