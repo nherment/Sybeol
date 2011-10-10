@@ -526,3 +526,21 @@ fieldset {
 .auth p a {
     color:#27B!important;
 }
+
+.ui-state-error {
+    background-color: #FEF1EC;
+    color: #CD0A0A;
+    border: 1px solid #CD0A0A;
+}
+
+.ui-state-success {
+    background-color: #FEF1EC;
+    color: #00AA00;
+    font-weight: bold;
+    border: 1px solid #00AA00;
+}
+
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}

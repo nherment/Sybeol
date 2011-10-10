@@ -72,7 +72,7 @@ var register = function(email, password, callback) {
                     if(dataObj.result == "success") {
                         callback(dataObj.result);
                     } else {
-                        callback(dataObj.result);
+                        callback(dataObj.cause);
                     }
                 }
             }

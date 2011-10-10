@@ -67,7 +67,7 @@ app.get('/login/:email/:password', function(req, res) {
 });
 
 app.get('/loginStatus', function(req, res) {
-    logger.info("login verification for user ["+ req.param('email') + "]");
+    logger.info("login verification");
     if(authSvc.isAuthenticated(req) == true) {
         res.end("YES")
     } else {

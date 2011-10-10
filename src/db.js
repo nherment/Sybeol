@@ -91,16 +91,25 @@ var createUser = function(email, password, callback) {
         'password': password
     });
     var err;
-    try{
-        usr.save();
-        logger.info("saved new user: " + usr);
-    } catch(error) {
-        err = error;
-        logger.warn("error when creating user [" + usr + "]: " + err);
-    }
-    if(callback) {
-        callback(err, usr);
-    }
+
+    getUser(usr.email, function(error, user) {
+        if(user) {
+            usr = undefined;
+            err = "User already exists";
+            logger.warn("creating user. User already exists:" + email);
+        } else { 
+            try{
+                usr.save();
+                logger.info("saved new user: " + JSON.stringify(usr));
+            } catch(error) {
+                err = error;
+                logger.warn("error when creating user [" + usr + "]: " + err);
+            }
+        }
+        if(callback) {
+            callback(err, usr);
+        }
+    });
 }
 
 var getUser = function(email, callback) {
