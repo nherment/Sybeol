@@ -28,13 +28,14 @@ var app = express.createServer();
 
 app.configure(function() {
     app.use(express.bodyParser());
+    app.use(express.static(__dirname + '/static'));
     app.set('views', __dirname + '/views');
     app.set('view engine', 'jade');
     app.set('view options', {
         layout: false
     });
     app.use(express.cookieParser());
-    app.use(express.session({ secret: "keyboard cat"/*, store: new RedisStore*/ }));
+    app.use(express.session({ secret: "J41Ma14uB1D", store: new RedisStore() }));
     app.use(app.router);
 });
 

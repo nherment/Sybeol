@@ -1889,3 +1889,108 @@
 [2011-10-09 23:35:55.194] [INFO] sybeol - login verification IP[127.0.0.1]
 [2011-10-09 23:35:55.196] [INFO] sybeol - isAuthenticated: true
 [2011-10-09 23:35:55.196] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-10 00:05:32.747] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:06:01.539] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 00:06:01.540] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-10 00:06:01.540] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-10 00:06:01.540] [INFO] sybeol - Not yet authenticated
+[2011-10-10 00:06:01.541] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-10 00:06:01.541] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-10 00:06:01.672] [INFO] sybeol - processing...
+[2011-10-10 00:06:01.673] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-10 00:06:01.768] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:06:01.769] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:06:01.770] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-10 00:11:22.473] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:11:27.727] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:11:32.252] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:12:02.238] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:12:12.216] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:16:02.290] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:51:59.652] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:52:05.996] [INFO] sybeol - listening on port 4100
+[2011-10-10 00:52:25.027] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 00:52:25.028] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-10 00:52:25.029] [DEBUG] sybeol - isAuthenticated email: undefined
+[2011-10-10 00:52:25.029] [INFO] sybeol - Not yet authenticated
+[2011-10-10 00:52:25.029] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-10 00:52:25.029] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-10 00:52:25.169] [INFO] sybeol - processing...
+[2011-10-10 00:52:25.170] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-10 00:52:25.280] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:52:25.280] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:52:25.280] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:52:27.836] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:52:27.836] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:52:27.837] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:52:28.733] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:52:28.734] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:52:28.735] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:52:29.609] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:52:29.610] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:52:29.610] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:52:30.963] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:52:30.963] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:52:30.963] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:52:51.226] [INFO] sybeol - Registering attempt trough POST IP[127.0.0.1]
+[2011-10-10 00:52:51.398] [WARN] sybeol - creating user. User already exists:nherment@gmail.com
+[2011-10-10 00:52:51.399] [ERROR] sybeol - User already exists
+[2011-10-10 00:57:48.222] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 00:57:48.223] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-10 00:57:48.223] [DEBUG] sybeol - isAuthenticated email: undefined
+[2011-10-10 00:57:48.223] [INFO] sybeol - Not yet authenticated
+[2011-10-10 00:57:48.223] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-10 00:57:48.224] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-10 00:57:48.358] [INFO] sybeol - processing...
+[2011-10-10 00:57:48.359] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-10 00:57:54.744] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 00:57:54.745] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:57:54.745] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:57:54.745] [INFO] sybeol - Already authenticated
+[2011-10-10 00:58:04.178] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:58:04.179] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:58:04.180] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:58:22.192] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:58:22.193] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:58:22.194] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:58:46.228] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:58:46.228] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:58:46.229] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:59:21.258] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:59:21.259] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:59:21.259] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 00:59:56.790] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 00:59:56.791] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 00:59:56.791] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:00:12.020] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 01:00:12.020] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:00:12.021] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:00:37.098] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 01:00:37.111] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:00:37.112] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:01:20.913] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 01:01:20.913] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:01:20.914] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:03:46.893] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-10 01:03:46.894] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:03:46.895] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:06:27.700] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 01:06:27.702] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:06:27.702] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:06:27.703] [INFO] sybeol - Already authenticated
+[2011-10-10 01:06:32.990] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 01:06:32.990] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:06:32.991] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:06:32.991] [INFO] sybeol - Already authenticated
+[2011-10-10 01:06:35.646] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 01:06:35.646] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:06:35.646] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:06:35.646] [INFO] sybeol - Already authenticated
+[2011-10-10 01:06:36.102] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 01:06:36.103] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:06:36.104] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:06:36.104] [INFO] sybeol - Already authenticated
+[2011-10-10 01:07:33.165] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-10 01:07:33.166] [INFO] sybeol - isAuthenticated: true
+[2011-10-10 01:07:33.166] [DEBUG] sybeol - isAuthenticated email: nherment@gmail.com
+[2011-10-10 01:07:33.166] [INFO] sybeol - Already authenticated

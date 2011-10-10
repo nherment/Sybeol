@@ -73,55 +73,37 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/static/activate/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="156" column="9" selection-start="5541" selection-end="5541" vertical-scroll-proportion="-79.86957">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/static/data/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="28" selection-start="1382" selection-end="1382" vertical-scroll-proportion="-15.304348">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Sybeol.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sybeol.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="51" selection-start="4097" selection-end="4149" vertical-scroll-proportion="0.0">
+            <state line="30" column="47" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chart.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/js/chart.js">
+      <file leaf-file-name="login.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/static/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="21" selection-start="6712" selection-end="6712" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="124" selection-start="1985" selection-end="1985" vertical-scroll-proportion="-6.923077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/contact/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2013" selection-end="2013" vertical-scroll-proportion="-31.608696">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/devices/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="17" selection-start="1827" selection-end="1827" vertical-scroll-proportion="-31.608696">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/static/account/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="17" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.88639367">
+            <state line="41" column="35" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.78846157">
               <folding />
             </state>
           </provider>
@@ -141,22 +123,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/static/registerPanel.html" />
-        <option value="$PROJECT_DIR$/src/static/menu.html" />
         <option value="$PROJECT_DIR$/src/static/js/demoChart.js" />
         <option value="$PROJECT_DIR$/src/static/js/chart.js" />
         <option value="$PROJECT_DIR$/src/static/footer.html" />
-        <option value="$PROJECT_DIR$/src/static/index.html" />
-        <option value="$PROJECT_DIR$/src/static/activate/index.html" />
-        <option value="$PROJECT_DIR$/src/static/data/index.html" />
-        <option value="$PROJECT_DIR$/src/static/forgotpassword/index.html" />
-        <option value="$PROJECT_DIR$/src/static/login/index.html" />
-        <option value="$PROJECT_DIR$/src/Sybeol.js" />
         <option value="$PROJECT_DIR$/src/static/css/style.css" />
         <option value="$PROJECT_DIR$/src/static/elements/comingSoon.html" />
-        <option value="$PROJECT_DIR$/src/static/contact/index.html" />
-        <option value="$PROJECT_DIR$/src/static/devices/index.html" />
         <option value="$PROJECT_DIR$/src/static/account/index.html" />
+        <option value="$PROJECT_DIR$/src/static/contact/index.html" />
+        <option value="$PROJECT_DIR$/src/static/activate/index.html" />
+        <option value="$PROJECT_DIR$/src/static/devices/index.html" />
+        <option value="$PROJECT_DIR$/src/static/forgotpassword/index.html" />
+        <option value="$PROJECT_DIR$/src/static/index.html" />
+        <option value="$PROJECT_DIR$/src/static/login/index.html" />
+        <option value="$PROJECT_DIR$/src/authentication.js" />
+        <option value="$PROJECT_DIR$/src/static/data/index.html" />
+        <option value="$PROJECT_DIR$/src/Sybeol.js" />
+        <option value="$PROJECT_DIR$/src/static/js/login.js" />
       </list>
     </option>
   </component>
@@ -265,6 +247,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="forgotpassword" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -332,6 +358,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="contact" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,20 +737,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/static/elements/loginPanel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="99" selection-start="1624" selection-end="1624" vertical-scroll-proportion="0.52025586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/js/demoChart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="10" selection-start="921" selection-end="978" vertical-scroll-proportion="0.0">
@@ -717,23 +751,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="54" selection-start="5160" selection-end="5164" vertical-scroll-proportion="-7.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="240" column="21" selection-start="6712" selection-end="6712" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="124" selection-start="1985" selection-end="1985" vertical-scroll-proportion="-6.923077">
           <folding />
         </state>
       </provider>
@@ -745,58 +765,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/data/index.html">
+    <entry file="file://$PROJECT_DIR$/src/static/account/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="54" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.1997264">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="124" selection-start="482" selection-end="482" vertical-scroll-proportion="0.17833553">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/activate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="54" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.21268164">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sybeol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="51" selection-start="4097" selection-end="4149" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/forgotpassword/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="0" selection-end="2013" vertical-scroll-proportion="7.521739">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/devices/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="17" selection-start="1827" selection-end="1827" vertical-scroll-proportion="-31.608696">
+        <state line="79" column="9" selection-start="2408" selection-end="2408" vertical-scroll-proportion="-31.608696">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/contact/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2013" selection-end="2013" vertical-scroll-proportion="-31.608696">
+        <state line="79" column="9" selection-start="2487" selection-end="2487" vertical-scroll-proportion="1.5653898">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/account/index.html">
+    <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="17" selection-start="1757" selection-end="1757" vertical-scroll-proportion="0.88639367">
+        <state line="118" column="124" selection-start="1985" selection-end="1985" vertical-scroll-proportion="0.2387268">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="17" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.5026525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/activate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="9" selection-start="5541" selection-end="5541" vertical-scroll-proportion="-79.86957">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/forgotpassword/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="9" selection-start="2487" selection-end="2487" vertical-scroll-proportion="1.5653898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="9" selection-start="9218" selection-end="9218" vertical-scroll-proportion="4.636724">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="9" selection-start="2389" selection-end="2389" vertical-scroll-proportion="1.4663144">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/data/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="28" selection-start="1382" selection-end="1382" vertical-scroll-proportion="-15.304348">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/devices/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="9" selection-start="2433" selection-end="2433" vertical-scroll-proportion="1.6050198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sybeol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="47" selection-start="770" selection-end="770" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="35" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.78846157">
           <folding />
         </state>
       </provider>

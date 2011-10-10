@@ -1,12 +1,14 @@
 
 var isSignedIn = function(callback) {
-    $.get('/app/loginStatus', function(data) {
+    $.get('/loginStatus', function(data) {
         if(data == 'YES') {
+
             callback(true);
         } else {
             callback(false);
         }
-    });
+    },
+    'html');
 };
 
 
@@ -26,7 +28,7 @@ var signIn = function(email, password, callback) {
         "password": password
     }
 
-    postJson("/app/login",
+    postJson("/login",
             JSON.stringify(userLoginData),
             function(data) {
                 if(data) {
@@ -34,15 +36,17 @@ var signIn = function(email, password, callback) {
                     if(dataObj.result == "success") {
                         window.location.href = "/data";
                     } else {
-                        callback(dataObj.cause);
+                        callback(dataObj.result);
                     }
+                } else {
+                    callback(data);
                 }
             }
             );
 }
 
 var activate = function(email, key, callback) {
-    var url = "/app/activate/" + email + "/" + key;
+    var url = "/activate/" + email + "/" + key;
 
     $.get(url,
             function(data) {
@@ -64,7 +68,7 @@ var register = function(email, password, callback) {
         "password": password
     }
 
-    postJson("/app/register",
+    postJson("/register",
             JSON.stringify(userLoginData),
             function(data) {
                 if(data) {
@@ -72,7 +76,7 @@ var register = function(email, password, callback) {
                     if(dataObj.result == "success") {
                         callback(dataObj.result);
                     } else {
-                        callback(dataObj.cause);
+                        callback(dataObj.result);
                     }
                 }
             }

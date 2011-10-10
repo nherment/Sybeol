@@ -8,7 +8,7 @@ var Measure = db.Measure;
 
 var isAuthenticated = function(req) {
     logger.info('isAuthenticated: ' + req.session.authenticated);
-    logger.debug('isAuthenticated: ' + req.session.email);
+    logger.debug('isAuthenticated email: ' + req.session.email);
     if(req.session.authenticated) {
         if(req.session.email) {
             return true;
