@@ -52,20 +52,26 @@ var authenticateUser = function(request, response, email, password) {
                 logger.error("Error:"+err);
                 response.end('{"result": "Failed"}');
             }
-            if(user == null) {
-                logger.info('Could not find user with email['+email+']');
-                response.end('{"result": "Failed"}');
-            } else if(user.authenticate(password)) {
-                request.session.authenticated = true;
-                request.session.email = user.email;
-                request.session.save();
-                //logger.info("session email: "+request.session.email);
-                logger.info('user with email ['+user.email+'] is now authenticated');
-                response.end('{"result": "success"}');
+            if(user) {
+                if(user.active) {
+                    if(user.authenticate(password)) {
+                        request.session.authenticated = true;
+                        request.session.email = user.email;
+                        request.session.save();
+                        //logger.info("session email: "+request.session.email);
+                        logger.info('user with email ['+user.email+'] is now authenticated');
+                        response.end('{"result": "success"}');
+                    } else {
+                        logger.info('authentication failed because the password is wrong. user['+user.email+']');
+                        response.end('{"result": "Failed", "cause":"Wrong password"}');
+                    }
+                } else {
+                    logger.info('authentication failed because acount is inactive. user['+user.email+']');
+                    response.end('{"result": "Failed", "cause":"The account needs to be activated"}');
+                }
             } else {
-                logger.info('Failed authentication attempt for user with email['+email+']');
-                response.end('{"result": "Failed"}');
-                //response.redirect('back', 403);
+                logger.info('Could not find user with email['+email+']');
+                response.end('{"result": "Failed", "cause":"Unknown email"}');
             }
         });
     } else {
@@ -127,29 +133,34 @@ var sendActivationMail = function(user) {
 }
 
 var activate = function(email, validationKey, callback) {
-    logger.info("Activating " + email + " with key " + validationKey);
-    db.getUser(email, function(err, user) {
-        if(err) {
-            logger.error("Error:"+err);
-            callback(err, null);
-        } else if(user) {
-            logger.info("found matching user [" + user.email + "] for activation");
-            if(user.validationKey === validationKey) {
-                logger.info("Activation key match");
-                user.active = true;
-                user.save();
-                logger.info("User is now active");
-                callback(null, user);
-            } else {
-                var msg = "Activation key does not match the one expected. Expected ["+user.validationKey+"] but got ["+validationKey+"]";
-                logger.warn(msg);
-                callback("Activation key is not valid", null);
+    if(email && validationKey) {
+        logger.info("Activating " + email + " with key " + validationKey);
+        db.getUser(email, function(err, user) {
+            if(err) {
+                logger.error("Error:"+err);
+                callback(err, null);
+            } else if(user) {
+                logger.info("found matching user [" + user.email + "] for activation");
+                if(user.validationKey === validationKey) {
+                    logger.info("Activation key match");
+                    user.active = true;
+                    user.validationKey = undefined;
+                    user.save();
+                    logger.info("User is now active");
+                    callback(null, user);
+                } else {
+                    var msg = "Activation key does not match the one expected. Expected ["+user.validationKey+"] but got ["+validationKey+"]";
+                    logger.warn(msg);
+                    callback("Activation key is not valid", null);
+                }
+            } else{
+                logger.info('Activation: Could not find user with email['+email+']');
+                callback("User not found", null);
             }
-        } else{
-            logger.info('Activation: Could not find user with email['+email+']');
-            callback("User not found", null);
-        }
-    });
+        });
+    } else {
+        callback("Wrong arguments", null);
+    }
 }
 
 exports.authenticateUserParams = authenticateUserParams;

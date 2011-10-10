@@ -104,7 +104,7 @@
             $("#signin_submit").click(function(e) {
                 displayLoginError(null);
                 signIn($('#email').val(), $('#password').val(), function(error) {
-                    displayLoginError("email or password invalid");
+                    displayLoginError(error);
                 });
                 return false; // do not proceed with form
             });

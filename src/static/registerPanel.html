@@ -1,0 +1,90 @@
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        var displayRegistrationError = function(html) {
+            if(html) {
+                var StyledError = '<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">';
+                StyledError += '<p>';
+                StyledError += html;
+                StyledError += "</p></div>";
+                $("#registerNotification").html(StyledError);
+            } else {
+                $("#registerNotification").html("");
+            }
+        }
+
+        var displayRegistrationDone = function(html) {
+            if(html) {
+                var StyledError = '<div class="ui-state-success ui-corner-all" style="padding: 0 .7em;">';
+                StyledError += '<p>';
+                StyledError += html;
+                StyledError += "</p></div>";
+                $("#registerNotification").html(StyledError);
+            } else {
+                $("#registerNotification").html("");
+            }
+        }
+
+
+        //----- REGISTRATION
+        $("#register").click(function(e) {
+            e.preventDefault();
+            $("#register_menu").toggle();
+            $(".register").toggleClass("menu-open");
+        });
+
+        $("#register_menu").mouseup(function() {
+            return false
+        });
+        $(document).mouseup(function(e) {
+            if($(e.target).parent("a.register").length==0) {
+                $(".register").removeClass("menu-open");
+                $("#register_menu").hide();
+            }
+        });
+
+
+        var handleRegistrationStatus = function(msg) {
+            if(msg == "success") {
+                displayRegistrationDone("We just sent you an activation email");
+            } else {
+                displayRegistrationError(msg);
+            }
+        }
+
+        $("#register_submit").click(function(e) {
+            if($("#reg_password_check").val() === $('#reg_password').val()) {
+                //check the username exists or not from ajax
+                register($('#reg_email').val(), $('#reg_password').val(), handleRegistrationStatus );
+            } else {
+                handleRegistrationStatus("Passwords do not match");
+            }
+            return false; // do not proceed with form
+        });
+
+
+    });
+</script>
+<div style="position: relative;">
+    <fieldset class="auth">
+        <form id="register_form" method="post" action="">
+            <h2>Register</h2>
+            <div id="registerNotification" style="margin-bottom: 10px;"></div>
+            <p>
+                <label for="reg_email">Email</label>
+                <input id="reg_email" name="email" value="" title="email" tabindex="6" type="text">
+            </p>
+            <p>
+                <label for="reg_password">Password</label>
+                <input id="reg_password" name="password" value="" title="password" tabindex="7" type="password">
+            </p>
+            <p>
+                <label for="reg_password_check">Password Verification</label>
+                <input id="reg_password_check" name="password_check" value="" title="password_check" tabindex="8" type="password">
+            </p>
+            <p class="remember">
+                <input id="register_submit" class="auth_submit submitBtn" value="Register" tabindex="9" type="submit">
+            </p>
+        </form>
+    </fieldset>
+</div>

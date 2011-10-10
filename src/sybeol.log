@@ -1177,3 +1177,370 @@
 [2011-10-09 19:16:17.456] [INFO] sybeol - Registering attempt trough POST
 [2011-10-09 19:16:17.600] [WARN] sybeol - creating user. User already exists:nherment@gmail.com
 [2011-10-09 19:16:17.602] [ERROR] sybeol - User already exists
+[2011-10-09 19:34:48.195] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 19:34:48.195] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 19:34:48.196] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 19:34:48.196] [INFO] sybeol - Not yet authenticated
+[2011-10-09 19:34:48.196] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 19:34:48.196] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 19:34:48.360] [INFO] sybeol - processing...
+[2011-10-09 19:34:48.360] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 19:34:48.576] [INFO] sybeol - login verification
+[2011-10-09 19:34:48.577] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 19:34:48.577] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 19:34:48.681] [INFO] sybeol - receive get request on /measure
+[2011-10-09 19:34:51.660] [INFO] sybeol - login verification
+[2011-10-09 19:34:51.661] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 19:34:51.661] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 19:34:53.726] [INFO] sybeol - login verification
+[2011-10-09 19:34:53.726] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 19:34:53.727] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 19:34:53.838] [INFO] sybeol - receive get request on /measure
+[2011-10-09 19:35:54.947] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 19:35:55.077] [INFO] sybeol - saved new user: {"email":"nicolas.herment@gmail.com","hashed_password":"2e06ffe7ad6b91dd8edbbcafedd1171986ac7885","apiKey":"215358d1-afcf-44e4-bc51-cb76e47d346a","validationKey":"fa7bf0b7-b86b-4ff8-89fb-d9c3b1932ef0","salt":"1232876849034","_id":"4e925a0a6b9f5b382d000008","active":false}
+[2011-10-09 19:35:55.077] [INFO] sybeol - Registered new user: {"email":"nicolas.herment@gmail.com","hashed_password":"2e06ffe7ad6b91dd8edbbcafedd1171986ac7885","apiKey":"215358d1-afcf-44e4-bc51-cb76e47d346a","validationKey":"fa7bf0b7-b86b-4ff8-89fb-d9c3b1932ef0","salt":"1232876849034","_id":"4e925a0a6b9f5b382d000008","active":false}
+[2011-10-09 19:35:55.078] [INFO] sybeol - sending validation key to user: {"email":"nicolas.herment@gmail.com","hashed_password":"2e06ffe7ad6b91dd8edbbcafedd1171986ac7885","apiKey":"215358d1-afcf-44e4-bc51-cb76e47d346a","validationKey":"fa7bf0b7-b86b-4ff8-89fb-d9c3b1932ef0","salt":"1232876849034","_id":"4e925a0a6b9f5b382d000008","active":false}
+[2011-10-09 19:35:58.176] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nicolas.herment@gmail.com&k=fa7bf0b7-b86b-4ff8-89fb-d9c3b1932ef0"}
+[2011-10-09 19:36:48.129] [INFO] sybeol - Activating nicolas.herment@gmail.com with key fa7bf0b7-b86b-4ff8-89fb-d9c3b1932ef0
+[2011-10-09 19:36:48.276] [INFO] sybeol - found matching user [nicolas.herment@gmail.com] for activation
+[2011-10-09 19:36:48.277] [INFO] sybeol - Activation key match
+[2011-10-09 19:36:48.280] [INFO] sybeol - User is now active
+[2011-10-09 19:36:56.947] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 19:36:56.948] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 19:36:56.948] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 19:36:56.948] [INFO] sybeol - Not yet authenticated
+[2011-10-09 19:36:56.948] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 19:36:56.948] [INFO] sybeol - authenticating nicolas.herment@gmail.com
+[2011-10-09 19:36:57.092] [INFO] sybeol - processing...
+[2011-10-09 19:36:57.094] [INFO] sybeol - user with email [nicolas.herment@gmail.com] is now authenticated
+[2011-10-09 19:36:57.239] [INFO] sybeol - login verification
+[2011-10-09 19:36:57.239] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 19:36:57.239] [DEBUG] sybeol - isAuthenticated: nicolas.herment@gmail.com
+[2011-10-09 19:36:57.295] [INFO] sybeol - receive get request on /measure
+[2011-10-09 19:54:53.468] [INFO] sybeol - login verification
+[2011-10-09 19:54:53.470] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 19:54:53.470] [DEBUG] sybeol - isAuthenticated: nicolas.herment@gmail.com
+[2011-10-09 19:54:53.596] [INFO] sybeol - receive get request on /measure
+[2011-10-09 19:55:46.122] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:57:35.313] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:57:49.322] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:58:32.494] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:58:42.500] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:58:55.561] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:59:18.078] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:59:32.516] [INFO] sybeol - listening on port 4100
+[2011-10-09 19:59:34.050] [INFO] sybeol - listening on port 4100
+[2011-10-09 20:00:38.409] [INFO] sybeol - login verification
+[2011-10-09 20:00:38.411] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:00:38.412] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:00:51.052] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:00:51.052] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:00:51.052] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:00:51.052] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:00:51.052] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:00:51.053] [INFO] sybeol - authenticating nhermenddt@gmail.com
+[2011-10-09 20:00:51.188] [INFO] sybeol - processing...
+[2011-10-09 20:00:51.188] [INFO] sybeol - Could not find user with email[nhermenddt@gmail.com]
+[2011-10-09 20:01:01.831] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:01:01.832] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:01.832] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:01.833] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:01:01.833] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:01:01.833] [INFO] sybeol - authenticating nhermddent@gmail.com
+[2011-10-09 20:01:01.963] [INFO] sybeol - processing...
+[2011-10-09 20:01:01.963] [INFO] sybeol - Could not find user with email[nhermddent@gmail.com]
+[2011-10-09 20:01:21.488] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:01:21.489] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:21.490] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:21.490] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:01:21.490] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:01:21.490] [INFO] sybeol - authenticating nherment@gmail.comss
+[2011-10-09 20:01:21.623] [INFO] sybeol - processing...
+[2011-10-09 20:01:21.624] [INFO] sybeol - Could not find user with email[nherment@gmail.comss]
+[2011-10-09 20:01:26.203] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:01:26.204] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:26.204] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:26.204] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:01:26.204] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:01:26.204] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:01:26.350] [INFO] sybeol - processing...
+[2011-10-09 20:01:26.351] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:01:33.522] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:01:33.523] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:33.523] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:33.523] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:01:33.523] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:01:33.523] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:01:33.668] [INFO] sybeol - processing...
+[2011-10-09 20:01:33.668] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:01:35.541] [INFO] sybeol - login verification
+[2011-10-09 20:01:35.543] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:35.544] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:01:50.201] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:01:50.382] [WARN] sybeol - creating user. User already exists:nherment@gmail.com
+[2011-10-09 20:01:50.382] [ERROR] sybeol - User already exists
+[2011-10-09 20:10:12.475] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:10:12.476] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:10:12.477] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:10:12.477] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:10:12.477] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:10:12.477] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:10:12.638] [INFO] sybeol - processing...
+[2011-10-09 20:10:12.639] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 20:10:12.767] [INFO] sybeol - login verification
+[2011-10-09 20:10:12.768] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:10:12.769] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:10:12.782] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:10:17.061] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:10:17.062] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:10:17.062] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:10:17.063] [INFO] sybeol - Already authenticated
+[2011-10-09 20:10:17.119] [INFO] sybeol - login verification
+[2011-10-09 20:10:17.119] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:10:17.119] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:10:17.167] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:10:28.644] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:10:28.645] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:10:28.646] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:10:28.646] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:10:28.646] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:10:28.646] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:10:28.779] [INFO] sybeol - processing...
+[2011-10-09 20:10:28.779] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:13:18.446] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:13:18.447] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:13:18.448] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:13:18.448] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:13:18.448] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:13:18.448] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:13:18.624] [INFO] sybeol - processing...
+[2011-10-09 20:13:18.625] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:13:56.547] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:13:56.547] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:13:56.547] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:13:56.548] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:13:56.548] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:13:56.548] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:13:56.687] [INFO] sybeol - processing...
+[2011-10-09 20:13:56.688] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:14:19.839] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:14:19.841] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:14:19.841] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:14:19.841] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:14:19.841] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:14:19.841] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:14:20.007] [INFO] sybeol - processing...
+[2011-10-09 20:14:20.008] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:14:24.160] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:14:24.161] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:14:24.162] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:14:24.162] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:14:24.162] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:14:24.162] [INFO] sybeol - authenticating nherment@gmail.com22
+[2011-10-09 20:14:24.294] [INFO] sybeol - processing...
+[2011-10-09 20:14:24.294] [INFO] sybeol - Could not find user with email[nherment@gmail.com22]
+[2011-10-09 20:24:21.059] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:24:21.242] [WARN] sybeol - creating user. User already exists:nherment@gmail.com
+[2011-10-09 20:24:21.243] [ERROR] sybeol - User already exists
+[2011-10-09 20:24:48.032] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:24:48.164] [INFO] sybeol - saved new user: {"email":"","hashed_password":"d9422868656308ee20d2744fb456d8050b379341","apiKey":"bd2259dc-7dc4-43a7-8c28-07e155b75d9a","validationKey":"8a39f563-024f-4522-8d8d-b016b4ab8561","salt":"755674475947","_id":"4e9265808bbba85b2e00000c","active":false}
+[2011-10-09 20:30:35.144] [INFO] sybeol - listening on port 4100
+[2011-10-09 20:31:32.975] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:31:33.107] [WARN] sybeol - creating user. User already exists:nherment@gmail.com
+[2011-10-09 20:31:33.107] [ERROR] sybeol - User already exists
+[2011-10-09 20:33:41.905] [INFO] sybeol - listening on port 4100
+[2011-10-09 20:34:42.907] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:34:43.035] [WARN] sybeol - creating user. User already exists:nicolas.herment@gmail.com
+[2011-10-09 20:34:43.035] [ERROR] sybeol - User already exists
+[2011-10-09 20:34:47.313] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:34:47.490] [WARN] sybeol - creating user. User already exists:nicolas.herment@gmail.com
+[2011-10-09 20:34:47.490] [ERROR] sybeol - User already exists
+[2011-10-09 20:34:50.983] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:34:51.108] [INFO] sybeol - saved new user: {"email":"nicolas.herment2@gmail.com","hashed_password":"6f7da696d625eca1464f1d61d6a7ee9375450544","apiKey":"377cb11e-0f75-4188-91a6-99c5549cf768","validationKey":"1780c4e4-410e-4541-9891-c90f517e3aae","salt":"409137308545","_id":"4e9267da3676dc8e2e000005","active":false}
+[2011-10-09 20:34:51.109] [INFO] sybeol - Registered new user: {"email":"nicolas.herment2@gmail.com","hashed_password":"6f7da696d625eca1464f1d61d6a7ee9375450544","apiKey":"377cb11e-0f75-4188-91a6-99c5549cf768","validationKey":"1780c4e4-410e-4541-9891-c90f517e3aae","salt":"409137308545","_id":"4e9267da3676dc8e2e000005","active":false}
+[2011-10-09 20:34:51.109] [INFO] sybeol - sending validation key to user: {"email":"nicolas.herment2@gmail.com","hashed_password":"6f7da696d625eca1464f1d61d6a7ee9375450544","apiKey":"377cb11e-0f75-4188-91a6-99c5549cf768","validationKey":"1780c4e4-410e-4541-9891-c90f517e3aae","salt":"409137308545","_id":"4e9267da3676dc8e2e000005","active":false}
+[2011-10-09 20:34:54.303] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nicolas.herment2@gmail.com&k=1780c4e4-410e-4541-9891-c90f517e3aae"}
+[2011-10-09 20:35:44.155] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:35:44.298] [INFO] sybeol - saved new user: {"email":"nhermen2t@gmail.com","hashed_password":"5d025ff19753e9e577c51df41d4fec3c2ac2426f","apiKey":"beefbe24-b5a9-436a-adc3-154d9e767ca9","validationKey":"e9596c38-16e3-4821-a73e-bc6d587518d5","salt":"560120079041","_id":"4e9268103676dc8e2e000006","active":false}
+[2011-10-09 20:35:44.299] [INFO] sybeol - Registered new user: {"email":"nhermen2t@gmail.com","hashed_password":"5d025ff19753e9e577c51df41d4fec3c2ac2426f","apiKey":"beefbe24-b5a9-436a-adc3-154d9e767ca9","validationKey":"e9596c38-16e3-4821-a73e-bc6d587518d5","salt":"560120079041","_id":"4e9268103676dc8e2e000006","active":false}
+[2011-10-09 20:35:44.299] [INFO] sybeol - sending validation key to user: {"email":"nhermen2t@gmail.com","hashed_password":"5d025ff19753e9e577c51df41d4fec3c2ac2426f","apiKey":"beefbe24-b5a9-436a-adc3-154d9e767ca9","validationKey":"e9596c38-16e3-4821-a73e-bc6d587518d5","salt":"560120079041","_id":"4e9268103676dc8e2e000006","active":false}
+[2011-10-09 20:35:51.798] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nhermen2t@gmail.com&k=e9596c38-16e3-4821-a73e-bc6d587518d5"}
+[2011-10-09 20:37:02.327] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:37:02.460] [INFO] sybeol - saved new user: {"email":"spacecow787sssss@hotmail.com","hashed_password":"b4ce0e740a48ef235c7c5c87cc543cd230109847","apiKey":"81d5ce39-18eb-4117-9ff7-155bcb2de838","validationKey":"8d3a4afa-3b90-4887-ae13-987c25df96e6","salt":"573340633275","_id":"4e92685e3676dc8e2e000007","active":false}
+[2011-10-09 20:37:02.461] [INFO] sybeol - Registered new user: {"email":"spacecow787sssss@hotmail.com","hashed_password":"b4ce0e740a48ef235c7c5c87cc543cd230109847","apiKey":"81d5ce39-18eb-4117-9ff7-155bcb2de838","validationKey":"8d3a4afa-3b90-4887-ae13-987c25df96e6","salt":"573340633275","_id":"4e92685e3676dc8e2e000007","active":false}
+[2011-10-09 20:37:02.476] [INFO] sybeol - sending validation key to user: {"email":"spacecow787sssss@hotmail.com","hashed_password":"b4ce0e740a48ef235c7c5c87cc543cd230109847","apiKey":"81d5ce39-18eb-4117-9ff7-155bcb2de838","validationKey":"8d3a4afa-3b90-4887-ae13-987c25df96e6","salt":"573340633275","_id":"4e92685e3676dc8e2e000007","active":false}
+[2011-10-09 20:37:06.857] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=spacecow787sssss@hotmail.com&k=8d3a4afa-3b90-4887-ae13-987c25df96e6"}
+[2011-10-09 20:39:53.542] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 20:39:53.667] [INFO] sybeol - saved new user: {"email":"s@foo.bar","hashed_password":"11d22cdb7a529b759d7771376425725861b245d4","apiKey":"7047d2f4-0648-4cf7-b108-069ea6c5d2bb","validationKey":"faae4b82-84e4-44a6-8d62-53e9648a14c1","salt":"54267104487","_id":"4e9269093676dc8e2e000008","active":false}
+[2011-10-09 20:39:53.668] [INFO] sybeol - Registered new user: {"email":"s@foo.bar","hashed_password":"11d22cdb7a529b759d7771376425725861b245d4","apiKey":"7047d2f4-0648-4cf7-b108-069ea6c5d2bb","validationKey":"faae4b82-84e4-44a6-8d62-53e9648a14c1","salt":"54267104487","_id":"4e9269093676dc8e2e000008","active":false}
+[2011-10-09 20:39:53.668] [INFO] sybeol - sending validation key to user: {"email":"s@foo.bar","hashed_password":"11d22cdb7a529b759d7771376425725861b245d4","apiKey":"7047d2f4-0648-4cf7-b108-069ea6c5d2bb","validationKey":"faae4b82-84e4-44a6-8d62-53e9648a14c1","salt":"54267104487","_id":"4e9269093676dc8e2e000008","active":false}
+[2011-10-09 20:39:57.250] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=s@foo.bar&k=faae4b82-84e4-44a6-8d62-53e9648a14c1"}
+[2011-10-09 20:40:20.217] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:40:20.218] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:40:20.218] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:40:20.219] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:40:20.219] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:40:20.219] [INFO] sybeol - authenticating spacecow787@hotmail.com
+[2011-10-09 20:40:20.345] [INFO] sybeol - processing...
+[2011-10-09 20:40:20.345] [INFO] sybeol - Could not find user with email[spacecow787@hotmail.com]
+[2011-10-09 20:40:35.247] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:40:35.248] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:40:35.249] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:40:35.249] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:40:35.249] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:40:35.249] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:40:35.378] [INFO] sybeol - processing...
+[2011-10-09 20:40:35.379] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:40:39.810] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:40:39.811] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:40:39.811] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:40:39.811] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:40:39.811] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:40:39.811] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:40:39.959] [INFO] sybeol - processing...
+[2011-10-09 20:40:39.960] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 20:40:40.017] [INFO] sybeol - login verification
+[2011-10-09 20:40:40.018] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:40:40.018] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:40:40.055] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:30.172] [INFO] sybeol - login verification
+[2011-10-09 20:44:30.173] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:30.174] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:31.124] [INFO] sybeol - login verification
+[2011-10-09 20:44:31.126] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:31.126] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:31.184] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:31.949] [INFO] sybeol - login verification
+[2011-10-09 20:44:31.949] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:31.950] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:35.049] [INFO] sybeol - login verification
+[2011-10-09 20:44:35.050] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:35.051] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:35.092] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:38.423] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:44:38.423] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:44:38.423] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:44:38.423] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:44:38.423] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:44:38.424] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:44:38.555] [INFO] sybeol - processing...
+[2011-10-09 20:44:38.555] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 20:44:38.629] [INFO] sybeol - login verification
+[2011-10-09 20:44:38.630] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:38.630] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:38.697] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:40.414] [INFO] sybeol - login verification
+[2011-10-09 20:44:40.414] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:40.415] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:43.206] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:50.781] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:44:50.782] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:50.783] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:50.783] [INFO] sybeol - Already authenticated
+[2011-10-09 20:44:50.849] [INFO] sybeol - login verification
+[2011-10-09 20:44:50.849] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:50.850] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:50.895] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:54.600] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:44:54.600] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:54.600] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:54.600] [INFO] sybeol - Already authenticated
+[2011-10-09 20:44:54.666] [INFO] sybeol - login verification
+[2011-10-09 20:44:54.667] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:54.668] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:54.708] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:44:57.042] [INFO] sybeol - login verification
+[2011-10-09 20:44:57.043] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:44:57.044] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:44:57.060] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:45:13.825] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:45:13.826] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:13.826] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:13.826] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:45:13.826] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:45:13.826] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:45:13.952] [INFO] sybeol - processing...
+[2011-10-09 20:45:13.953] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:45:18.125] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:45:18.126] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:18.126] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:18.126] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:45:18.126] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:45:18.127] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:45:18.255] [INFO] sybeol - processing...
+[2011-10-09 20:45:18.256] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:45:20.163] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:45:20.164] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:20.165] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:20.165] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:45:20.165] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:45:20.165] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:45:20.291] [INFO] sybeol - processing...
+[2011-10-09 20:45:20.292] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 20:45:20.379] [INFO] sybeol - login verification
+[2011-10-09 20:45:20.380] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:45:20.380] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:45:20.420] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:45:36.415] [INFO] sybeol - login verification
+[2011-10-09 20:45:36.416] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:45:36.416] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:46:32.132] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:46:32.133] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:46:32.133] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:46:32.133] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:46:32.133] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:46:32.133] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:46:32.258] [INFO] sybeol - processing...
+[2011-10-09 20:46:32.259] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 20:46:32.326] [INFO] sybeol - login verification
+[2011-10-09 20:46:32.326] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:46:32.326] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:46:32.338] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:46:34.594] [INFO] sybeol - login verification
+[2011-10-09 20:46:34.595] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:46:34.596] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:48:18.035] [INFO] sybeol - listening on port 4100
+[2011-10-09 20:48:26.037] [INFO] sybeol - listening on port 4100
+[2011-10-09 20:48:29.256] [INFO] sybeol - login verification
+[2011-10-09 20:48:29.258] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:48:29.258] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:48:33.542] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:48:33.542] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:48:33.543] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:48:33.543] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:48:33.543] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:48:33.543] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:48:33.678] [INFO] sybeol - processing...
+[2011-10-09 20:48:33.679] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 20:48:35.963] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:48:35.964] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:48:35.964] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:48:35.964] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:48:35.965] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:48:35.965] [INFO] sybeol - authenticating nherment@gmail.coms
+[2011-10-09 20:48:36.559] [INFO] sybeol - processing...
+[2011-10-09 20:48:36.560] [INFO] sybeol - Could not find user with email[nherment@gmail.coms]
+[2011-10-09 20:53:20.753] [INFO] sybeol - login verification
+[2011-10-09 20:53:20.754] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:53:20.755] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:53:33.179] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 20:53:33.180] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 20:53:33.180] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 20:53:33.180] [INFO] sybeol - Not yet authenticated
+[2011-10-09 20:53:33.180] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 20:53:33.180] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 20:53:33.330] [INFO] sybeol - processing...
+[2011-10-09 20:53:33.330] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 20:53:33.384] [INFO] sybeol - login verification
+[2011-10-09 20:53:33.384] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:53:33.385] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:53:33.429] [INFO] sybeol - receive get request on /measure
+[2011-10-09 20:53:34.882] [INFO] sybeol - login verification
+[2011-10-09 20:53:34.883] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:53:34.883] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:53:55.830] [INFO] sybeol - login verification
+[2011-10-09 20:53:55.831] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:53:55.831] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 20:54:02.031] [INFO] sybeol - login verification
+[2011-10-09 20:54:02.033] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 20:54:02.033] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com

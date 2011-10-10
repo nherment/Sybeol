@@ -26,30 +26,9 @@
 
         $(document).ready(function() {
 
-            $("#signin_submit").click(function(e) {
-                signIn($('#email').val(), $('#password').val(), function(error) {
-                    alert(error);
-                });
-                return false; // do not proceed with form
-            });
+            $('#loginContainer').load('/loginPanel.html');
+            $('#registrationContainer').load('/registerPanel.html');
 
-            var handleRegistrationStatus = function(msg) {
-                if(msg == "success") {
-
-                } else {
-
-                }
-            }
-
-            $("#register_submit").click(function(e) {
-                if($("#reg_password_check").val() === $('#reg_password').val()) {
-                    //check the username exists or not from ajax
-                    register($('#reg_email').val(), $('#reg_password').val(), handleRegistrationStatus );
-                } else {
-                    handleRegistrationStatus("Passwords do not match");
-                }
-                return false; // do not proceed with form
-            });
 
         });
     </script>
@@ -57,8 +36,6 @@
 
 <body>
 <div class="header">
-    <div id="loginContainer">
-    </div>
     <div class="headerContent">
         <a href="/">
             <img width="50px" class="inline" src="/images/logo_Sybeol_small.png" alt="Logo Sybeol"/>
@@ -71,49 +48,11 @@
 <div class="loginBanner">
     <div class="eighthundred">
 
-        <div class="loginBannerLeft">
-            <fieldset class="auth">
-                <form id="signin_form" class="signin" method="post" action="">
-                    <h2>Sign in</h2>
-                    <p>
-                        <label for="email">Email</label>
-                        <input id="email" class="email" name="email" value="" title="email" tabindex="4" type="text">
-                    </p>
-                    <p>
-                        <label for="password">Password</label>
-                        <input id="password" class="password" name="password" value="" title="password" tabindex="5" type="password">
-                    </p>
-                    <p class="remember">
-                        <input id="signin_submit" class="auth_submit submitBtn" value="Sign in" tabindex="6" type="submit">
-                        <input id="remember" name="remember_me" value="1" tabindex="7" type="checkbox">
-                        <label for="remember">Remember me</label>
-                    </p>
-                    <p class="forgot"> <a id="resend_password_link" href="/forgotpassword/" tabindex="8">Forgot your password?</a> </p>
-                    </p>
-                </form>
-            </fieldset>
+        <div id="loginContainer" class="loginBannerLeft">
+            
         </div>
         <div class="loginBannerRight">
-            <fieldset class="auth">
-                <form id="register_form" method="post" action="">
-                    <h2>Register</h2>
-                    <p>
-                        <label for="email">Email</label>
-                        <input id="reg_email" class="inputError" name="email" value="" title="email" tabindex="4" type="text">
-                    </p>
-                    <p>
-                        <label for="reg_password">Password</label>
-                        <input id="reg_password" name="password" value="" title="password" tabindex="5" type="password">
-                    </p>
-                    <p>
-                        <label for="reg_password_check">Password Verification</label>
-                        <input id="reg_password_check" name="password_check" value="" title="password_check" tabindex="5" type="password">
-                    </p>
-                    <p class="remember">
-                        <input id="register_submit" class="auth_submit submitBtn" value="Register" tabindex="6" type="submit">
-                    </p>
-                </form>
-            </fieldset>
+            <div id="registrationContainer" style="position: relative;"></div>
         </div>
     </div>
 </div>

@@ -41,6 +41,21 @@ h2{
     color: #6e6e6e;
 }
 
+h3{
+	font-size: 18px;
+	padding-top: 0;
+    font-weight: normal;
+    color: #6e6e6e;
+
+    margin-bottom: 2px;
+}
+
+hr {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
 .highlight {background-color:#FF9D9D;border-bottom:#F30 1px solid;border-top:#F30 1px solid;padding: 4px 10px}
 
 /***** Main Layout ****/
@@ -299,7 +314,7 @@ ul {
     display: block;
     margin-top: 210px;
     background-color: #6596d9;
-    height: 300px;
+    height: 330px;
     width: 100%;
 
     color: #FFFFFF;
@@ -470,11 +485,13 @@ fieldset {
 .submitBtn {
     position: absolute;
     right: 5px;
+    bottom: 10px;
 }
 
-.inputError {
-    border:1px solid #FF0000;
-    color: red;
+.forgotPwdLink {
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
 }
 
 .auth {
@@ -488,7 +505,7 @@ fieldset {
     -webkit-border-bottom-right-radius:5px;
     background-color:#ddeef6;
     width:210px;
-    height: 250px;
+    height: 275px;
     z-index:100;
     border:1px transparent;
     text-align:left;
@@ -496,6 +513,10 @@ fieldset {
     color:#789;
 
     font-size: 13px;
+}
+
+.auth h2 {
+    margin-top: 0px;
 }
 .auth input[type=text], .auth input[type=password] {
     display:block;
@@ -536,7 +557,6 @@ fieldset {
 .ui-state-success {
     background-color: #FEF1EC;
     color: #00AA00;
-    font-weight: bold;
     border: 1px solid #00AA00;
 }
 

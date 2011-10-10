@@ -76,16 +76,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/account/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="42" selection-start="2528" selection-end="2528" vertical-scroll-proportion="-15.173913">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/forgotpassword/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="45" selection-start="1163" selection-end="1341" vertical-scroll-proportion="-6.521739">
+            <state line="70" column="17" selection-start="2327" selection-end="2327" vertical-scroll-proportion="-12.565217">
               <folding />
             </state>
           </provider>
@@ -94,7 +85,7 @@
       <file leaf-file-name="authentication.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/authentication.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="28" selection-start="3271" selection-end="3271" vertical-scroll-proportion="-9.230769">
+            <state line="47" column="8" selection-start="1326" selection-end="1329" vertical-scroll-proportion="-8.692307">
               <folding />
             </state>
           </provider>
@@ -109,28 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="69" selection-start="2846" selection-end="2846" vertical-scroll-proportion="-8.076923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/static/activate/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="82" selection-start="4687" selection-end="4687" vertical-scroll-proportion="-7.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/js/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="48" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0">
+            <state line="36" column="49" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,25 +112,43 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/login/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="38" selection-start="3671" selection-end="3671" vertical-scroll-proportion="-10.26087">
+            <state line="54" column="70" selection-start="1755" selection-end="1755" vertical-scroll-proportion="-17.782608">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/static/index.html">
+      <file leaf-file-name="loginPanel.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/static/loginPanel.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="215" column="28" selection-start="8617" selection-end="8617" vertical-scroll-proportion="7.041485">
+            <state line="42" column="99" selection-start="1624" selection-end="1624" vertical-scroll-proportion="-10.608696">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="535" column="17" selection-start="8896" selection-end="8903" vertical-scroll-proportion="0.0">
+            <state line="49" column="20" selection-start="688" selection-end="688" vertical-scroll-proportion="0.74844074">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registerPanel.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/static/registerPanel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="102" selection-start="3271" selection-end="3271" vertical-scroll-proportion="-37.826088">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sybeol.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Sybeol.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="50" selection-start="2501" selection-end="2501" vertical-scroll-proportion="-3.0384614">
               <folding />
             </state>
           </provider>
@@ -177,22 +168,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/static/js/chart.js" />
-        <option value="$PROJECT_DIR$/src/node_modules/smtpclient/smtpclient.js" />
-        <option value="$PROJECT_DIR$/src/mail.js" />
         <option value="$PROJECT_DIR$/src/static/js/util.js" />
-        <option value="$PROJECT_DIR$/src/static/account/index.html" />
         <option value="$PROJECT_DIR$/src/admin.js" />
-        <option value="$PROJECT_DIR$/src/Sybeol.js" />
-        <option value="$PROJECT_DIR$/src/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/authentication.js" />
         <option value="$PROJECT_DIR$/src/db.js" />
-        <option value="$PROJECT_DIR$/src/static/js/login.js" />
         <option value="$PROJECT_DIR$/src/static/lostpassword/index.html" />
         <option value="$PROJECT_DIR$/src/static/activate/index.html" />
-        <option value="$PROJECT_DIR$/src/static/login/index.html" />
         <option value="$PROJECT_DIR$/src/static/forgotpassword/index.html" />
+        <option value="$PROJECT_DIR$/src/static/js/login.js" />
         <option value="$PROJECT_DIR$/src/static/index.html" />
+        <option value="$PROJECT_DIR$/src/static/menu.html" />
+        <option value="$PROJECT_DIR$/src/static/login/index.html" />
+        <option value="$PROJECT_DIR$/src/authentication.js" />
+        <option value="$PROJECT_DIR$/src/Sybeol.js" />
+        <option value="$PROJECT_DIR$/src/static/loginPanel.html" />
+        <option value="$PROJECT_DIR$/src/static/registerPanel.html" />
+        <option value="$PROJECT_DIR$/src/static/account/index.html" />
+        <option value="$PROJECT_DIR$/src/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -301,7 +292,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forgotpassword" />
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sybeol" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,27 +649,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/node_modules/smtpclient/smtpclient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="20" selection-start="4423" selection-end="4423" vertical-scroll-proportion="0.7413793">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="219" selection-end="219" vertical-scroll-proportion="0.1923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/logger.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="189" selection-end="189" vertical-scroll-proportion="-3.4615386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/css/slide.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -671,23 +663,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Sybeol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="20" selection-start="1951" selection-end="1951" vertical-scroll-proportion="-20.923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="535" column="17" selection-start="8896" selection-end="8903" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="69" selection-start="2846" selection-end="2846" vertical-scroll-proportion="-8.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="49" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/activate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="82" selection-start="4687" selection-end="4687" vertical-scroll-proportion="1.572314">
           <folding />
         </state>
       </provider>
@@ -699,51 +691,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/authentication.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="28" selection-start="3271" selection-end="3271" vertical-scroll-proportion="-9.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="48" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/activate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="82" selection-start="4687" selection-end="4687" vertical-scroll-proportion="-7.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/login/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="38" selection-start="3671" selection-end="3671" vertical-scroll-proportion="-10.26087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/static/account/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="42" selection-start="2528" selection-end="2528" vertical-scroll-proportion="-15.173913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/forgotpassword/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="1163" selection-end="1341" vertical-scroll-proportion="-6.521739">
+        <state line="28" column="20" selection-start="1090" selection-end="1090" vertical-scroll-proportion="-18.26087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="57" selection-end="57" vertical-scroll-proportion="-0.11570248">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="215" column="28" selection-start="8617" selection-end="8617" vertical-scroll-proportion="7.041485">
+        <state line="130" column="61" selection-start="1154" selection-end="5005" vertical-scroll-proportion="0.411157">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/authentication.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="8" selection-start="1326" selection-end="1329" vertical-scroll-proportion="-8.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sybeol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="50" selection-start="2501" selection-end="2501" vertical-scroll-proportion="-3.0384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/registerPanel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="102" selection-start="3271" selection-end="3271" vertical-scroll-proportion="-37.826088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/login/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="70" selection-start="1755" selection-end="1755" vertical-scroll-proportion="-17.782608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/account/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="17" selection-start="2327" selection-end="2327" vertical-scroll-proportion="-12.565217">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/loginPanel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="99" selection-start="1624" selection-end="1624" vertical-scroll-proportion="-10.608696">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="20" selection-start="688" selection-end="688" vertical-scroll-proportion="0.74844074">
           <folding />
         </state>
       </provider>

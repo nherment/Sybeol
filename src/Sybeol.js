@@ -88,6 +88,7 @@ app.post('/login', function(req, res) {
 });
 
 app.get('/logout', function(req, res) {
+    logger.info("Logout ["+req.session.email+"]");
     req.session.destroy();
     res.send(200);
 });

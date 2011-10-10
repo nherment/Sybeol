@@ -34,7 +34,7 @@ var signIn = function(email, password, callback) {
                     if(dataObj.result == "success") {
                         window.location.href = "/data";
                     } else {
-                        callback(dataObj.result);
+                        callback(dataObj.cause);
                     }
                 }
             }
