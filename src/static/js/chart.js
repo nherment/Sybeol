@@ -280,6 +280,9 @@ var initChart = function(containerName, serie) {
         subtitle: {
             text: ''
         },
+        credits: {
+            enabled: false
+        },
         xAxis: {
             type: 'datetime',
             dateTimeLabelFormats: { // don't display the dummy year

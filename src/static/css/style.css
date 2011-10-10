@@ -12,16 +12,22 @@ body {
 
 a {
 	color: #0099CC;
-	text-decoration: none;
+	text-decoration: underline;
     cursor: pointer;
 }
 
 a:hover {
 	color: #00CCFF;
+    text-decoration: none;
 }
 
 a img {
   border: none;/*remove border for linked images*/
+}
+
+a:link, a:visited {
+    color:#27b;
+    text-decoration:none;
 }
 
 h1 {
@@ -67,18 +73,65 @@ hr {
     position: relative;
 }
 
-a:link, a:visited {
-    color:#27b;
-    text-decoration:none;
+
+.topMenu {
+    padding:10px 0px 12px;
+    font-size:16px;
+    line-height:30px;
+    text-align:right;
 }
 
-a:hover {
-    text-decoration:underline;
+.topMenu a {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    background-color:#ddeef6;
+    position:relative;
+    display:inline;
+    border:1px transparent;
+    text-align:center;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    color:#789;
+    font-size:16px;
+
+    cursor: pointer;
 }
 
-a img {
-    border-width:0;
+.topMenu a:hover {
+    background-color: #6596d9;
+    color: #FFFFFF;
+    text-decoration: none;
 }
+
+a.signout {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #6596d9;
+}
+a.signout:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #2371D7;
+}
+
+.topMenuButtonSelected {
+    background-color: #6596d9;
+    color: #FFFFFF;
+}
+
 
 .topnav {
     padding:10px 0px 12px;
@@ -94,24 +147,17 @@ a img {
     padding:4px 6px 6px;
     text-decoration:none;
     font-weight:normal;
-    color:#ffffff;
+    color:#789;
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     border-radius:4px;
-    background-color: #88bbd4;
+    background-color: #ddeef6;
     padding:4px 12px 6px;
 }
 .topnav a:hover {
-    background:#59B;
+    background:#6596d9;
+    color: #FFFFFF;
     padding:4px 12px 6px;
-}
-
-.topnav a.signout {
-    background-color: #FFFFFF;
-    color: #6596d9;
-}
-a.signout:hover {
-    text-decoration: underline;
 }
 
 a {
@@ -392,7 +438,6 @@ ul {
     position: absolute;
     left: 0px;
 }
-
 .menuButton {
     -moz-border-radius-topright:5px;
     -moz-border-radius-bottomright:5px;
@@ -415,7 +460,6 @@ ul {
 .menuButton:hover {
     background-color: #6596d9;
     color: #FFFFFF;
-    cursor: pointer;
 }
 
 .menuButtonSelected {

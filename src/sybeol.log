@@ -1561,3 +1561,331 @@
 [2011-10-09 21:06:38.538] [INFO] sybeol - authenticating nherment@gmail.com
 [2011-10-09 21:06:38.692] [INFO] sybeol - processing...
 [2011-10-09 21:06:38.693] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 22:21:59.550] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 22:21:59.552] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 22:21:59.552] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 22:21:59.552] [INFO] sybeol - Not yet authenticated
+[2011-10-09 22:21:59.552] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 22:21:59.553] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 22:21:59.752] [INFO] sybeol - processing...
+[2011-10-09 22:21:59.752] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
+[2011-10-09 22:22:09.216] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 22:22:09.216] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 22:22:09.216] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 22:22:09.216] [INFO] sybeol - Not yet authenticated
+[2011-10-09 22:22:09.216] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 22:22:09.217] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 22:22:09.507] [INFO] sybeol - processing...
+[2011-10-09 22:22:09.509] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 22:22:09.655] [INFO] sybeol - login verification
+[2011-10-09 22:22:09.656] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:22:09.656] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:22:09.673] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:25:01.940] [INFO] sybeol - login verification
+[2011-10-09 22:25:01.940] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:25:01.940] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:25:01.962] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:25:35.767] [INFO] sybeol - login verification
+[2011-10-09 22:25:35.768] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:25:35.768] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:25:35.794] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:26:13.088] [INFO] sybeol - login verification
+[2011-10-09 22:26:13.089] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:26:13.089] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:26:13.104] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:26:43.217] [INFO] sybeol - login verification
+[2011-10-09 22:26:43.219] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:26:43.220] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:26:43.311] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:27:11.123] [INFO] sybeol - login verification
+[2011-10-09 22:27:11.124] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:27:11.127] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:27:11.156] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:27:43.941] [INFO] sybeol - login verification
+[2011-10-09 22:27:43.942] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:27:43.942] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:27:43.957] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:27:45.700] [INFO] sybeol - login verification
+[2011-10-09 22:27:45.701] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:27:45.701] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:27:47.026] [INFO] sybeol - login verification
+[2011-10-09 22:27:47.028] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:27:47.028] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:27:47.130] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:27:48.874] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:28:58.071] [INFO] sybeol - login verification
+[2011-10-09 22:28:58.073] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:28:58.074] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:28:59.598] [INFO] sybeol - login verification
+[2011-10-09 22:28:59.599] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:28:59.599] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:30:37.983] [INFO] sybeol - login verification
+[2011-10-09 22:30:37.983] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:30:37.984] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:30:55.505] [INFO] sybeol - login verification
+[2011-10-09 22:30:55.507] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:30:55.508] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:31:01.701] [INFO] sybeol - login verification
+[2011-10-09 22:31:01.702] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:31:01.704] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:31:01.843] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:31:15.213] [INFO] sybeol - login verification
+[2011-10-09 22:31:15.214] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:31:15.214] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:31:15.227] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:31:25.737] [INFO] sybeol - login verification
+[2011-10-09 22:31:25.739] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:31:25.739] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:31:25.927] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:31:32.918] [INFO] sybeol - login verification
+[2011-10-09 22:31:32.919] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:31:32.919] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:33:30.729] [INFO] sybeol - login verification
+[2011-10-09 22:33:30.730] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:33:30.730] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:33:37.291] [INFO] sybeol - login verification
+[2011-10-09 22:33:37.292] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:33:37.292] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:33:37.357] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:35:28.837] [INFO] sybeol - login verification
+[2011-10-09 22:35:28.837] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:28.838] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:28.851] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:35:31.356] [INFO] sybeol - login verification
+[2011-10-09 22:35:31.357] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:31.357] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:31.370] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:35:35.411] [INFO] sybeol - login verification
+[2011-10-09 22:35:35.412] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:35.413] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:50.157] [INFO] sybeol - login verification
+[2011-10-09 22:35:50.157] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:50.157] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:52.839] [INFO] sybeol - login verification
+[2011-10-09 22:35:52.840] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:52.840] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:52.899] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:35:53.774] [INFO] sybeol - login verification
+[2011-10-09 22:35:53.776] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:53.776] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:56.200] [INFO] sybeol - login verification
+[2011-10-09 22:35:56.201] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:56.201] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:35:56.220] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:35:56.900] [INFO] sybeol - login verification
+[2011-10-09 22:35:56.901] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:35:56.902] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:36:20.705] [INFO] sybeol - login verification
+[2011-10-09 22:36:20.706] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:36:20.707] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:36:38.745] [INFO] sybeol - login verification
+[2011-10-09 22:36:38.745] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:36:38.746] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:37:08.172] [INFO] sybeol - login verification
+[2011-10-09 22:37:08.172] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:37:08.173] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:38:05.660] [INFO] sybeol - login verification
+[2011-10-09 22:38:05.660] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:38:05.661] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:39:11.856] [INFO] sybeol - login verification
+[2011-10-09 22:39:11.857] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:39:11.858] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:39:34.268] [INFO] sybeol - login verification
+[2011-10-09 22:39:34.269] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:39:34.269] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:39:46.132] [INFO] sybeol - login verification
+[2011-10-09 22:39:46.134] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:39:46.134] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:40:57.532] [INFO] sybeol - login verification
+[2011-10-09 22:40:57.533] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:40:57.533] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:41:12.874] [INFO] sybeol - login verification
+[2011-10-09 22:41:12.875] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:41:12.875] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:41:22.230] [INFO] sybeol - login verification
+[2011-10-09 22:41:22.230] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:41:22.231] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:41:22.639] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:42:30.749] [INFO] sybeol - login verification
+[2011-10-09 22:42:30.749] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:42:30.749] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:42:30.902] [INFO] sybeol - receive get request on /measure
+[2011-10-09 22:43:24.755] [INFO] sybeol - login verification
+[2011-10-09 22:43:24.755] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:43:24.756] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:43:43.315] [INFO] sybeol - login verification
+[2011-10-09 22:43:43.316] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:43:43.316] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:43:49.233] [INFO] sybeol - login verification
+[2011-10-09 22:43:49.233] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:43:49.233] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:45:12.448] [INFO] sybeol - login verification
+[2011-10-09 22:45:12.449] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:45:12.450] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:45:50.937] [INFO] sybeol - login verification
+[2011-10-09 22:45:50.938] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:45:50.938] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:45:53.732] [INFO] sybeol - Logout [nherment@gmail.com]
+[2011-10-09 22:45:53.872] [INFO] sybeol - login verification
+[2011-10-09 22:45:53.872] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 22:45:53.873] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 22:46:04.626] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 22:46:04.627] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 22:46:04.642] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 22:46:04.643] [INFO] sybeol - Not yet authenticated
+[2011-10-09 22:46:04.643] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 22:46:04.643] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 22:46:04.786] [INFO] sybeol - processing...
+[2011-10-09 22:46:04.787] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 22:46:04.933] [INFO] sybeol - login verification
+[2011-10-09 22:46:04.933] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:46:04.933] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:46:08.450] [INFO] sybeol - login verification
+[2011-10-09 22:46:08.450] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:46:08.450] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:46:39.376] [INFO] sybeol - login verification
+[2011-10-09 22:46:39.377] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:46:39.378] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:46:41.180] [INFO] sybeol - login verification
+[2011-10-09 22:46:41.180] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:46:41.181] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:48:57.229] [INFO] sybeol - login verification
+[2011-10-09 22:48:57.230] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:48:57.230] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:55:43.498] [INFO] sybeol - login verification
+[2011-10-09 22:55:43.501] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:55:43.502] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:55:44.769] [INFO] sybeol - login verification
+[2011-10-09 22:55:44.769] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:55:44.769] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:58:20.847] [INFO] sybeol - login verification
+[2011-10-09 22:58:20.848] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:58:20.849] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:58:24.798] [INFO] sybeol - login verification
+[2011-10-09 22:58:24.799] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:58:24.800] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:58:25.601] [INFO] sybeol - login verification
+[2011-10-09 22:58:25.606] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:58:25.608] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 22:59:51.702] [INFO] sybeol - login verification
+[2011-10-09 22:59:51.704] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 22:59:51.707] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:00:14.948] [INFO] sybeol - receive get request on /measure
+[2011-10-09 23:00:47.058] [INFO] sybeol - login verification
+[2011-10-09 23:00:47.059] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:00:47.060] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:00:49.400] [INFO] sybeol - login verification
+[2011-10-09 23:00:49.400] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:00:49.400] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:00:50.323] [INFO] sybeol - login verification
+[2011-10-09 23:00:50.323] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:00:50.324] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:00:53.555] [INFO] sybeol - Logout [nherment@gmail.com]
+[2011-10-09 23:00:53.605] [INFO] sybeol - login verification
+[2011-10-09 23:00:53.607] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 23:00:53.607] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 23:12:18.673] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:13:44.133] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:13:46.243] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:14:12.639] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:14:53.659] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:15:39.705] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:15:53.701] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:16:11.637] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:16:30.735] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:16:44.773] [INFO] sybeol - listening on port 4100
+[2011-10-09 23:17:11.395] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-09 23:17:11.396] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 23:17:11.396] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 23:17:11.396] [INFO] sybeol - Not yet authenticated
+[2011-10-09 23:17:11.396] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 23:17:11.396] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 23:17:11.540] [INFO] sybeol - processing...
+[2011-10-09 23:17:11.540] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 23:17:11.617] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:17:11.617] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:17:11.618] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:17:21.205] [INFO] sybeol - Logout [nherment@gmail.com] IP[127.0.0.1]
+[2011-10-09 23:17:21.255] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:17:21.256] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 23:17:21.256] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 23:19:17.683] [INFO] sybeol - Login attempt trough POST IP[127.0.0.1]
+[2011-10-09 23:19:17.684] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 23:19:17.685] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 23:19:17.685] [INFO] sybeol - Not yet authenticated
+[2011-10-09 23:19:17.685] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 23:19:17.685] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 23:19:18.181] [INFO] sybeol - processing...
+[2011-10-09 23:19:18.182] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 23:19:18.245] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:19:18.245] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:19:18.246] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:19:20.052] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:19:20.053] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:19:20.053] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:19:23.150] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:19:23.150] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:19:23.152] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:19:26.105] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:19:26.106] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:19:26.107] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:20:04.434] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:20:04.435] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:20:04.435] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:20:20.066] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:20:20.067] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:20:20.067] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:20:21.661] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:20:21.663] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:20:21.664] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:20:42.529] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:20:42.530] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:20:42.530] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:20:44.020] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:20:44.022] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:20:44.023] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:20:44.280] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:20:44.280] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:20:44.281] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:21:48.438] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:21:48.438] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:21:48.439] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:23:43.740] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:23:43.741] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:23:43.741] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:23:56.064] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:23:56.065] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:23:56.065] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:24:23.585] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:24:23.586] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:24:23.587] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:24:29.225] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:24:29.226] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:24:29.226] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:24:31.700] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:24:31.702] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:24:31.703] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:24:50.585] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:24:50.585] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:24:50.585] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:26:15.445] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:26:15.446] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:26:15.446] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:27:53.285] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:27:53.287] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:27:53.287] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:29:48.058] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:29:48.059] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:29:48.059] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:30:15.513] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:30:15.514] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:30:15.515] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:34:56.421] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:34:56.426] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:34:56.427] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:35:20.738] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:35:20.739] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:35:20.739] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 23:35:55.194] [INFO] sybeol - login verification IP[127.0.0.1]
+[2011-10-09 23:35:55.196] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 23:35:55.196] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com

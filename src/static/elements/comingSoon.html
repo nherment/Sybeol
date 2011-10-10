@@ -11,57 +11,62 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/slide.css" type="text/css" media="screen" />
 
     <!-- jQuery - the core -->
     <!--<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>-->
     <script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
 
-    <!-- charts API -->
     <script src="/js/login.js" type="text/javascript"></script>
 
     <script type="text/javascript">
 
-
         $(document).ready(function() {
-            autoRedirectToLogin();
-            $('#header').load('/elements/menu.html');
             $('#footer').load('/elements/footer.html');
         });
     </script>
+
 </head>
 
 <body>
-<div id="header" class="header">
-    
-</div>
-<div class="headerContentLeft">
-    <a href="/">
+<div class="header">
+    <div class="headerContent">
         <img width="50px" class="inline" src="/css/images/logo_Sybeol_small.png" alt="Logo Sybeol"/>
         <h1 class="inline">Sybeol</h1>
-    </a>
+        <h2>Make your Home smart</h2>
+    </div>
+
 </div>
-<div class="content">
-    <div>
-        <div class="eighthundred">
-            <h2>Basic</h2>
-            <hr/>
+
+<div class="homeBanner">
+    <div class="eighthundred">
+
+        <div class="homeBannerLeft">
+            Sybeol is an energy monitoring tool for your home
             <br/>
-            <h3>Change your password</h3>
-            <hr/>
             <p>
-                
+                It can also monitor all your environment
             </p>
-            <br/><br/>
-            <h2>Advanced</h2>
-            <hr/>
-            <h3>Your API key</h3>
-            <hr/>
-            <p id="apiKeyContainer">
-                FGGRGR--e34t#$%f=4353fRF_-$ET4tt
-            </p>
+            <ul>
+                <li>Watch your power consumption</li>
+                <li>Identify anomalies</li>
+                <li>Lower your costs</li>
+                <li>Share with the community</li>
+            </ul>
+        </div>
+        <div class="homeBannerRight">
+            <div id="chartContainer" style="height:220px; width: 300px;">
+            </div>
         </div>
     </div>
 </div>
-<div id="footer"></div>
+<div class="footer">
+    <div class="center">
+        <a href="legal/terms">Terms of use</a>
+        <a href="legal/privacy">Privacy Policy</a>
+        <a href="../contact">Contact</a>
+    </div>
+</div>
 </body>
+<div id="footer"></div>
 </html>
