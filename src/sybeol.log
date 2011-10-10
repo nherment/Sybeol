@@ -1544,3 +1544,20 @@
 [2011-10-09 20:54:02.031] [INFO] sybeol - login verification
 [2011-10-09 20:54:02.033] [INFO] sybeol - isAuthenticated: true
 [2011-10-09 20:54:02.033] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 21:06:34.421] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 21:06:34.422] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 21:06:34.422] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 21:06:34.422] [INFO] sybeol - Already authenticated
+[2011-10-09 21:06:34.609] [INFO] sybeol - login verification
+[2011-10-09 21:06:34.609] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 21:06:34.609] [DEBUG] sybeol - isAuthenticated: nherment@gmail.com
+[2011-10-09 21:06:34.702] [INFO] sybeol - receive get request on /measure
+[2011-10-09 21:06:36.345] [INFO] sybeol - Logout [nherment@gmail.com]
+[2011-10-09 21:06:38.536] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 21:06:38.537] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 21:06:38.537] [DEBUG] sybeol - isAuthenticated: undefined
+[2011-10-09 21:06:38.538] [INFO] sybeol - Not yet authenticated
+[2011-10-09 21:06:38.538] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 21:06:38.538] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 21:06:38.692] [INFO] sybeol - processing...
+[2011-10-09 21:06:38.693] [INFO] sybeol - authentication failed because the password is wrong. user[nherment@gmail.com]
