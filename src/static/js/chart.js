@@ -33,6 +33,9 @@ var theme = function() {
                 font: '12px Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, sans-serif'
             }
         },
+        credits: {
+            enabled: false
+        },
         xAxis: {
             gridLineWidth: 0,
             lineColor: '#999',
@@ -272,10 +275,10 @@ var initChart = function(containerName, serie) {
             zoomType: 'x'
         },
         title: {
-            text: 'Power consumption'
+            text: ''
         },
         subtitle: {
-            text: 'This is a subtitle'
+            text: ''
         },
         xAxis: {
             type: 'datetime',

@@ -563,3 +563,307 @@
 [2011-10-07 17:52:09.791] [INFO] sybeol - authenticating...
 [2011-10-07 17:52:09.796] [INFO] sybeol - processing...
 [2011-10-07 17:52:09.797] [INFO] sybeol - user with email[nherment@gmail.com] is now authenticated
+[2011-10-08 20:47:02.748] [INFO] sybeol - listening on port 4100
+[2011-10-08 20:48:15.074] [INFO] sybeol - listening on port 4100
+[2011-10-08 20:50:15.550] [INFO] sybeol - Registering attempt trough POST
+[2011-10-08 20:50:15.554] [INFO] sybeol - saved new user: [object Object]
+[2011-10-08 20:50:15.555] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"221b8fa8b3853010b82fa289251e43a1e6fb1476","apiKey":"30e8ded0-c857-43ff-85fb-3d06de48436f","validationKey":"53a4b632-3684-4a90-8740-65e4c430c8ce","salt":"908927894087","_id":"4e9119f755167d8828000001","active":false}
+[2011-10-08 20:50:15.555] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"221b8fa8b3853010b82fa289251e43a1e6fb1476","apiKey":"30e8ded0-c857-43ff-85fb-3d06de48436f","validationKey":"53a4b632-3684-4a90-8740-65e4c430c8ce","salt":"908927894087","_id":"4e9119f755167d8828000001","active":false}
+[2011-10-08 20:50:15.949] [ERROR] sybeol - Error sending email to [nherment@gmail.com]Error: ECONNREFUSED, Connection refused
+[2011-10-08 20:51:24.298] [INFO] sybeol - listening on port 4100
+[2011-10-08 20:51:27.464] [INFO] sybeol - Registering attempt trough POST
+[2011-10-08 20:51:27.467] [INFO] sybeol - saved new user: [object Object]
+[2011-10-08 20:51:27.467] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"1690c9ecb6c4ab19e91135d48b8a2829688aadd8","apiKey":"dae5f0a5-acb8-4c38-82ed-47697f67293e","validationKey":"3a7c0252-0a3a-4de8-ade6-67cc7b9a5249","salt":"342692130885","_id":"4e911a3fce5ee28d28000001","active":false}
+[2011-10-08 20:51:27.468] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"1690c9ecb6c4ab19e91135d48b8a2829688aadd8","apiKey":"dae5f0a5-acb8-4c38-82ed-47697f67293e","validationKey":"3a7c0252-0a3a-4de8-ade6-67cc7b9a5249","salt":"342692130885","_id":"4e911a3fce5ee28d28000001","active":false}
+[2011-10-08 20:51:27.476] [ERROR] sybeol - Error sending email to [nherment@gmail.com]Error: ECONNREFUSED, Connection refused
+[2011-10-08 20:51:55.987] [INFO] sybeol - Registering attempt trough POST
+[2011-10-08 20:51:55.989] [INFO] sybeol - saved new user: [object Object]
+[2011-10-08 20:51:55.990] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"2b26f13411a952bd7723779e4b597318b1423a7f","apiKey":"0714abaa-7d8c-4542-b2eb-838cddab5c77","validationKey":"61136452-7670-447d-9d5c-aebb5811ec20","salt":"1041148668314","_id":"4e911a5bce5ee28d28000002","active":false}
+[2011-10-08 20:51:55.990] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"2b26f13411a952bd7723779e4b597318b1423a7f","apiKey":"0714abaa-7d8c-4542-b2eb-838cddab5c77","validationKey":"61136452-7670-447d-9d5c-aebb5811ec20","salt":"1041148668314","_id":"4e911a5bce5ee28d28000002","active":false}
+[2011-10-08 20:51:56.003] [ERROR] sybeol - Error sending email to [nherment@gmail.com]Error: ECONNREFUSED, Connection refused
+[2011-10-09 10:54:22.635] [INFO] sybeol - listening on port 4100
+[2011-10-09 10:54:36.698] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 10:54:36.702] [INFO] sybeol - saved new user: [object Object]
+[2011-10-09 10:54:36.703] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"b18465d2967fc7bffac6e5d9ddb4cfae93a40b29","apiKey":"eb74b640-5996-4820-92c7-29effd6d183a","validationKey":"e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f","salt":"838329194010","_id":"4e91dfdc56074a9d29000001","active":false}
+[2011-10-09 10:54:36.703] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"b18465d2967fc7bffac6e5d9ddb4cfae93a40b29","apiKey":"eb74b640-5996-4820-92c7-29effd6d183a","validationKey":"e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f","salt":"838329194010","_id":"4e91dfdc56074a9d29000001","active":false}
+[2011-10-09 10:54:38.991] [INFO] sybeol - Validation email sent: {"subject":"Validate your new account at Sybeol.com !","body":"Click on this link to validate your account: http://www.sybeol.com/validate/nherment@gmail.com/e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f"}
+[2011-10-09 10:55:15.300] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 10:58:06.333] [INFO] sybeol - listening on port 4100
+[2011-10-09 10:58:12.751] [INFO] sybeol - validating nherment@gmail.com with key e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f
+[2011-10-09 10:59:12.691] [INFO] sybeol - listening on port 4100
+[2011-10-09 10:59:16.278] [INFO] sybeol - validating nherment@gmail.com with key e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f
+[2011-10-09 10:59:35.845] [INFO] sybeol - listening on port 4100
+[2011-10-09 10:59:48.501] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:00:09.447] [INFO] sybeol - validating nherment@gmail.com with key e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f
+[2011-10-09 11:00:26.407] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:00:28.958] [INFO] sybeol - validating nherment@gmail.com with key e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f
+[2011-10-09 11:02:14.831] [INFO] sybeol - User saved
+[2011-10-09 11:02:14.942] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:02:27.397] [INFO] sybeol - validating nherment@gmail.com with key e1f0d6c3-f8b6-4d0e-a15f-debc85654c5f
+[2011-10-09 11:04:35.907] [INFO] sybeol - User saved
+[2011-10-09 11:04:36.032] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:05:02.921] [INFO] sybeol - User saved
+[2011-10-09 11:05:03.037] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:06:38.164] [INFO] sybeol - User saved
+[2011-10-09 11:06:38.277] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:06:39.133] [ERROR] sybeol - null
+[2011-10-09 11:06:39.134] [INFO] sybeol - null
+[2011-10-09 11:14:55.225] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:14:56.225] [ERROR] sybeol - null
+[2011-10-09 11:14:56.227] [INFO] sybeol - {"email":"nherment@gmail.com","hashed_password":"d265f3cff028c497cb624d8adb701c434484991e","apiKey":"3825029d-82cb-40a7-a234-d1f12018111d","validationKey":"a38dc7f2-200f-4b0d-9ec2-07191594443b","salt":"1254999117072","_id":"4e91e2ae3730a2c529000001","active":false}
+[2011-10-09 11:15:41.798] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:15:42.600] [ERROR] sybeol - null
+[2011-10-09 11:15:42.602] [INFO] sybeol - {"email":"nherment@gmail.com","hashed_password":"d265f3cff028c497cb624d8adb701c434484991e","apiKey":"3825029d-82cb-40a7-a234-d1f12018111d","validationKey":"a38dc7f2-200f-4b0d-9ec2-07191594443b","salt":"1254999117072","_id":"4e91e2ae3730a2c529000001","active":false}
+[2011-10-09 11:15:42.606] [ERROR] sybeol - null
+[2011-10-09 11:15:42.606] [INFO] sybeol - {"email":"nherment@gmail.com","hashed_password":"d265f3cff028c497cb624d8adb701c434484991e","apiKey":"3825029d-82cb-40a7-a234-d1f12018111d","validationKey":"a38dc7f2-200f-4b0d-9ec2-07191594443b","salt":"1254999117072","_id":"4e91e2ae3730a2c529000001","active":false}
+[2011-10-09 11:16:32.817] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:16:33.655] [ERROR] sybeol - null
+[2011-10-09 11:16:33.656] [INFO] sybeol - {"email":"nherment@gmail.com","hashed_password":"d265f3cff028c497cb624d8adb701c434484991e","apiKey":"3825029d-82cb-40a7-a234-d1f12018111d","validationKey":"a38dc7f2-200f-4b0d-9ec2-07191594443b","salt":"1254999117072","_id":"4e91e2ae3730a2c529000001","active":false}
+[2011-10-09 11:16:33.659] [ERROR] sybeol - null
+[2011-10-09 11:16:33.660] [INFO] sybeol - null
+[2011-10-09 11:16:49.147] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:16:51.746] [ERROR] sybeol - null
+[2011-10-09 11:16:51.747] [INFO] sybeol - null
+[2011-10-09 11:17:17.764] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:17:18.554] [ERROR] sybeol - null
+[2011-10-09 11:17:18.555] [INFO] sybeol - null
+[2011-10-09 11:18:02.978] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:18:04.282] [ERROR] sybeol - null
+[2011-10-09 11:18:04.283] [INFO] sybeol - {"email":"nherment@gmail.com","hashed_password":"d265f3cff028c497cb624d8adb701c434484991e","apiKey":"3825029d-82cb-40a7-a234-d1f12018111d","validationKey":"a38dc7f2-200f-4b0d-9ec2-07191594443b","salt":"1254999117072","_id":"4e91e2ae3730a2c529000001","active":false}
+[2011-10-09 11:19:47.567] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:20:36.421] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:20:40.638] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:20:40.770] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:22:57.396] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:23:22.663] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:23:25.574] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:23:25.765] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:24:44.430] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:24:46.910] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:24:47.037] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:25:42.361] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:25:46.022] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:25:46.154] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:26:45.105] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:26:48.501] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:26:48.630] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:27:05.067] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:27:07.526] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:27:07.652] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:28:23.615] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:28:28.871] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:28:29.002] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:29:08.717] [INFO] sybeol - listening on port 4100
+[2011-10-09 11:29:11.422] [INFO] sybeol - validating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 11:29:11.549] [INFO] sybeol - Validating user [nherment@gmail.com] with validationKey [a38dc7f2-200f-4b0d-9ec2-07191594443b]
+[2011-10-09 11:29:11.550] [INFO] sybeol - Validation key match
+[2011-10-09 11:29:11.550] [INFO] sybeol - User is now activated
+[2011-10-09 11:31:09.183] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:31:09.184] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:31:09.184] [INFO] sybeol - Not yet authenticated
+[2011-10-09 11:31:09.184] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 11:31:09.184] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 11:31:09.333] [INFO] sybeol - processing...
+[2011-10-09 11:31:09.333] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 11:31:16.949] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:31:16.951] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 11:31:16.952] [INFO] sybeol - Already authenticated
+[2011-10-09 11:32:59.159] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 11:32:59.160] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 11:32:59.174] [INFO] sybeol - receive get request on /measure
+[2011-10-09 11:33:23.073] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 11:33:23.073] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:33:37.666] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:33:37.666] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:33:37.666] [INFO] sybeol - Not yet authenticated
+[2011-10-09 11:33:37.666] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 11:33:37.667] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 11:33:37.812] [INFO] sybeol - processing...
+[2011-10-09 11:33:37.813] [INFO] sybeol - Failed authentication attempt for user with email[nherment@gmail.com]
+[2011-10-09 11:33:49.154] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:33:49.154] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:33:49.155] [INFO] sybeol - Not yet authenticated
+[2011-10-09 11:33:49.155] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 11:33:49.155] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 11:33:49.294] [INFO] sybeol - processing...
+[2011-10-09 11:33:49.294] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 11:35:56.875] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 11:35:56.876] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 11:35:56.990] [INFO] sybeol - receive get request on /measure
+[2011-10-09 11:36:03.034] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:36:03.034] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:36:03.034] [INFO] sybeol - Not yet authenticated
+[2011-10-09 11:36:03.034] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 11:36:03.035] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 11:36:03.163] [INFO] sybeol - processing...
+[2011-10-09 11:36:03.163] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 11:36:10.181] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:36:10.183] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 11:36:10.183] [INFO] sybeol - Already authenticated
+[2011-10-09 11:36:10.253] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 11:36:10.253] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 11:36:10.268] [INFO] sybeol - receive get request on /measure
+[2011-10-09 11:36:14.866] [INFO] sybeol - receive get request on /measure
+[2011-10-09 11:36:38.181] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 11:36:38.183] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:38:15.852] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 11:38:15.852] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 11:38:15.852] [INFO] sybeol - Not yet authenticated
+[2011-10-09 11:38:15.852] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 11:38:15.853] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 11:38:15.997] [INFO] sybeol - processing...
+[2011-10-09 11:38:15.997] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 11:38:16.062] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 11:38:16.062] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 11:38:16.112] [INFO] sybeol - receive get request on /measure
+[2011-10-09 12:24:53.931] [INFO] sybeol - listening on port 4100
+[2011-10-09 12:25:15.213] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 12:25:15.214] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 12:25:15.215] [INFO] sybeol - Not yet authenticated
+[2011-10-09 12:25:15.215] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 12:25:15.215] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 12:25:15.366] [INFO] sybeol - processing...
+[2011-10-09 12:25:15.366] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 12:25:15.433] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:25:15.433] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:25:15.445] [INFO] sybeol - receive get request on /measure
+[2011-10-09 12:25:19.601] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:25:19.603] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:25:19.650] [INFO] sybeol - receive get request on /measure
+[2011-10-09 12:25:20.639] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:25:20.640] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:25:23.388] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:25:23.390] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:25:23.424] [INFO] sybeol - receive get request on /measure
+[2011-10-09 12:25:24.075] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:25:24.076] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:27:22.390] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 12:27:22.390] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:27:22.390] [INFO] sybeol - Already authenticated
+[2011-10-09 12:27:22.508] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:27:22.508] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:27:22.569] [INFO] sybeol - receive get request on /measure
+[2011-10-09 12:27:29.506] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:27:29.508] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:28:50.110] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:28:50.111] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:28:59.059] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 12:28:59.059] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 12:34:31.085] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 12:34:31.087] [INFO] sybeol - saved new user: [object Object]
+[2011-10-09 12:34:31.088] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"b4c00e2b40f8e63dfdf5f3e2640568754ec2afbb","apiKey":"3cc0a86d-03b2-43b3-bc7d-2695def9e2f1","validationKey":"b215c202-f49c-45c7-802a-db8c43c63b66","salt":"1220416716524","_id":"4e91f7471d23cb4b2a000002","active":false}
+[2011-10-09 12:34:31.088] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"b4c00e2b40f8e63dfdf5f3e2640568754ec2afbb","apiKey":"3cc0a86d-03b2-43b3-bc7d-2695def9e2f1","validationKey":"b215c202-f49c-45c7-802a-db8c43c63b66","salt":"1220416716524","_id":"4e91f7471d23cb4b2a000002","active":false}
+[2011-10-09 12:34:33.744] [INFO] sybeol - Validation email sent: {"subject":"Validate your new account at Sybeol.com !","body":"Click on this link to validate your account: http://www.sybeol.com/validate/nherment@gmail.com/b215c202-f49c-45c7-802a-db8c43c63b66"}
+[2011-10-09 13:32:33.372] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 13:32:33.373] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 13:32:33.374] [INFO] sybeol - Already authenticated
+[2011-10-09 13:32:33.508] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 13:32:33.509] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 13:32:33.525] [INFO] sybeol - receive get request on /measure
+[2011-10-09 13:32:55.623] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 13:32:55.623] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 13:32:59.570] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 13:32:59.571] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 13:32:59.613] [INFO] sybeol - receive get request on /measure
+[2011-10-09 13:59:25.838] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 13:59:25.839] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 13:59:25.839] [INFO] sybeol - Not yet authenticated
+[2011-10-09 13:59:25.839] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 13:59:25.839] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 13:59:25.985] [INFO] sybeol - processing...
+[2011-10-09 13:59:25.986] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 14:03:11.233] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 14:03:11.234] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 14:03:11.234] [INFO] sybeol - Already authenticated
+[2011-10-09 14:03:11.339] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 14:03:11.339] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 14:03:11.389] [INFO] sybeol - receive get request on /measure
+[2011-10-09 14:11:10.823] [INFO] sybeol - Login attempt trough POST
+[2011-10-09 14:11:10.824] [INFO] sybeol - isAuthenticated: undefined
+[2011-10-09 14:11:10.824] [INFO] sybeol - Not yet authenticated
+[2011-10-09 14:11:10.824] [INFO] sybeol - Attempting JSON parsing of the request body
+[2011-10-09 14:11:10.824] [INFO] sybeol - authenticating nherment@gmail.com
+[2011-10-09 14:11:10.961] [INFO] sybeol - processing...
+[2011-10-09 14:11:10.962] [INFO] sybeol - user with email [nherment@gmail.com] is now authenticated
+[2011-10-09 14:11:11.036] [INFO] sybeol - login verification for user [undefined]
+[2011-10-09 14:11:11.038] [INFO] sybeol - isAuthenticated: true
+[2011-10-09 14:11:11.096] [INFO] sybeol - receive get request on /measure
+[2011-10-09 14:28:56.301] [INFO] sybeol - listening on port 4100
+[2011-10-09 14:31:10.615] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 14:31:10.618] [INFO] sybeol - saved new user: [object Object]
+[2011-10-09 14:31:10.619] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"4511092033367ffdeeedaf22dcbd607d2504c8b4","apiKey":"24d4d51c-c394-41c9-89ae-6c60e3991bbe","validationKey":"e4417a1e-543e-432d-b3fc-4c93b3c50e44","salt":"126399915414","_id":"4e92129e73eb9b9c2a000001","active":false}
+[2011-10-09 14:31:10.619] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"4511092033367ffdeeedaf22dcbd607d2504c8b4","apiKey":"24d4d51c-c394-41c9-89ae-6c60e3991bbe","validationKey":"e4417a1e-543e-432d-b3fc-4c93b3c50e44","salt":"126399915414","_id":"4e92129e73eb9b9c2a000001","active":false}
+[2011-10-09 14:31:13.987] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nherment@gmail.com&k=e4417a1e-543e-432d-b3fc-4c93b3c50e44"}
+[2011-10-09 14:54:05.333] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 14:54:05.336] [INFO] sybeol - saved new user: [object Object]
+[2011-10-09 14:54:05.338] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"e5a47300930e40c2fbb137c72d8a16df2336fc43","apiKey":"6a1f867e-fd7a-4594-9fcd-1ce189241668","validationKey":"d1510c83-af17-46b5-9f99-223859a47c8c","salt":"491577492409","_id":"4e9217fd73eb9b9c2a000002","active":false}
+[2011-10-09 14:54:05.339] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"e5a47300930e40c2fbb137c72d8a16df2336fc43","apiKey":"6a1f867e-fd7a-4594-9fcd-1ce189241668","validationKey":"d1510c83-af17-46b5-9f99-223859a47c8c","salt":"491577492409","_id":"4e9217fd73eb9b9c2a000002","active":false}
+[2011-10-09 14:54:06.457] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 14:54:06.459] [INFO] sybeol - saved new user: [object Object]
+[2011-10-09 14:54:06.459] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"b933d5c3ed72d44afa759543296be00a34403e4c","apiKey":"dbca3093-ec9f-469a-bb44-4d00b2eca5c6","validationKey":"ae63896b-750b-4d7c-a0e6-5e955115be69","salt":"741527455480","_id":"4e9217fe73eb9b9c2a000003","active":false}
+[2011-10-09 14:54:06.460] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"b933d5c3ed72d44afa759543296be00a34403e4c","apiKey":"dbca3093-ec9f-469a-bb44-4d00b2eca5c6","validationKey":"ae63896b-750b-4d7c-a0e6-5e955115be69","salt":"741527455480","_id":"4e9217fe73eb9b9c2a000003","active":false}
+[2011-10-09 14:54:06.986] [INFO] sybeol - Registering attempt trough POST
+[2011-10-09 14:54:06.988] [INFO] sybeol - saved new user: [object Object]
+[2011-10-09 14:54:06.989] [INFO] sybeol - Registered new user: {"email":"nherment@gmail.com","hashed_password":"898451c18aa7897a658fe64cf8c37734f7caf1b9","apiKey":"5a6c446e-8519-437d-9bac-6e34d86aa3a7","validationKey":"8c9ea639-28f0-4e2e-9c43-732cd24c8905","salt":"380239395316","_id":"4e9217fe73eb9b9c2a000004","active":false}
+[2011-10-09 14:54:06.989] [INFO] sybeol - sending validation key to user: {"email":"nherment@gmail.com","hashed_password":"898451c18aa7897a658fe64cf8c37734f7caf1b9","apiKey":"5a6c446e-8519-437d-9bac-6e34d86aa3a7","validationKey":"8c9ea639-28f0-4e2e-9c43-732cd24c8905","salt":"380239395316","_id":"4e9217fe73eb9b9c2a000004","active":false}
+[2011-10-09 14:54:08.600] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nherment@gmail.com&k=d1510c83-af17-46b5-9f99-223859a47c8c"}
+[2011-10-09 14:54:08.804] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nherment@gmail.com&k=ae63896b-750b-4d7c-a0e6-5e955115be69"}
+[2011-10-09 14:54:09.279] [INFO] sybeol - Validation email sent: {"subject":"Activate your new Sybeol account !","body":"Click on this link to activate your account: http://www.sybeol.com/activate/?u=nherment@gmail.com&k=8c9ea639-28f0-4e2e-9c43-732cd24c8905"}
+[2011-10-09 15:10:13.768] [INFO] sybeol - listening on port 4100
+[2011-10-09 15:11:32.884] [INFO] sybeol - listening on port 4100
+[2011-10-09 15:11:52.727] [INFO] sybeol - listening on port 4100
+[2011-10-09 15:27:48.787] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:27:48.954] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:27:48.955] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:28:10.050] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:28:10.174] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:28:10.175] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:28:21.503] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:28:21.679] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:28:21.680] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:28:27.160] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:28:27.287] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:28:27.288] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:30:12.608] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:30:12.737] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:30:12.737] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:30:34.870] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:30:35.016] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:30:35.017] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:31:00.238] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:31:00.363] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:31:00.364] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:32:28.379] [INFO] sybeol - listening on port 4100
+[2011-10-09 15:32:52.420] [INFO] sybeol - listening on port 4100
+[2011-10-09 15:33:07.702] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:33:07.840] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:33:07.840] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:33:54.734] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:33:54.863] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:33:54.864] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:35:29.018] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:35:29.155] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:35:29.156] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:35:59.341] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:35:59.522] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:35:59.522] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:36:07.258] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:36:07.392] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:36:07.392] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:36:16.086] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:36:16.238] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:36:16.239] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:36:26.765] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:36:26.909] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:36:26.909] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:36:35.325] [INFO] sybeol - Activating nherment@gmail.com with key dd
+[2011-10-09 15:36:35.462] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:36:35.463] [WARN] sybeol - Activation key does not match the one expected. Expected [a38dc7f2-200f-4b0d-9ec2-07191594443b] but got [dd]
+[2011-10-09 15:38:51.518] [INFO] sybeol - Activating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 15:38:51.649] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:38:51.650] [INFO] sybeol - Activation key match
+[2011-10-09 15:38:51.651] [INFO] sybeol - User is now active
+[2011-10-09 15:39:10.305] [INFO] sybeol - Activating nherment@gmail.com with key a38dc7f2-200f-4b0d-9ec2-07191594443b
+[2011-10-09 15:39:10.434] [INFO] sybeol - found matching user [nherment@gmail.com] for activation
+[2011-10-09 15:39:10.435] [INFO] sybeol - Activation key match
+[2011-10-09 15:39:10.435] [INFO] sybeol - User is now active

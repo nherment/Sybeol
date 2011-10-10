@@ -61,17 +61,17 @@ app.get('/user', function(req, res) {
 //--------------------------------- Authentication API
 
 app.get('/login/:email/:password', function(req, res) {
-    logger.info("login attempt for user["+ req.param('email') + "]");
+    logger.info("login attempt for user ["+ req.param('email') + "]");
     authSvc.handleAuth(req, res);
     //res.send(200);
 });
 
 app.get('/loginStatus', function(req, res) {
-    logger.info("login verification for user["+ req.param('email') + "]");
+    logger.info("login verification for user ["+ req.param('email') + "]");
     if(authSvc.isAuthenticated(req) == true) {
-        res.send(200);
+        res.end("YES")
     } else {
-        res.send(403);
+        res.end("NO")
     }
 });
 
@@ -92,11 +92,27 @@ app.get('/logout', function(req, res) {
     res.send(200);
 });
 
-app.get('/test', function(req, res) {
-    req.session.count = (req.session.count) ? req.session.count + 1 : 1;
-    logger.info(req.session.count);
-    logger.info("session email: "+req.session.email);
-    res.end(req.session.email);
+
+app.post('/register', function(req, res) {
+    var isJson = req.is('application/json');
+    if(isJson) {
+        logger.info('Registering attempt trough POST');
+        authSvc.handleRegister(req, res);
+    } else {
+        logger.security("Registering attempt made with wrong request")
+        res.end("Expecting Content-Type:application/json");
+        //res.send(400);
+    }
+});
+
+app.get('/activate/:email/:validationKey', function(req, res) {
+    authSvc.activate(req.param("email"), req.param("validationKey"), function(err, user){
+        if(err) {
+            res.end( '{ "result": "Failed", "cause": "'+err+'" }' );
+        } else {
+            res.end('{"result":"success"}');
+        }
+    });
 });
 
 

@@ -1,31 +1,19 @@
-/*
-Name: Sliding Login Panel with jQuery 1.3.2
-Author: Jeremie Tisseau
-Author URI: http://web-kreation.com/
-Script URI: http://web-kreation.com/index.php/tutorials/nice-clean-sliding-login-panel-built-with-jquery/
-Date: March 26, 2009
-Version: 1.0
-
-	Copyright 2009 Jeremie Tisseau
-	"Sliding Login Panel with jQuery 1.3.2" is distributed under the GNU General Public License version 3:
-	http://www.gnu.org/licenses/gpl-3.0.html
-
-*/       
 
 html, body {border: 0; margin: 0; padding: 0;}
 
 body {
-  	font: 85%/0.9 arial, helvetica, sans-serif;
-//	background: #99A989 url(../images/bg.jpg) repeat 0 0;
+  	font-family: Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
   	line-height: 130%;
   	width: 100%;
-  	min-width: 970px;
+  	min-width: 800px;
   	color: black;
 }
 
 a {
 	color: #0099CC;
 	text-decoration: none;
+    cursor: pointer;
 }
 
 a:hover {
@@ -37,29 +25,504 @@ a img {
 }
 
 h1 {
-	font-size: 1.6em;
-	height: 20px;
+	font-size: 36px;
 	padding-top: 0;
+    font-weight: normal;
+
+    color: #538DB3;
+    /*text-shadow: #666666 3px 2px 3px;*/
+
 }
 
 h2{
-	font-size: 1.2em;
-	height: 20px;
+	font-size: 22px;
 	padding-top: 0;
+    font-weight: normal;
+    color: #6e6e6e;
 }
 
 .highlight {background-color:#FF9D9D;border-bottom:#F30 1px solid;border-top:#F30 1px solid;padding: 4px 10px}
 
 /***** Main Layout ****/
-#container {
-  	width: 100%;
-  	height: 100%;
-  	text-align: center;/* IE fix to center the page */
+
+
+#loginContainer {
+    width:800px;
+    margin:0 auto;
+    position: relative;
 }
 
-#content {
-  	width: 740px;
-  	margin: 0 auto;/* center the page in Firefox */
+a:link, a:visited {
+    color:#27b;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+a img {
+    border-width:0;
+}
+
+.topnav {
+    padding:10px 0px 12px;
+    font-size:16px;
+    line-height:30px;
+    text-align:right;
+}
+
+.topnav a {
+    width: 120px;
+    height: 120px;
+
+    padding:4px 6px 6px;
+    text-decoration:none;
+    font-weight:normal;
+    color:#ffffff;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    background-color: #88bbd4;
+    padding:4px 12px 6px;
+}
+.topnav a:hover {
+    background:#59B;
+    padding:4px 12px 6px;
+}
+
+.topnav a.signout {
+    background-color: #FFFFFF;
+    color: #6596d9;
+}
+a.signout:hover {
+    text-decoration: underline;
+}
+
+a {
+    position:relative;
+    margin-left:3px;
+    cursor: pointer;
+}
+
+.arrow {
+    background-image:url("images/toggle_down_light.png");
+    background-repeat:no-repeat;
+    background-position:100% 50%;
+    padding:4px 20px 6px 0px;
+}
+.topnav a.menu-open {
+    background:#ddeef6!important;
+    color:#666!important;
+    outline:none;
+}
+.small_signup {
+    display:inline;
+    float:none;
+    line-height:23px;
+    margin:25px 0 0;
+    width:170px;
+}
+a.menu-open span {
+    background-image:url("images/toggle_up_dark.png");
+    color:#789;
+}
+
+
+/* LOGIN FORM */
+.auth_menu {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    display:none;
+    background-color:#ddeef6;
+    position:absolute;
+    width:210px;
+    z-index:100;
+    border:1px transparent;
+    text-align:left;
+    padding:12px;
+    top: 32.5px;
+    margin-top:5px;
+    margin-right: 0px;
+    color:#789;
+    font-size:11px;
+}
+
+.register_menu {
+    right: 0px;
+}
+
+.signin_menu {
+    right: 111px;
+}
+
+.auth_menu input[type=text], .auth_menu input[type=password] {
+    display:block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border:1px solid #ACE;
+    font-size:13px;
+    margin:0 0 5px;
+    padding:5px;
+    width:203px;
+}
+.auth_menu p {
+    margin:0;
+}
+.auth_menu a {
+    color:#6AC;
+}
+
+.auth_menu label {
+    font-weight:normal;
+}
+.auth_menu p.remember {
+    padding:10px 0;
+}
+.auth_menu p.forgot, .auth_menu p.complete {
+    clear:both;
+    margin:5px 0;
+}
+.auth_menu p a {
+    color:#27B!important;
+}
+.auth_submit {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background:#39d url('images/bg-btn-blue.png') repeat-x scroll 0 0;
+    border:1px solid #39D;
+    color:#fff;
+    text-shadow:0 -1px 0 #39d;
+    padding:4px 10px 5px;
+    font-size:11px;
+    margin:0 5px 0 0;
+    font-weight:bold;
+}
+
+.auth_submit::-moz-focus-inner {
+padding:0;
+border:0;
+}
+
+.auth_submit:hover, .auth_submit:focus {
+    background-position:0 -5px;
+    cursor:pointer;
+}
+
+.header {
+  	width: 800px;
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+/*  CUSTOM  */
+.headerContent {
   	text-align: left;
-	padding: 20px;
+
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.headerContentLeft {
+  	text-align: left;
+
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.content {
+    margin-top: 40px;
+    position: relative;
+    display: block;
+}
+
+.inline {
+    position: relative;
+    display:inline;
+}
+
+.eighthundred {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+.homeBanner {
+    position: absolute;
+    display: block;
+    margin-top: 160px;
+    background-color: #6596d9;
+    height: 300px;
+    width: 100%;
+
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.homeBannerLeft {
+    position: absolute;
+    top: 35px;
+    font-size: 22px;
+}
+
+.homeBanner p {
+    font-size: 20px;
+}
+
+.homeBanner ul li {
+    font-size: 18px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.homeBannerRight {
+    position: absolute;
+    right: 0px;
+    top: 35px;
+}
+
+.loginBanner {
+    position: absolute;
+    display: block;
+    margin-top: 210px;
+    background-color: #6596d9;
+    height: 300px;
+    width: 100%;
+
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.loginBanner a {
+    color: #ddeef6;
+}
+.loginBanner a:hover {
+    color: #FFFFFF;
+}
+.loginBannerLeft {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    font-size: 22px;
+}
+
+.loginBannerRight {
+    position: absolute;
+    right: 60px;
+    top: 12px;
+}
+
+.absContent {
+    position: absolute;
+    display: block;
+    margin-top: 160px;
+}
+
+.infoBanner {
+    position: relative;
+    display: block;
+    margin-top: 160px;
+    background-color: #6596d9;
+    width: 100%;
+
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.center {
+    position: relative;
+    display:block;
+    margin: auto;
+}
+
+.footer {
+    position: absolute;
+    display: block;
+    margin: auto;
+    bottom: 20px;
+    right: 50px;
+
+    font-size: 14px;
+}
+
+.footer a {
+    position: relative;
+    display: inline;
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.leftMenu {
+    margin-top: 40px;
+    position: absolute;
+    left: 0px;
+}
+
+.menuButton {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+    position:relative;
+    display:block;
+    width:150px;
+    border:1px transparent;
+    text-align:right;
+    padding:12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    color:#789;
+    font-size:16px;
+}
+
+.menuButton:hover {
+    background-color: #6596d9;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.menuButtonSelected {
+    background-color: #6596d9;
+    color: #FFFFFF;
+}
+
+
+
+.auth_form {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+    position:absolute;
+    width:210px;
+    z-index:100;
+    border:1px transparent;
+    text-align:left;
+    padding:12px;
+    color:#789;
+    font-size:11px;
+}
+
+.auth_form input[type=text], .auth_form input[type=password] {
+    display:block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border:1px solid #ACE;
+    font-size:13px;
+    padding:5px;
+    width:203px;
+}
+.auth_form p {
+    margin:0;
+}
+.auth_form a {
+    color:#6AC;
+}
+
+.auth_form label {
+    font-weight:normal;
+}
+.auth_form p.remember {
+    padding:10px 0;
+}
+.auth_form p.forgot, .auth_form p.complete {
+    clear:both;
+    margin:5px 0;
+}
+.auth_form p a {
+    color:#27B!important;
+}
+
+
+// Login page
+
+fieldset {
+    border-style: none;
+}
+
+.submitBtn {
+    position: absolute;
+    right: 5px;
+}
+
+.inputError {
+    border:1px solid #FF0000;
+    color: red;
+}
+
+.auth {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+    width:210px;
+    height: 250px;
+    z-index:100;
+    border:1px transparent;
+    text-align:left;
+    padding:12px;
+    color:#789;
+
+    font-size: 13px;
+}
+.auth input[type=text], .auth input[type=password] {
+    display:block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border:1px solid #ACE;
+    font-size:13px;
+    padding:5px;
+    width:203px;
+}
+.auth p {
+    margin:0;
+}
+.auth a {
+    color:#6AC;
+}
+
+.auth label {
+    font-weight:normal;
+}
+.auth p.remember {
+    padding:10px 0;
+}
+.auth p.forgot, .auth_form p.complete {
+    clear:both;
+    margin:5px 0;
+}
+.auth p a {
+    color:#27B!important;
 }
