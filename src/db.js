@@ -6,8 +6,9 @@ var logger = require("./logger.js").getLogger("db");
 
 //------------ DATABASES
 //mongoose.connect("mongodb://sybeol:sybeol@staff.local.mongohq.com:10055/sybeol");
-//mongoose.connect("mongodb://sybeol:sybeol@staff.mongohq.com:10028/sybeol-dev");
-mongoose.connect('mongodb://localhost/sybeol');
+//mongoose.connect("mongodb://sybeol:sybeol@staff.mongohq.com:10028/sybeol-test");
+mongoose.connect("mongodb://sybeol:sybeol@staff.mongohq.com:10068/sybeol-beta");
+//mongoose.connect('mongodb://localhost/sybeol');
 
 
 

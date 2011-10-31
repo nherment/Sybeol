@@ -5,18 +5,22 @@ var nextRandom = function() {
     return Math.floor(Math.random()*5);
 }
 
+//var HOST = "localhost";
+var HOST = "178.79.186.224";
+var PORT = 4100;
+
 var putNew = function() {
 
     var measure = {
-        apiKey: "c684e72c-7f44-4075-a452-5416bd2e74aa",
-        email: "nherment@gmail.com",
-        uid: "a844782b-8ec2-4958-b22c-668cf15be227",
+        apiKey: "e9830ee2-3fd5-43db-a66a-df105bae15d7",
+        email: "gregory.zussa@gmail.com",
+        uid: "376b2111-7411-4d0f-99e6-4fdb16ac596c",
         value: nextRandom()
     }
 
     var data = JSON.stringify(measure);
 
-    var client = http.createClient(4100, 'localhost');
+    var client = http.createClient(PORT, HOST);
 
     var headers = {
         'Host': 'localhost',
