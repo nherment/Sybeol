@@ -34,9 +34,13 @@ var signIn = function(email, password, callback) {
                 if(data) {
                     var dataObj = JSON.parse(data);
                     if(dataObj.result == "success") {
-                        window.location.href = "/data";
+                        window.location = "/data";
                     } else {
-                        callback(dataObj.result);
+                        if(dataObj.cause) {
+                            callback(dataObj.cause);
+                        } else {
+                            callback(dataObj.result);
+                        }
                     }
                 } else {
                     callback(data);
@@ -62,6 +66,16 @@ var activate = function(email, key, callback) {
             );
 }
 
+var logout = function(callback) {
+    var url = "/logout";
+
+    $.get(url,
+        function(data) {
+            callback();
+        }
+    );
+}
+
 var register = function(email, password, callback) {
     var userLoginData = {
         "email": email,
@@ -69,18 +83,11 @@ var register = function(email, password, callback) {
     }
 
     postJson("/register",
-            JSON.stringify(userLoginData),
-            function(data) {
-                if(data) {
-                    var dataObj = JSON.parse(data);
-                    if(dataObj.result == "success") {
-                        callback(dataObj.result);
-                    } else {
-                        callback(dataObj.result);
-                    }
-                }
-            }
-            );
+        JSON.stringify(userLoginData),
+        function(data) {
+            callback(data);
+        }
+    );
 }
 
 

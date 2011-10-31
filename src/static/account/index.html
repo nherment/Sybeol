@@ -16,16 +16,27 @@
     <!--<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>-->
     <script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
 
-    <!-- charts API -->
     <script src="/js/login.js" type="text/javascript"></script>
+    <script src="/js/sybeol.js" type="text/javascript"></script>
 
     <script type="text/javascript">
 
+        var showUserProfile = function() {
+            Sybeol.getUser(function(user) {
+                if(user) {
+                    $("#emailContainer").html(user.email);
+                    $("#apiKeyContainer").html(user.apiKey);
+                }
+            });
+        }
 
         $(document).ready(function() {
             autoRedirectToLogin();
             $('#header').load('/elements/menu.html');
             $('#footer').load('/elements/footer.html');
+            $('#changePasswordContainer').load('/elements/changePassword.html');
+
+            showUserProfile();
         });
     </script>
 </head>
@@ -43,22 +54,20 @@
 <div class="content">
     <div>
         <div class="eighthundred">
-            <h2>Basic</h2>
+            <h2>Your profile</h2>
             <hr/>
             <br/>
-            <h3>Change your password</h3>
-            <hr/>
-            <p>
-                
-            </p>
-            <br/><br/>
-            <h2>Advanced</h2>
-            <hr/>
-            <h3>Your API key</h3>
-            <hr/>
-            <p id="apiKeyContainer">
-                FGGRGR--e34t#$%f=4353fRF_-$ET4tt
-            </p>
+            <ul>
+                <li>
+                    E-mail: <span id="emailContainer"></span>
+                </li>
+                <li>
+                    Api key: <span id="apiKeyContainer"></span>
+                </li>
+            </ul>
+            <br/>
+            <br/>
+            <div id="changePasswordContainer"></div>
         </div>
     </div>
 </div>

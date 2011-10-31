@@ -2,7 +2,7 @@
 //---------------------------------- log4js setup
 var log4js = require("log4js");
 
-log4js.addAppender(log4js.fileAppender('sybeol.log'), 'sybeol');
+//log4js.addAppender(log4js.fileAppender('sybeol.log'), 'sybeol');
 
 var logger = log4js.getLogger('sybeol');
 

@@ -1,44 +1,87 @@
 var db = require('./db.js');
 var logger = require('./logger.js').getLogger('authentication');
 var mail = require("./mail.js");
+var ErrorUtil = require("./util.js").Error;
 
 var User = db.User;
 var Measure = db.Measure;
 
-
-var isAuthenticated = function(req) {
-    logger.info('isAuthenticated: ' + req.session.authenticated);
-    logger.debug('isAuthenticated email: ' + req.session.email);
-    if(req.session.authenticated) {
-        if(req.session.email) {
-            return true;
+var isAuthenticated = function(req, cb) {
+    var err;
+    logger.info("session id: " + req.session.id);
+    req.session.reload(function(err){
+        if(err) {
+            logger.error(err);
+            //    cb(false);
+            //    throw err;
         }
-    }
-    return false;
+        //} else {
+        logger.debug(JSON.stringify(req.session));
+        logger.info('isAuthenticated: ' + req.session.authenticated);
+        logger.debug('isAuthenticated email: ' + req.session.email);
+        logger.debug("session cookie:" + JSON.stringify(req.session.cookie));
+        if(req.session.authenticated) {
+            if(req.session.email) {
+                cb(true);
+            } else {
+                logger.error("Inconsistent session state. authenticated=true but email is missing");
+                cb(false);
+            }
+        } else {
+            cb(false);
+        }
+        //}
+    });
+}
+
+var getCurrentUser = function(req, cb) {
+    isAuthenticated(req, function(isAuth) {
+        if(isAuth) {
+            db.getUser(req.session.email, function(err, user) {
+                if(err) {
+                    cb(err, null);
+                } else if(user) {
+                    cb(null, user);
+                } else {
+                    var error = new Error("User is authenticated but could not find it in DB. IP["+req.connection.remoteAddress+"]");
+                    logger.error(error);
+                    cb(error, null);
+                }
+            });
+        } else {
+            var err = new Error("Authentication required");
+            logger.warn(err);
+            cb(err, null);
+        }
+    });
 }
 
 var handleAuth = function(request, response) {
-    if(!exports.isAuthenticated(request)) {
-        logger.info('Not yet authenticated');
-        if(request.method == "GET") {
-            exports.authenticateUserParams(request, response);
+    isAuthenticated(request, function(isAuth) {
+        if(isAuth) {
+            logger.info('Already authenticated');
+            response.end('{"result": "success"}');
         } else {
-            exports.authenticateUserJson(request, response);
+            logger.info('Not yet authenticated');
+            if(request.method == "GET") {
+                exports.authenticateUserParams(request, response);
+            } else {
+                exports.authenticateUserJson(request, response);
+            }
         }
-    } else {
-        logger.info('Already authenticated');
-        response.end('{"result": "success"}');
-    }
+    })
 }
 
 var handleAuthJson = function(request, response) {
-    if(!exports.isAuthenticated(request)) {
-        logger.info('Not yet authenticated');
-        exports.authenticateUserJson(request, response);
-    } else {
-        logger.info('Already authenticated');
-        response.end('{"result": "success"}');
-    }
+    isAuthenticated(request, function(isAuth) {
+        if(isAuth) {
+            logger.info('Already authenticated');
+            response.end('{"result": "success"}');
+        } else {
+            logger.info('Not yet authenticated');
+            exports.authenticateUserJson(request, response);
+        }
+    });
 }
 
 var authenticateUser = function(request, response, email, password) {
@@ -57,10 +100,17 @@ var authenticateUser = function(request, response, email, password) {
                     if(user.authenticate(password)) {
                         request.session.authenticated = true;
                         request.session.email = user.email;
-                        request.session.save();
+                        request.session.save(function(err){
+                            logger.info("session saved");
+                            if(err) {
+                                logger.error(err);
+                                throw err;
+                            }
+                        });
+                        logger.debug("session cookie:" + JSON.stringify(request.session.cookie));
                         //logger.info("session email: "+request.session.email);
-                        logger.info('user with email ['+user.email+'] is now authenticated');
-                        response.end('{"result": "success"}');
+                        logger.info('user with email ['+request.session.email+'] is now authenticated');
+                        response.send('{"result": "success"}');
                     } else {
                         logger.info('authentication failed because the password is wrong. user['+user.email+']');
                         response.end('{"result": "Failed", "cause":"Wrong password"}');
@@ -94,20 +144,29 @@ var authenticateUserJson = function(request, response) {
 var authenticateUserParams = function(request, response) {
     authenticateUser(request, response, request.param('email'), request.param('password'));
 }
+var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i ;
 
 var handleRegister = function(request, response) {
 
     if(request.body) {
-        db.createUser(request.body.email, request.body.password, function(err, user) {
-            if(err) {
-                logger.error(err);
-                response.end('{"result": "Failed", "cause": "'+ err +'" }');
-            } else {
-                logger.info("Registered new user: " + JSON.stringify(user));
-                sendActivationMail(user);
-                response.end('{"result": "success"}');
-            }
-        });
+        var email = request.body.email;
+        var password = request.body.password;
+        if(emailPattern.test(email)) {
+            db.createUser(email, password, function(err, user) {
+                if(err) {
+                    logger.error(err);
+                    response.send(ErrorUtil.reduce(err));
+                } else {
+                    logger.info("Registered new user: " + JSON.stringify(user));
+                    sendActivationMail(user);
+                    response.send({ result: "success" });
+                }
+            });
+        } else {
+            var err = new Error("Email is invalid ["+email+"]");
+            logger.error(err);
+            response.send(ErrorUtil.reduce(err));
+        }
     } else {
         response.end('{"result": "Failed"}');
     }
@@ -159,8 +218,57 @@ var activate = function(email, validationKey, callback) {
             }
         });
     } else {
-        callback("Wrong arguments", null);
+        callback(new Error("Wrong arguments"), null);
     }
+}
+
+var sendPasswordResetMail = function(user, password) {
+
+    logger.info("sending new password to user: " + JSON.stringify(user));
+
+    var mailOpts = {
+        subject: "Your new Sybeol password",
+        body: "Your new password is: " + password
+    }
+
+    mail.send(user.email, mailOpts.subject, mailOpts.body, function(e) {
+        if(e) {
+            logger.error("Error sending email to [" + user.email + "]" + e);
+        } else {
+            logger.info("Reset password email sent to [" + user.email + "]");
+        }
+    });
+}
+
+var resetPassword = function(email, callback) {
+    if(emailPattern.test(email)) {
+        logger.info("Resetting password for [" + email + "]");
+        db.getUser(email, function(err, user) {
+            if(err) {
+                callback(err);
+            } else if(user) {
+                try {
+                    var newPassword = generatePassword(8);
+                    user.password = newPassword;
+                    user.save();
+                    sendPasswordResetMail(user, newPassword);
+                    callback();
+                } catch(err) {
+                    callback(err);
+                }
+            } else {
+                var noSuchUserError = new Error("Could not find user with email ["+email+"]");
+                logger.warn(noSuchUserError);
+                callback(noSuchUserError);
+            }
+        });
+    } else {
+        var err = new Error("Email is invalid ["+email+"]");
+        logger.error(err);
+        res.send(ErrorUtil.reduce(err));
+        callback(err);
+    }
+
 }
 
 exports.authenticateUserParams = authenticateUserParams;
@@ -170,3 +278,35 @@ exports.handleAuth = handleAuth;
 exports.isAuthenticated = isAuthenticated;
 exports.handleRegister = handleRegister;
 exports.activate = activate;
+exports.resetPassword = resetPassword;
+exports.getCurrentUser = getCurrentUser;
+
+
+function getRandomNum(lbound, ubound) {
+    return (Math.floor(Math.random() * (ubound - lbound)) + lbound);
+}
+function getRandomChar(number, lower, upper, other) {
+    var numberChars = "123456789123456789";
+    var lowerChars = "abcdefghijklmnpqrstuvwxyz";
+    var upperChars = "ABCDEFGHIJKLMNPQRSTUVWXYZ";
+    var otherChars = "------______";
+    var charSet = "";
+    if (number == true)
+        charSet += numberChars;
+    if (lower == true)
+        charSet += lowerChars;
+    if (upper == true)
+        charSet += upperChars;
+    if (other == true)
+        charSet += otherChars;
+    return charSet.charAt(getRandomNum(0, charSet.length));
+}
+function generatePassword(length) {
+    var rc = "";
+    if (length > 0)
+        rc = rc + getRandomChar(true, true, true, true);
+    for (var idx = 1; idx < length; ++idx) {
+        rc = rc + getRandomChar(true, true, true, true);
+    }
+    return rc;
+}

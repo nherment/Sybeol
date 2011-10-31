@@ -14,11 +14,32 @@
         };
 
 
+
+
         $("#signout").click(function(){
-            $.get("/app/logout", function(data) {
-                window.location.href = "/data";
+            $.get("/logout", function(data) {
+                window.location.href = "/login";
             });
         });
+
+        var showText = function(element) {
+            $("#home_txt").hide();
+            $("#account_txt").hide();
+            $("#devices_txt").hide();
+            if(element) {
+                $("#"+element+"_txt").show();
+            }
+        }
+
+        $(".topMenu a").hover(
+                function(){
+                    showText($(this).attr("id"));
+                }, function(){
+                    showText();
+                }
+        );
+
+        showText();
 
 
     });
@@ -26,9 +47,26 @@
 
 <div id="loginContainer">
     <div class="topMenu">
-        <a id="data" href="/data"><span>Data</span></a>
-        <a id="account" href="/account"><span>Account</span></a>
-        <a id="devices" href="/devices"><span>Devices</span></a>
-        <a id="signout" class="signout"><span>Sign out</span></a>
+        <div style="position: relative; display: block;">
+            <div class="top_menu_button">
+                <a id="home" href="/data">
+                    <img src="/css/images/icons/24/home.png" alt="Home"/>
+                </a>
+                <div id="home_txt" class="top_menu_label">&nbsp;Home</div>
+            </div>
+            <div class="top_menu_button">
+                <a id="account" href="/account">
+                    <img src="/css/images/icons/24/profile.png" alt="My Account"/>
+                </a>
+                <div id="account_txt" class="top_menu_label">Account</div>
+            </div>
+            <div class="top_menu_button">
+                <a id="devices" href="/devices">
+                    <img src="/css/images/icons/24/device.png" alt="My Devices"/>
+                </a>
+                <div id="devices_txt" class="top_menu_label">Devices</div>
+            </div>
+            <a id="signout" class="signout"><span>Sign out</span></a>
+        </div>
     </div>
 </div>

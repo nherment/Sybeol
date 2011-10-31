@@ -45,8 +45,10 @@
 
 
         var handleRegistrationStatus = function(msg) {
-            if(msg == "success") {
+            if(msg.result == "success") {
                 displayRegistrationDone("We just sent you an activation email");
+            } else if(msg.error) {
+                displayRegistrationError(msg.error);
             } else {
                 displayRegistrationError(msg);
             }

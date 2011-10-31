@@ -1,0 +1,13 @@
+{
+    "name": "Sybeol",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "2.2.0",
+        "node-uuid": "1.2.0",
+        "mail": "0.2.3",
+        "connect-heroku-redis": "0.1.5",
+        "mongoose": "2.1.4",
+        "loggly": "0.3.8",
+        "log4js": "0.3.9"
+    }
+}

@@ -15,17 +15,145 @@
     <!-- jQuery - the core -->
     <!--<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>-->
     <script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/jquery.tmpl.min.js"></script>
 
-    <!-- charts API -->
     <script src="/js/login.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/sybeol.js"></script>
 
     <script type="text/javascript">
 
+        var displayAddDeviceError = function(html) {
+            if(html) {
+                var StyledError = '<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">';
+                StyledError += '<p>';
+                StyledError += html;
+                StyledError += "</p></div>";
+                $("#addDeviceNotification").html(StyledError);
+                $("#addDeviceNotification").show();
+            } else {
+                $("#addDeviceNotification").html("");
+                $("#addDeviceNotification").hide();
+            }
+        }
+
+        var states = new Object();
+
+        var setDeviceMouseOverEffect = function() {
+            $(document).ready(function() {
+                $('.device').hover(
+                        function() {
+                            $(this).find('.deviceActions').show();
+                        },
+                        function () {
+                            $(this).find('.deviceActions').hide();
+                        }
+                );
+
+                var resetDeleteHandler = function() {
+                    var device = $(this).attr("id");
+                    states[device] = false;
+                    $(this).html("delete");
+                }
+
+                var deleteClickHandler = function() {
+                    var device = $(this).attr("id");
+                    if(states[device] == true) {
+                        $(this).html("deleting...");
+                        Sybeol.deleteDevice(device, function(event) {
+                            if(event.error) {
+                                $(this).html(event.error);
+                            } else {
+                                states[device] = false;
+                                $(this).remove();
+                                refreshDevices();
+                            }
+                        })
+                    } else {
+                        $(this).mouseout(resetDeleteHandler);
+                        states[device] = true;
+
+                        $(this).html("Do you really want to delete this device ?");
+                    }
+                }
+
+                $('.deleteDevice').click(deleteClickHandler);
+
+
+                var editClickHandler = function() {
+                    alert("This feature is coming soon !");
+                }
+
+                $('.editDevice').click(editClickHandler);
+            });
+        }
+
+        var refreshDevices = function() {
+            $( "#devicesContainer" ).html("");
+            Sybeol.getDevices(function(devices) {
+                //$.( "#devicesContainer" ).html("");
+                $.tmpl("deviceTemplate", devices).appendTo( "#devicesContainer" );
+
+                setDeviceMouseOverEffect();
+            });
+        }
 
         $(document).ready(function() {
             autoRedirectToLogin();
             $('#header').load('/elements/menu.html');
             $('#footer').load('/elements/footer.html');
+
+            $.get("deviceTemplate.html", function(responseText) {
+                $.template( "deviceTemplate", responseText );
+                refreshDevices();
+            });
+
+            //--------------------------------//
+            //------ ADD NEW DEVICE  ---------//
+            //--------------------------------//
+
+            $("#addDevice").click(function(e) {
+                e.preventDefault();
+                $("#addDevice_form").toggle();
+                $("#addDevice").toggleClass("buttonSelected");
+            });
+
+            $("#addDevice_form").mouseup(function() {
+                return false
+            });
+            $(document).mouseup(function(e) {
+                if($(e.target).parent("#addDevice").length == 0) {
+                    $("#addDevice").removeClass("buttonSelected");
+                    $("#addDevice_form").hide();
+                }
+            });
+
+
+            $("#add_submit").click(function(e) {
+
+                displayAddDeviceError(null);
+                var device = {
+                    name: $('#name').val(),
+                    units: $('#units').val()
+                }
+
+                Sybeol.addDevice(device, function(event) {
+                    if(event) {
+                        if(event.error) {
+                            displayAddDeviceError(event.error);
+                        } else {
+                            var newDevice = event;
+                            $("#addDevice").removeClass("buttonSelected");
+                            $("#addDevice_form").hide();
+
+                            $.tmpl("deviceTemplate", newDevice).appendTo( "#devicesContainer" );
+                            setDeviceMouseOverEffect();
+                        }
+                    }
+                });
+
+                return false; // do not proceed with form
+            });
+
         });
     </script>
 </head>
@@ -43,23 +171,58 @@
 <div class="content">
     <div>
         <div class="eighthundred">
-            <h2>Basic</h2>
+            <div class="addDevice">
+                <a id="addDevice" class="button" href="#">
+                    <!--<img src="/css/images/icons/16/add.png" alt="Add a new device"/>-->
+                    <span class="arrowDark">Add a new device</span>
+                </a>
+                <form id="addDevice_form" class="addDeviceForm create_form">
+                    <div id="addDeviceNotification" style="margin-bottom:10px;"></div>
+                    <p>
+                        <label for="name">Name</label>
+                        <input id="name" name="name" value="" title="name" tabindex="1" type="text">
+                    </p>
+                    <p>
+                        <label for="units">Units</label>
+                        <select id="units" name="units" value="" title="units" tabindex="2">
+                            <option value="Watts">Watts</option>
+                            <option value="kilo Watts">kilo Watts</option>
+                            <option value="Celcius">Celcius</option>
+                            <option value="Farenheit">Farenheit</option>
+                            <option value="Percents">Percents</option>
+                            <option value="hPa">hPa</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="graph">Graph type</label>
+                        <select id="graph" name="units" value="" title="units" tabindex="2">
+                            <option value="line">Line</option>
+                            <option value="bar">Bar</option>
+                            <option value="spline">Spline</option>
+                            <option value="area">Area</option>
+                            <option value="areaspline">Area Spline</option>
+                        </select>
+                    </p>
+                    <p class="remember">
+                        <input id="isPublic" name="isPublic" value="" title="isPublic" tabindex="3" type="checkbox">
+                        <label for="isPublic">Make public</label>
+                    </p>
+                    <p class="forgot">
+                        <input id="add_submit" class="auth_submit submitBtn" value="Add" tabindex="5" type="submit">
+                    </p>
+                </form>
+            </div>
+            <h2>Your Devices</h2>
             <hr/>
-            <h3>Your devices</h3>
-            <hr/>
-            <p>
+            <p id="devicesContainer">
 
             </p>
 
             <br/><br/>
-            <h2>Advanced</h2>
-            <hr/>
-            <p>Do you have your own devices ?</p>
-            <p>Learn how you can connect them to Sybeol</p>
-            <h3>API Documentation</h3>
-            <hr/>
             <p>
-               blah blah
+                Do you have your own devices ?
+                <br/>
+                <a href="#">Learn how you can connect them</a>
             </p>
         </div>
     </div>
@@ -69,14 +232,14 @@
 </html>
 <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-26203167-1']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26203167-1']);
+    _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
 
 </script>

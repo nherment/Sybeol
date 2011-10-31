@@ -266,7 +266,7 @@ var theme = function() {
     var highchartsOptions = Highcharts.setOptions(Highcharts.theme);
 }
 
-var initChart = function(containerName, serie) {
+var initChart = function(containerName, series, device) {
     //theme();
     var chart = new Highcharts.Chart({
         chart: {
@@ -292,37 +292,37 @@ var initChart = function(containerName, serie) {
         },
         yAxis: {
             title: {
-                text: 'Power (w)'
+                text: device.units
             },
             min: 0
         },
         tooltip: {
             formatter: function() {
                 return '<b>'+ this.series.name +'</b><br/>'+
-                        Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' (Watts)';
+                    Highcharts.dateFormat('%e. %b', this.x) +': '+ this.y +' (Watts)';
             }
         },
         plotOptions: {
             series: {
-               fillColor: {
-                  stops: [
-                     [0, 'rgba(255,255,255,0)'],
-                     [1, 'rgba(0,0,0,0)']
-                  ]
-               },
-               lineWidth: 2,
-               marker: {
-                  enabled: false
-               },
-               shadow: false,
-               states: {
-                  hover: {
-                     lineWidth: 3
-                  }
-               },
-               enableMouseTracking: true
+                fillColor: {
+                    stops: [
+                        [0, 'rgba(255,255,255,0)'],
+                        [1, 'rgba(0,0,0,0)']
+                    ]
+                },
+                lineWidth: 2,
+                marker: {
+                    enabled: false
+                },
+                shadow: false,
+                states: {
+                    hover: {
+                        lineWidth: 3
+                    }
+                },
+                enableMouseTracking: true
             }
-         },
-        series: [serie]
+        },
+        series: series
     });
 }

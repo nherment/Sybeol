@@ -6,8 +6,8 @@ var logger = require("./logger.js").getLogger("db");
 
 //------------ DATABASES
 //mongoose.connect("mongodb://sybeol:sybeol@staff.local.mongohq.com:10055/sybeol");
-mongoose.connect("mongodb://sybeol:sybeol@staff.mongohq.com:10028/sybeol-dev");
-//mongoose.connect('mongodb://localhost/sybeol');
+//mongoose.connect("mongodb://sybeol:sybeol@staff.mongohq.com:10028/sybeol-dev");
+mongoose.connect('mongodb://localhost/sybeol');
 
 
 
@@ -18,6 +18,13 @@ var ObjectId = Schema.ObjectId;
 function validatePresenceOf(value) {
     return value && value.length;
 }
+//------------ SENSOR
+
+var Sensor = new Schema({
+    'uid'   : {type: String},
+    'name'  : {type: String},
+    'units' : {type: String}
+});
 
 //------------ USER
 
@@ -28,7 +35,8 @@ var UserSchema = new Schema({
     'lastAccessed' : {type: Date},
     'hashed_password': String,
     'salt': String,
-    'apiKey' : { type: String/*, index: { unique: true }*/}
+    'apiKey' : { type: String/*, index: { unique: true }*/},
+    'sensors' : [Sensor]
 });
 
 UserSchema.virtual('password')
@@ -83,6 +91,7 @@ exports.createMeasure = function(user, type, time, value) {
     });
     msr.save();
     logger.info("saved new measure: " + msr);
+    return msr;
 }
 
 var createUser = function(email, password, callback) {
@@ -95,7 +104,7 @@ var createUser = function(email, password, callback) {
     getUser(usr.email, function(error, user) {
         if(user) {
             usr = undefined;
-            err = "User already exists";
+            err = new Error("User already exists");
             logger.warn("creating user. User already exists:" + email);
         } else { 
             try{
@@ -103,7 +112,7 @@ var createUser = function(email, password, callback) {
                 logger.info("saved new user: " + JSON.stringify(usr));
             } catch(error) {
                 err = error;
-                logger.warn("error when creating user [" + usr + "]: " + err);
+                logger.warn("Error when creating user [" + usr + "]: " + err);
             }
         }
         if(callback) {
@@ -116,6 +125,10 @@ var getUser = function(email, callback) {
     User.where('email', email).findOne(callback);
 }
 
+var listUsers = function(cb) {
+    User.find({}, cb);
+}
+
 exports.deleteUser = function(email) {
 //    getUser(email, function(err, user) {
 //        user.
@@ -125,16 +138,17 @@ exports.createUser = createUser;
 exports.getUser = getUser;
 exports.User = User;
 exports.Measure = Measure;
+exports.listUsers = listUsers;
 
 
 // DEBUG:
 
-    //var usr = new User({
-    //    'email': 'nherment@gmail.com',
-    //    'password': 'nherment'
-    //});
-    //usr.save();
-    //logger.info('User saved');
+//    var usr = new User({
+//        'email': 'nherment@gmail.com',
+//        'password': 'nherment'
+//    });
+//    usr.save();
+//    logger.info('User saved');
 
 //User.findOne({ 'email': 'nherment@gmail.com' } , function(err, user) {
 //    logger.error(err);
