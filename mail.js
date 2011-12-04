@@ -1,8 +1,15 @@
 
+if(!process.env.SYBEOL_EMAIL_REG_USER) {
+    throw new Error("Env variable SYBEOL_EMAIL_REG_USER is needed");
+}
+if(!process.env.SYBEOL_EMAIL_REG_PWD) {
+    throw new Error("Env variable SYBEOL_EMAIL_REG_PWD is needed");
+}
+
 var mail = require('mail').Mail({
     host: 'smtp.gmail.com',
-    username: 'registration@sybeol.com',
-    password: '6031769a'
+    username: process.env.SYBEOL_EMAIL_REG_USER,
+    password: process.env.SYBEOL_EMAIL_REG_PWD
 });
 
 
