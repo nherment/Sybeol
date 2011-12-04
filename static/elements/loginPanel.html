@@ -1,0 +1,50 @@
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+        var displayLoginError = function(html) {
+            if(html) {
+                var StyledError = '<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">';
+                StyledError += '<p>';
+                StyledError += html;
+                StyledError += "</p></div>";
+                $("#signinNotification").html(StyledError);
+            } else {
+                $("#signinNotification").html("");
+            }
+        }
+
+        $("#signin_submit").click(function(e) {
+            displayLoginError(null);
+            signIn($('#email').val(), $('#password').val(), function(error) {
+                displayLoginError(error);
+            });
+            return false; // do not proceed with form
+        });
+
+    });
+</script>
+<div>
+    <fieldset class="auth">
+        <form id="signin_form" class="signin" method="post" action="#">
+            <h2>Sign in</h2>
+            <br/>
+            <div id="signinNotification" style="margin-bottom:10px;"></div>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" class="email" name="email" value="" title="email" tabindex="1" type="text">
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" class="password" name="password" value="" title="password" tabindex="2" type="password">
+            </p>
+            <p class="remember">
+                <input id="signin_submit" class="auth_submit submitBtn" value="Sign in" tabindex="5" type="submit">
+                <input id="remember" name="remember_me" value="1" tabindex="3" type="checkbox">
+                <label for="remember">Remember me</label>
+            </p>
+            <p class="forgot"> <a id="resend_password_link" class="forgotPwdLink" href="/forgotpassword/" tabindex="4">Forgot your password?</a> </p>
+            </p>
+        </form>
+    </fieldset>
+</div>

@@ -1,0 +1,1001 @@
+
+html, body {border: 0; margin: 0; padding: 0;}
+
+body {
+  	font-family     : Arial, Helvetica, sans-serif;
+	background      : #FFFFFF;
+  	line-height     : 130%;
+  	width           : 100%;
+  	min-width       : 800px;
+  	color           : #4e4e4e;
+}
+
+a {
+	color           : #0099CC;
+	text-decoration : underline;
+    cursor          : pointer;
+}
+
+a:hover {
+	color           : #00CCFF;
+    text-decoration : none;
+}
+
+a img {
+  border            : none;/*remove border for linked images*/
+}
+
+a:link, a:visited {
+    color           : #27b;
+    text-decoration : none;
+}
+
+h1 {
+	font-size       : 36px;
+	padding-top     : 0;
+    font-weight     : normal;
+
+    color           : #538DB3;
+    /*text-shadow     : #666666 3px 2px 3px;*/
+
+}
+
+h2 {
+	font-size       : 22px;
+	padding-top     : 0;
+    font-weight     : normal;
+    color           : #6e6e6e;
+}
+
+h3 {
+	font-size       : 18px;
+	padding-top     : 0px;
+    font-weight     : normal;
+    color           : #6e6e6e;
+
+    margin-bottom   : 2px;
+}
+
+hr {
+    width           : 100%;
+    margin-top      : 0px;
+    margin-bottom   : 5px;
+}
+
+.highlight {
+    background-color: #FF9D9D;
+    border-bottom   : #F30 1px solid;
+    border-top      : #F30 1px solid;
+    padding         : 4px 10px}
+
+/***** Main Layout ****/
+
+
+
+
+.topMenu {
+    padding         : 10px 0px 12px;
+    font-size       : 16px;
+    line-height     : 20px;
+    text-align      : right;
+    position        : relative;
+
+    vertical-align  : middle;
+}
+
+.topMenu a {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+
+    background-color: transparent;
+
+    position        : relative;
+    display         : inline;
+
+    border          : 1px transparent;
+
+    padding         : 5px;
+
+    margin-top      : 5px;
+    margin-bottom   : 5px;
+    margin-left     : 10px;
+    margin-right    : 10px;
+
+    font-size       : 16px;
+
+    cursor          : pointer;
+}
+
+.top_menu_label {
+    display         : block;
+    position        : absolute;
+    top: 20px;
+    margin          : auto;
+    color           : #2371D7;
+    text-align      : center;
+}
+
+.top_menu_button {
+    position        : relative;
+    display         : inline;
+}
+
+.topMenu a:hover {
+    background-color: transparent;
+    text-decoration : none;
+}
+
+a.signout {
+    background-color: transparent;
+    text-decoration : underline;
+    color           : #6596d9;
+}
+a.signout:hover {
+    background-color: transparent;
+    text-decoration : none;
+    color           : #2371D7;
+}
+
+.topMenuButtonSelected {
+    background-color: #6596d9;
+    color           : #FFFFFF;
+}
+
+
+.topnav {
+    padding         : 10px 0px 12px;
+    font-size       : 16px;
+    line-height     : 30px;
+    text-align      : right;
+}
+
+.topnav a {
+    width           : 120px;
+    height          : 120px;
+
+    padding         : 4px 6px 6px;
+    text-decoration : none;
+    font-weight     : normal;
+    color           : #789;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius   : 4px;
+    background-color: #ddeef6;
+    padding         : 4px 12px 6px;
+}
+.topnav a:hover {
+    background      : #6596d9;
+    color           : #FFFFFF;
+    padding         : 4px 12px 6px;
+}
+
+a {
+    position        : relative;
+    margin-left     : 3px;
+    cursor          : pointer;
+}
+
+.arrow {
+    background-image: url("images/toggle_down_light.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding         : 4px 20px 6px 0px;
+}
+
+.topnav a.menu-open {
+    background      : #ddeef6!important;
+    color           : #666!important;
+    outline         : none;
+}
+.small_signup {
+    display         : inline;
+    float           : none;
+    line-height     : 23px;
+    margin          : 25px 0 0;
+    width           : 170px;
+}
+a.menu-open span.arrow {
+    background-image: url("images/toggle_up_dark.png");
+    color           : #789;
+}
+
+
+/* LOGIN FORM */
+.auth_menu {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    display         : none;
+    background-color: #ddeef6;
+    position        : absolute;
+    width           : 210px;
+    z-index         : 100;
+    border          : 1px transparent;
+    text-align      : left;
+    padding         : 12px;
+    top             : 32.5px;
+    margin-top      : 5px;
+    margin-right    : 0px;
+    color           : #789;
+    font-size       : 11px;
+}
+
+.register_menu {
+    right           : 0px;
+}
+
+.signin_menu {
+    right           : 111px;
+}
+
+.auth_menu input[type=text], .auth_menu input[type=password], .auth_menu option {
+    display         : block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border          : 1px solid #ACE;
+    font-size       : 13px;
+    margin          : 0 0 5px;
+    padding         : 5px;
+    width           : 203px;
+}
+.auth_menu p {
+    margin          : 0px;
+}
+.auth_menu a {
+    color           : #6AC;
+}
+
+.auth_menu label {
+    font-weight     : normal;
+}
+.auth_menu p.remember {
+    padding         : 10px 0;
+}
+.auth_menu p.forgot, .auth_menu p.complete {
+    clear           : both;
+    margin          : 5px 0;
+}
+.auth_menu p a {
+    color           : #27B!important;
+}
+.auth_submit {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background      : #39d url('images/bg-btn-blue.png') repeat-x scroll 0 0;
+    border          : 1px solid #39D;
+    color           : #fff;
+    text-shadow     : 0 -1px 0 #39d;
+    padding         : 4px 10px 5px;
+    font-size       : 11px;
+    margin          : 0 5px 0 0;
+    font-weight     : bold;
+}
+
+.auth_submit::-moz-focus-inner {
+    padding         : 0px;
+    border          : 0px;
+}
+
+.auth_submit:hover, .auth_submit:focus {
+    background-position: 0 -5px;
+    cursor          : pointer;
+}
+
+.header {
+  	width           : 800px;
+    display         : block;
+    position        : relative;
+    margin          : auto;
+}
+
+/*  CUSTOM  */
+
+.content {
+    margin-top: 40px;
+    position: relative;
+    display: block;
+    min-height: 600px;
+}
+
+.inline {
+    position: relative;
+    display:inline;
+}
+
+.eighthundred {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    display: block;
+}
+
+.homeBanner {
+    position: relative;
+    display: block;
+    margin-top: 160px;
+    background-color: #6596d9;
+    height: 300px;
+    width: 100%;
+
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.homeBannerLeft {
+    position: absolute;
+    top: 35px;
+    font-size: 22px;
+}
+
+.homeBanner p {
+    font-size: 20px;
+}
+
+.homeBanner ul li {
+    font-size: 18px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.homeBannerRight {
+    position: absolute;
+    right: 0px;
+    top: 35px;
+}
+
+.headerContent {
+  	text-align      : left;
+
+    display         : block;
+    position        : relative;
+
+    margin-top      : 10px;
+}
+
+.headerContentLeft {
+  	text-align      : left;
+
+    display         : block;
+    position        : absolute;
+    top             : 10px;
+    left            : 10px;
+}
+
+.login_top_menu {
+    position: absolute;
+    top:0px;
+    right: 0px;
+}
+
+.loginBanner {
+    position: relative;
+    display: block;
+    margin-top: 100px;
+    background-color: #6596d9;
+
+    height: 330px;
+    width: 100%;
+
+    color: #FFFFFF;
+    font-size: 22px;
+}
+.loginBanner a {
+    color: #ddeef6;
+}
+.loginBanner a:hover {
+    color: #FFFFFF;
+}
+.loginBannerLeft {
+    position: absolute;
+    top: 12px;
+    left: 60px;
+    font-size: 22px;
+}
+
+.loginBannerRight {
+    position: absolute;
+    top: 12px;
+    right: 60px;
+    font-size: 22px;
+}
+
+.absContent {
+    position: absolute;
+    display: block;
+    margin-top: 160px;
+}
+
+.infoBanner {
+    position: relative;
+    display: block;
+    margin-top: 160px;
+    background-color: #6596d9;
+    width: 100%;
+
+    color: #FFFFFF;
+    font-size: 22px;
+}
+
+.center {
+    position: relative;
+    display:block;
+    margin: auto;
+}
+
+.right {
+    position: absolute;
+    right: 5px;
+}
+
+.message {
+    width: 800px;
+    height: 130px;
+}
+.chartContainer {
+    margin-top: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer {
+    position    : relative;
+    display     : block;
+    width       : 100%;
+    height      : 100%;
+    margin-top  : 100px;
+    vertical-align: middle;
+}
+
+.inner_footer {
+    position: absolute;
+    display: block;
+    margin: auto;
+    bottom: 0px;
+    right: 0px;
+}
+
+.footer a {
+    position: relative;
+    display: inline;
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.leftMenu {
+    margin-top: 40px;
+    position: absolute;
+    left: 0px;
+}
+.menuButton {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+
+    color:#789;
+    font-size:16px;
+
+    position:relative;
+    display:block;
+    width:150px;
+
+    border:1px transparent;
+
+    text-align:right;
+
+    padding:12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    background-color: #6596d9;
+    color: #FFFFFF;
+}
+
+.menuButtonSelected {
+    background-color: #6596d9;
+    color: #FFFFFF;
+}
+
+
+
+.auth_form {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+    position:absolute;
+    width:210px;
+    z-index:100;
+    border:1px transparent;
+    text-align:left;
+    padding:12px;
+    color:#789;
+    font-size:11px;
+}
+
+.auth_form input[type=text], .auth_form input[type=password], .auth_form select {
+    display         : block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border          : 1px solid #ACE;
+    font-size       : 13px;
+    padding         : 5px;
+    width           : 203px;
+}
+
+.auth_form p {
+    margin:0;
+}
+.auth_form a {
+    color:#6AC;
+}
+
+.auth_form label {
+    font-weight:normal;
+}
+.auth_form p.remember {
+    padding:10px 0;
+}
+.auth_form p.forgot, .auth_form p.complete {
+    clear:both;
+    margin:5px 0;
+}
+.auth_form p a {
+    color:#27B!important;
+}
+
+// Contact form
+
+.contact_form {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+    position:absolute;
+    width:210px;
+    z-index:100;
+    border:1px transparent;
+    text-align:left;
+    padding:12px;
+    color:#789;
+}
+.contact_form label {
+    font-size:18px;
+}
+.contact_form input[type=text], .contact_form input[type=password], .contact_form select {
+    display         : block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border          : 1px solid #ACE;
+    font-size       : 20px;
+    padding         : 5px;
+    width           : 300px;
+}
+
+// Login page
+
+fieldset {
+    border-style: none;
+}
+
+.submitBtn {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+}
+
+.forgotPwdLink {
+    position: absolute;
+    left: 5px;
+    bottom: 10px;
+}
+
+.auth {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+
+    background-color: #ddeef6;
+    width           : 210px;
+    height          : 275px;
+    z-index         : 100;
+    border          : 1px transparent;
+    text-align      : left;
+    padding         : 12px;
+    color           : #789;
+
+    font-size       : 13px;
+}
+
+.auth h2 {
+    margin-top      : 0px;
+}
+.auth input[type=text], .auth input[type=password] {
+    display         : block;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border          : 1px solid #ACE;
+    font-size       : 13px;
+    padding         : 5px;
+    width           : 203px;
+}
+.auth p {
+    margin          : 0;
+}
+.auth a {
+    color           : #6AC;
+}
+
+.auth label {
+    font-weight     : normal;
+}
+.auth p.remember {
+    padding         : 10px 0;
+}
+.auth p.forgot, .auth_form p.complete {
+    clear           : both;
+    margin          : 5px 0;
+}
+.auth p a {
+    color           : #27B!important;
+}
+
+.ui-state-error {
+    background-color: #FEF1EC;
+    color           : #CD0A0A;
+    border          : 1px solid #CD0A0A;
+}
+
+.ui-state-success {
+    background-color: #FEF1EC;
+    color           : #00AA00;
+    border          : 1px solid #00AA00;
+}
+
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+ul {
+    list-style-type : none;
+    margin          : auto;
+}
+
+li {
+    margin-bottom   : 5px;
+}
+
+.device {
+    position        : relative;
+    padding-top     : 1px;
+    padding-left    : 5px;
+    padding-bottom  : 1px;
+}
+
+.device:hover {
+
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+
+    background-color: #ddeef6;
+}
+
+.deviceActions {
+    position        : absolute;
+    display         : none;
+
+    top             : 25px;
+    right           : 10px;
+
+    cursor          : pointer;
+}
+
+.deviceActions a {
+    display         : block;
+
+    margin-top      : 2px;
+    margin-bottom   : 2px;
+    padding-left    : 10px;
+    padding-right   : 10px;
+
+    text-align      : right;
+}
+
+.addDevice {
+    position    : absolute;
+    top         : 5px;
+    right       : 5px;
+}
+
+.addDeviceForm {
+    position    : absolute;
+    top         : 21px;
+    right       : 0px;
+    display     : none;
+}
+
+.button {
+    -moz-border-radius  :5px;
+    -webkit-border-radius:5px;
+
+    padding             : 3px;
+    border              : 1px solid #ACE;
+
+    background-color    : #FFFFFF;
+
+    cursor              : pointer;
+}
+
+.button:hover {
+    background-color    : #6596d9;
+    color               : #FFFFFF;
+}
+
+.buttonSelected, .buttonSelected span {
+    background-color    : #6596d9;
+    color               : #FFFFFF;
+}
+
+.arrowDark {
+    background-image: url("images/toggle_down_dark.png");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding         : 4px 20px 6px 0px;
+}
+.menu-open span.arrowDark {
+    background-image: url("images/toggle_up_light.png");
+    color               : #FFFFFF;
+}
+
+
+
+.create_form {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+
+    background-color    : #FFFFFF;
+    position            : absolute;
+    width               : 210px;
+    z-index             : 100;
+    border              : 1px solid #ACE;
+    text-align          : left;
+    padding             : 12px;
+    color               : #789;
+    font-size           : 11px;
+}
+
+.create_form input[type=text], .create_form input[type=password], .create_form select {
+    display             : block;
+    -moz-border-radius  : 4px;
+    -webkit-border-radius: 4px;
+    border              : 1px solid #ACE;
+    font-size           : 13px;
+    padding             : 5px;
+    width               : 203px;
+}
+
+select {
+    margin              : 0px;
+}
+
+.create_form p {
+    margin              : 0px;
+}
+.create_form a {
+    color               : #6AC;
+}
+
+.create_form label {
+    font-weight         : normal;
+}
+.create_form p.remember {
+    padding             : 10px 0;
+}
+.create_form p.forgot, .create_form p.complete {
+    clear               : both;
+    margin              : 5px 0;
+}
+.create_form p a {
+    color               : #27B!important;
+}
+
+
+.lostPassword {
+    position            : absolute;
+    top                 : 10px;
+    width               : 100%;
+
+    /*color: #27B;*/
+
+    -moz-border-radius  : 5px;
+    -webkit-border-radius:5px;
+
+    padding             : 50px;
+
+    /*background-color:#ddeef6;*/
+
+}
+
+.lostPassword input {
+    display             : inline;
+    margin-right        : 10px;
+    font-size           : 16px;
+}
+
+.buttonOnBlue {
+    -moz-border-radius  : 5px;
+    -webkit-border-radius:5px;
+
+
+    padding             : 3px;
+    border              : 1px solid #FFF;
+
+    background-color    : #EEE;
+    color               : #27B;
+
+    cursor              : pointer;
+}
+
+.buttonOnBlue:hover {
+    background-color    : #6596d9;
+    color               : #FFFFFF;
+}
+
+.notification {
+    margin-top          : 30px;
+    font-size           : 14px;
+}
+
+.central_form {
+    position            : relative;
+    display             : block;
+
+    -moz-border-radius  : 5px;
+    -webkit-border-radius:5px;
+
+    background-color    : transparent;
+    border              : none;
+    text-align          : left;
+    padding             : 0px;
+    color               : #789;
+
+
+    font-size           : 13px;
+}
+
+.central_form h3 {
+    margin-top          : 0px;
+}
+
+.central_form input[type=text], .central_form input[type=password] {
+    display             : block;
+    -moz-border-radius  : 4px;
+    -webkit-border-radius:4px;
+    border              : 1px solid #ACE;
+    font-size           : 16px;
+    padding             : 5px;
+    width               : 203px;
+}
+.central_form_elt {
+    margin              : 10px;
+    display             : inline-block;
+}
+.central_form a {
+    color               : #6AC;
+}
+
+.central_form label {
+    font-weight         : normal;
+}
+
+.form_submit {
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+}
+
+.form_button {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    background      : #39d url('images/bg-btn-blue.png') repeat-x scroll 0 0;
+    border          : 1px solid #39D;
+    color           : #fff;
+    text-shadow     : 0 -1px 0 #39d;
+    padding         : 4px 10px 5px;
+    font-size       : 11px;
+    margin          : 0 5px 0 0;
+    font-weight     : bold;
+
+    cursor          : pointer;
+}
+
+
+
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style: none;
+	height: 32px; /*--Set height of tabs--*/
+}
+
+ul.tabs li {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0;
+    height: 30px;
+	line-height: 30px; /*--Vertically aligns the text within the tab--*/
+	overflow: hidden;
+	position: relative;
+
+    background-color:#ddeef6;
+    color:#789;
+    font-size:16px;
+}
+
+ul.tabs li {
+	text-decoration: none;
+	display: block;
+	font-size: 1.2em;
+	padding: 0 20px;
+	outline: none;
+}
+ul.tabs li:hover, ul.tabs li:hover a, ul.tabs li.active, ul.tabs li.active a {
+    background-color: #6596d9;
+    color           : #FFFFFF;
+}
+/*html ul.tabs li.active, html ul.tabs li.active a:hover  {*/
+    /*background-color: #6596d9;*/
+    /*color           : #FFFFFF;*/
+/*}*/

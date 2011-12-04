@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Sybeol Home monitoring</title>
+    <meta name="description" content="Power metering for smart homes" />
+    <meta name="keywords" content="energy, power, metering, home, ecology, savings" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" />
+
+    <!-- jQuery - the core -->
+    <!--<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>-->
+    <script src="/js/jquery-1.6.2.min.js" type="text/javascript"></script>
+
+    <script src="/js/login.js" type="text/javascript"></script>
+    <script src="/js/sybeol.js" type="text/javascript"></script>
+    <script src="/js/util.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+
+        var displayError = function(html) {
+            if(html) {
+                var StyledError = '<div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">';
+                StyledError += '<p>';
+                StyledError += html;
+                StyledError += "</p></div>";
+                $("#notification").html(StyledError);
+                $("#notification").show();
+            } else {
+                $("#notification").html("");
+                $("#notification").hide();
+            }
+        }
+
+        var displaySuccess = function(html) {
+            if(html) {
+                var StyledError = '<div class="ui-state-success ui-corner-all" style="padding: 0 .7em;">';
+                StyledError += '<p>';
+                StyledError += html;
+                StyledError += "</p></div>";
+                $("#notification").html(StyledError);
+                $("#notification").show();
+            } else {
+                $("#notification").html("");
+                $("#notification").hide();
+            }
+        }
+
+        var emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i ;
+
+        $(document).ready(function() {
+            $('#footer').load('/elements/footer.html');
+
+            isSignedIn(function(loggedIn) {
+                if(loggedIn) {
+                    window.location.href = "/data";
+                }
+            });
+
+            $("#submit_btn").click(function(){
+                var email = $("#email").val();
+                if(emailPattern.test(email)) {
+                    Sybeol.resetPassword(email, function(event){
+                        if(event.error) {
+                            displayError(event.error);
+                        } else {
+                            displaySuccess("An email has been sent to your address");
+                        }
+                    });
+                } else {
+                    displayError("The email address is not valid");
+                }
+                return false;
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+<div class="header">
+    <div id="loginContainer">
+    </div>
+    <div class="headerContent">
+        <a href="/">
+            <img width="50px" class="inline" src="/css/images/logo_Sybeol_small.png" alt="Logo Sybeol"/>
+            <h1 class="inline">Sybeol</h1>
+        </a>
+        <h2>Make your Home smart</h2>
+    </div>
+</div>
+
+<div class="loginBanner">
+    <div class="eighthundred">
+        <div id="notification" class="notification"></div>
+        <form class="lostPassword">
+            <p>
+                What is your email address ?
+            </p>
+            <p>
+                <input id="email" style="font-size: 20px" size="30" name="email" value="" title="email" tabindex="1" type="text">
+                <input id="submit_btn" class="buttonOnBlue" value="Reset the password" tabindex="2" type="submit">
+            </p>
+            <p style="font-size: 14px; text-decoration: underline;">
+                <a href="/login">Sign-in or Register for a new account</a>
+            </p>
+        </form>
+    </div>
+</div>
+<div id="footer"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26203167-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
