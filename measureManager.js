@@ -4,10 +4,11 @@ var logger = require('./logger.js').getLogger("measureManager");
 var Measure = db.Measure;
 var Measure1H = db.Measure1H;
 
-var list = function(user, device, precision, cb) {
-    logger.info("retrieving measures. user["+user.email+"], device["+device+"], precision["+precision+"]");
+var list = function(user, deviceUid, precision, cb) {
+    logger.info("retrieving measures. user["+user.email+"], device["+deviceUid+"], precision["+precision+"]");
+
     if(precision === "raw") {
-        Measure.find({ type: device, user: user.email}, function(err, measures) {
+        Measure.find({ type: deviceUid, user: user.email}, function(err, measures) {
             cb(err, measures);
         });
     } else if(precision === "hour") {
@@ -16,7 +17,7 @@ var list = function(user, device, precision, cb) {
 //            cb(err, measures);
 //        });
         db.mongoose.connection.db.collection('measure1hs', function(err, collection) { //query the new map-reduced table
-            collection.find( { "value.type": device, "value.user": user.email } ).toArray(function(err, rows) { //only pull in the top 10 results and sort descending by number of pings
+            collection.find( { "value.type": deviceUid, "value.user": user.email } ).toArray(function(err, rows) { //only pull in the top 10 results and sort descending by number of pings
                 if(err) {
                     cb(err, undefined);
                 } else {
@@ -24,6 +25,7 @@ var list = function(user, device, precision, cb) {
                     for(var i = 0 ; i < rows.length ; i++) {
                         convertedData.push(rows[i].value);
                     }
+                    logger.debug("Found measures for user["+user.email+"], device["+deviceUid+"], precision["+precision+"] "+JSON.stringify(convertedData));
                     cb(undefined, convertedData);
                 }
             });
@@ -66,7 +68,8 @@ var add = function(user, measure, cb) {
                         );
                     }
 
-                    var msr = db.createMeasure(user.email, sensor.name, measureDate, parseFloat(measure.value));
+                    var msr = db.createMeasure(user.email, sensor.uid, measureDate, parseFloat(measure.value));
+                    mapReduceCheck(user, sensor, msr);
                     cb(null, msr);
                 } else {
                     var error = new Error("Could not find device with uid ["+measure.uid+"] for user ["+user.email+"]");
@@ -102,7 +105,9 @@ var validateKey = function(user, measure, cb) {
         cb(new Error("Server error. Please contact our support"));
     }
 }
-var updateDeviceWithLastMapReduce = function(device, mrName, timeRunMs) {
+
+// TODO: does not work. lastRun does not seem to be persisted
+var updateDeviceWithLastMapReduce = function(user, device, mrName, timeRunMs) {
     if(!device.mapreduce) {
         device.mapreduce = new Array();
     }
@@ -114,30 +119,32 @@ var updateDeviceWithLastMapReduce = function(device, mrName, timeRunMs) {
     }
 
     if(!mr) {
-        mr = new db.MapReduce({
+        mr = {
             'name': mrName,
             'lastRun': timeRunMs
-        });
+        };
     } else {
         mr.lastRun = timeRunMs;
     }
+    user.save();
 
 }
 
-var mapReduceCheck = function(device, measure) {
+var mapReduceCheck = function(user, device, measure) {
     var lastMR = device.mapreduce;
     var lastMRTimeMillisec = 0;
-    // TODO FIXME
+    // TODO FIXME: to this calculus for each mapReduce (hour, day, etc.)
     if(lastMR && lastMR.lastRun) {
-        lastMRTimeMillisec = lastMR.lastRun.getTime();
+        lastMRTimeMillisec = lastMR.lastRun;
     }
 
     if(lastMRTimeMillisec < measure.time.getTime()) {
+        logger.info("Map reduce process starting for user ["+measure.user+"], device ["+device.name+"] ["+device.uid+"] ");
         var options = {
             userEmail: measure.user,
             device: device,
             beginTimeMillisec: lastMRTimeMillisec,
-            endTimeMillisec: Date.now().getTime()
+            endTimeMillisec: new Date().getTime()
         }
 
         var millisecsSinceLastMR = measure.time.getTime() - lastMRTimeMillisec;
@@ -148,63 +155,67 @@ var mapReduceCheck = function(device, measure) {
         var hour = 60*60*1000; //millisecs
 
         if(millisecsSinceLastMR >= hour) {
+            logger.info("Doing hour map reduce. Last one was ["+ millisecsSinceLastMR / 1000 / 60+"] minutes ago");
             options.dateMask = {
                 minutes: true,
                 seconds: true
             }
+            options.collection = "measure1hs";
 
             doMapReduce(options, function(err, stats) {
                 if(err) {
                     logger.error(err);
                 } else {
-
-                    logger.info("Map reduce done for device ["+device.name+"] ["+device.uid+"] "+JSON.stringify(stats));
+                    logger.info("Map reduce [hour] done for user ["+measure.user+"], device ["+device.name+"] ["+device.uid+"] "+JSON.stringify(stats));
+                    //updateDeviceWithLastMapReduce(user, device, "hour", options.endTimeMillisec);
                 }
             });
         }
 
-        /** ********************************************* **/
-        /**                     DAY                       **/
-        /** ********************************************* **/
-        var day = 24*60*60*1000; //millisecs
-
-        if(millisecsSinceLastMR >= day) {
-            options.dateMask = {
-                hours: true,
-                minutes: true,
-                seconds: true
-            }
-
-            doMapReduce(options, function(err, stats) {
-                if(err) {
-                    logger.error(err);
-                } else {
-                    logger.info("Map reduce done for device ["+device.name+"] ["+device.uid+"] "+JSON.stringify(stats));
-                }
-            });
-        }
-
-        /** ********************************************* **/
-        /**                    WEEK                       **/
-        /** ********************************************* **/
-        var week = 7*24*60*60*1000; //millisecs
-
-        if(millisecsSinceLastMR >= week) {
-            options.dateMask = {
-                days: true,
-                hours: true,
-                minutes: true,
-                seconds: true
-            }
-
-            doMapReduce(options, function(err, stats) {
-                if(err) {
-                    logger.error(err);
-                } else {
-                    logger.info("Map reduce done for device ["+device.name+"] ["+device.uid+"] "+JSON.stringify(stats));
-                }
-            });
-        }
+//        /** ********************************************* **/
+//        /**                     DAY                       **/
+//        /** ********************************************* **/
+//        var day = 24*60*60*1000; //millisecs
+//
+//        if(millisecsSinceLastMR >= day) {
+//            options.dateMask = {
+//                hours: true,
+//                minutes: true,
+//                seconds: true
+//            }
+//            options.collection = "measure1ds";
+//
+//            doMapReduce(options, function(err, stats) {
+//                if(err) {
+//                    logger.error(err);
+//                } else {
+//                    logger.info("Map reduce done for device ["+device.name+"] ["+device.uid+"] "+JSON.stringify(stats));
+//                }
+//            });
+//        }
+//
+//        /** ********************************************* **/
+//        /**                    WEEK                       **/
+//        /** ********************************************* **/
+//        var week = 7*24*60*60*1000; //millisecs
+//
+//        if(millisecsSinceLastMR >= week) {
+//            options.dateMask = {
+//                days: true,
+//                hours: true,
+//                minutes: true,
+//                seconds: true
+//            }
+//            options.collection = "measure1ws";
+//
+//            doMapReduce(options, function(err, stats) {
+//                if(err) {
+//                    logger.error(err);
+//                } else {
+//                    logger.info("Map reduce done for device ["+device.name+"] ["+device.uid+"] "+JSON.stringify(stats));
+//                }
+//            });
+//        }
     }
 }
 
@@ -217,21 +228,11 @@ var doMapReduce = function(options, callback) {
     var map = function () {
 
         var dateKey = new Date(this.time.getTime());
-        if(options.dateMask.months) {
-            dateKey.setMonth(0);
-        }
-        if(options.dateMask.days) {
-            dateKey.setDate(0);
-        }
-        if(options.dateMask.hours) {
-            dateKey.setHours(0);
-        }
-        if(options.dateMask.minutes) {
-            dateKey.setMinutes(0);
-        }
-        if(options.dateMask.seconds) {
-            dateKey.setSeconds(0);
-        }
+//        dateKey.setMonth(0);
+//        dateKey.setDate(0);
+//        dateKey.setHours(0);
+        dateKey.setMinutes(30); // set data point at the middle of the hour
+        dateKey.setSeconds(0);
         dateKey.setMilliseconds(0);
 
         var mapped = {
@@ -242,7 +243,7 @@ var doMapReduce = function(options, callback) {
             weight: 1
         }
 
-        var key = options.userEmail + ":" + options.device.uid + ":" + dateKey;
+        var key = dateKey;
 
         emit(key, mapped);
     };
@@ -251,7 +252,7 @@ var doMapReduce = function(options, callback) {
         var reduced = {
             user: values[0].user,
             type: values[0].type,
-            time: values[0].hour,
+            time: values[0].time,
             value: 0,
             weight: 0
         }
@@ -268,7 +269,6 @@ var doMapReduce = function(options, callback) {
 
         reduced.value = sum/totalWeight;
         reduced.weight = totalWeight;
-
         return reduced;
     };
 
@@ -276,20 +276,20 @@ var doMapReduce = function(options, callback) {
         return value;
     }
 
-    //TODO: criteria on sensor and user
-    var options = {
+    var optionsMR = {
         query: {
             user : options.userEmail,
-            type : options.device
+            type : options.device.uid
         },
         out: {
-            merge: "measure1hs" // lowercase and 's' appended. Mongoose doing it's crap...
+            merge: "measure1hs" // lowercase and 's' appended from the mongoose collection name
         },
         include_statistics: true,
         verbose: true
     };
-
-    db.Measure.collection.mapReduce(map, reduce, options, function(err, collection, stats) {
+    logger.info("Launching MapReduce job "+JSON.stringify(optionsMR));
+    db.Measure.collection.mapReduce(map, reduce, optionsMR, function(err, collection, stats) {
+        logger.info("MapReduce done");
         callback(err, stats);
     });
 }
@@ -298,4 +298,3 @@ var doMapReduce = function(options, callback) {
 
 exports.add = add;
 exports.list = list;
-exports.mapReduceCheck = mapReduceCheck;

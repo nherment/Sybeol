@@ -26,7 +26,7 @@ function validatePresenceOf(value) {
 
 var MapReduce = new Schema({
     'name'   : {type: String},
-    'lastRun'  : {type: Date}
+    'lastRun'  : {type: Number, "default": 0}
 });
 
 var Sensor = new Schema({
@@ -118,6 +118,30 @@ var MeasureSchemaReduce1H = new Schema({
 
 var Measure1H = mongoose.model('Measure1H', MeasureSchemaReduce1H);
 
+//------------ MEASURE 1D (MapReduced)
+
+var MeasureSchemaReduce1D = new Schema({
+    user    :  { "type": String, "index": true }
+    , type    :  { "type": String, "index": true }
+    , time    :  { "type": Date, "index": true }
+    , value   :  { "type": Number }
+    , weight  :  { "type": Number }
+});
+
+var Measure1D = mongoose.model('Measure1D', MeasureSchemaReduce1D);
+
+//------------ MEASURE 1W (MapReduced)
+
+var MeasureSchemaReduce1W = new Schema({
+    user    :  { "type": String, "index": true }
+    , type    :  { "type": String, "index": true }
+    , time    :  { "type": Date, "index": true }
+    , value   :  { "type": Number }
+    , weight  :  { "type": Number }
+});
+
+var Measure1W = mongoose.model('Measure1W', MeasureSchemaReduce1W);
+
 var createUser = function(email, password, callback) {
     var usr = new User({
         'email': email,
@@ -165,6 +189,8 @@ exports.Measure = Measure;
 exports.Sensor = Sensor;
 exports.MapReduce = MapReduce;
 exports.Measure1H = Measure1H;
+exports.Measure1D = Measure1D;
+exports.Measure1W = Measure1W;
 exports.listUsers = listUsers;
 exports.mongoose = mongoose;
 

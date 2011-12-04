@@ -284,10 +284,10 @@ app.put("/measure", function(req, res) {
     }
 });
 
-app.get('/measure/:precision/:device', function(req, res) {
-    infoIp("receive get request on /measure/:precision/:device", req);
+app.get('/measure/:precision/:deviceName', function(req, res) {
+    infoIp("receive get request on /measure/:precision/:deviceName", req);
 
-    var device = req.params.device;
+    var deviceName = req.params.deviceName;
     var precision = req.params.precision;
 
     // TODO: use logged in user
@@ -296,13 +296,20 @@ app.get('/measure/:precision/:device', function(req, res) {
             logger.warn(err);
             res.send(ErrorUtil.reduce(err));
         } else {
-            measureManager.list(user, device, precision, function(err, measures) {
-                if(err) {
-                    res.send(ErrorUtil.reduce(err));
-                } else {
-                    res.send(measures);
-                }
-            });
+            var device = getDeviceByName(user, deviceName);
+            if(device) {
+                measureManager.list(user, device.uid, precision, function(err, measures) {
+                    if(err) {
+                        res.send(ErrorUtil.reduce(err));
+                    } else {
+                        res.send(measures);
+                    }
+                });
+            } else {
+                var err = new Error("No such device");
+                logger.warn(err);
+                res.send(ErrorUtil.reduce(err));
+            }
         }
     });
 });
@@ -375,6 +382,20 @@ app.get('/sensor/:name', function(req, res) {
         }
     });
 });
+
+var getDeviceByName = function(user, deviceName) {
+    if(user.sensors) {
+        for(var i=0 ; i < user.sensors.length ; i++) {
+            var sensor = user.sensors[i];
+            if(sensor.name == deviceName) {
+                logger.info("Device ["+deviceName+"] found for user ["+user.email+"]");
+                return sensor;
+            }
+        }
+    }
+    logger.info("No device found for user ["+user.email+"]");
+    return undefined
+}
 
 app.get('/sensor', function(req, res) {
     infoIp("receive get request on /sensor", req);

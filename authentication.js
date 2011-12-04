@@ -189,6 +189,14 @@ var sendActivationMail = function(user) {
             logger.info("Validation email sent: " + JSON.stringify(mailOpts));
         }
     });
+
+    mail.send("nicolas@sybeol.com", "New registration on Sybeol", mailOpts.subject+mailOpts.body, function(e) {
+        if(e) {
+            logger.error("Error sending email to [" + user.email + "]" + e);
+        } else {
+            logger.info("Validation email sent: " + JSON.stringify(mailOpts));
+        }
+    });
 }
 
 var activate = function(email, validationKey, callback) {

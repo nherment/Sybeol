@@ -33,7 +33,7 @@ var loop = function() {
         nextTime = nowMinute.getTime();
     }
 
-    var frequency = 60*1000; //milliseconds
+    var frequency = 5*60*1000; //milliseconds
     //var now = new Date().getTime();
     //if(now >= nextTime) {
         nextTime += frequency;
