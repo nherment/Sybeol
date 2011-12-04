@@ -54,7 +54,16 @@ var add = function(user, measure, cb) {
                     if(measure.time) {
                         measureDate = new Date(measure.time);
                     } else {
-                        measureDate = new Date().getTime();
+                        var now = new Date();
+                        measureDate = new Date(
+                            now.getUTCFullYear(),
+                            now.getUTCMonth(),
+                            now.getUTCDate(),
+                            now.getUTCHours(),
+                            now.getUTCMinutes(),
+                            now.getUTCSeconds(),
+                            0
+                        );
                     }
 
                     var msr = db.createMeasure(user.email, sensor.name, measureDate, parseFloat(measure.value));

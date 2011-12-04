@@ -22,7 +22,6 @@ var Sybeol = {
             {
                 url: "/sensor/"+deviceName,
                 type: "DELETE",
-                contentType: "application/json",
                 success: cb
             });
     },
