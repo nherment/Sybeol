@@ -174,11 +174,14 @@ var handleRegister = function(request, response) {
 
 var sendActivationMail = function(user) {
 
-    logger.info("sending validation key to user: " + JSON.stringify(user));
-
+    logger.info("sending registration mail to user: " + JSON.stringify(user));
 
     var mailOpts = {
-        subject: "Activate your new Sybeol account !",
+        subject: "Regarding your new Sybeol account",
+        body: "Thank you for registering for a new account. \n\nThe product is currently in Beta and we are manually activating each account.\nWe want to know about your amazing project so you will hear from us in the next 48 hours! \n\nThank you !\n- The Sybeol team"
+    }
+    var mailOptsAdmin = {
+        subject: "New registration on Sybeol",
         body: "Click on this link to activate your account: http://www.sybeol.com/activate/?u=" + user.email + "&k=" + user.validationKey
     }
 
@@ -190,7 +193,7 @@ var sendActivationMail = function(user) {
         }
     });
 
-    mail.send("nicolas@sybeol.com", "New registration on Sybeol", mailOpts.subject+mailOpts.body, function(e) {
+    mail.send("nicolas@sybeol.com", mailOptsAdmin.subject, mailOptsAdmin.body, function(e) {
         if(e) {
             logger.error("Error sending email to [" + user.email + "]" + e);
         } else {
