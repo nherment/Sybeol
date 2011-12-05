@@ -202,6 +202,21 @@ var sendActivationMail = function(user) {
     });
 }
 
+var sendAccountActiveEmail = function(user) {
+    var mailOpts = {
+        subject: "Your Sybeol account is now active",
+        body: "Thank you for your patience for a new account. \n\nYour account is now active. Please go take a look: http://www.sybeol.com.\n\nThank you !\n- The Sybeol team"
+    }
+
+    mail.send(user.email, mailOpts.subject, mailOpts.body, function(e) {
+        if(e) {
+            logger.error("Error sending email to [" + user.email + "]" + e);
+        } else {
+            logger.info("Activated notification email sent: " + JSON.stringify(mailOpts));
+        }
+    });
+}
+
 var activate = function(email, validationKey, callback) {
     if(email && validationKey) {
         logger.info("Activating " + email + " with key " + validationKey);
@@ -217,6 +232,7 @@ var activate = function(email, validationKey, callback) {
                     user.validationKey = undefined;
                     user.save();
                     logger.info("User is now active");
+                    sendAccountActiveEmail(user);
                     callback(null, user);
                 } else {
                     var msg = "Activation key does not match the one expected. Expected ["+user.validationKey+"] but got ["+validationKey+"]";
