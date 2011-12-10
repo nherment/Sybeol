@@ -22,24 +22,17 @@
             });
         });
 
-        var showText = function(element) {
-            $("#home_txt").hide();
-            $("#account_txt").hide();
-            $("#devices_txt").hide();
-            if(element) {
-                $("#"+element+"_txt").show();
-            }
-        }
+        $("#data").click(function() {
+            window.location.href = "/data";
+        });
 
-        $(".topMenu a").hover(
-                function(){
-                    showText($(this).attr("id"));
-                }, function(){
-                    showText();
-                }
-        );
+        $("#account").click(function() {
+            window.location.href = "/account";
+        });
 
-        showText();
+        $("#devices").click(function() {
+            window.location.href = "/devices";
+        });
 
 
     });
@@ -49,22 +42,19 @@
     <div class="topMenu">
         <div style="position: relative; display: block;">
             <div class="top_menu_button">
-                <a id="home" href="/data">
-                    <img src="/css/images/icons/24/home.png" alt="Home"/>
-                </a>
-                <div id="home_txt" class="top_menu_label">&nbsp;Home</div>
+                <button id="data" class="buttonOnBlue" href="/data">
+                    Data
+                </button>
             </div>
             <div class="top_menu_button">
-                <a id="account" href="/account">
-                    <img src="/css/images/icons/24/profile.png" alt="My Account"/>
-                </a>
-                <div id="account_txt" class="top_menu_label">Account</div>
+                <button id="account" class="buttonOnBlue" href="/account">
+                    Account
+                </button>
             </div>
             <div class="top_menu_button">
-                <a id="devices" href="/devices">
-                    <img src="/css/images/icons/24/device.png" alt="My Devices"/>
-                </a>
-                <div id="devices_txt" class="top_menu_label">Devices</div>
+                <button id="devices" class="buttonOnBlue" href="/devices">
+                    Devices
+                </button>
             </div>
             <a id="signout" class="signout"><span>Sign out</span></a>
         </div>

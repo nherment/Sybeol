@@ -33,28 +33,28 @@ var loop = function() {
         nextTime = nowMinute.getTime();
     }
 
-    var frequency = 5*60*1000; //milliseconds
-    //var now = new Date().getTime();
-    //if(now >= nextTime) {
-        nextTime += frequency;
+    var oneMinute = 60*1000; // in milliseconds
+    var now = new Date().getTime();
+    if(now >= nextTime) {
+        nextTime += oneMinute;
         console.log(new Date(nextTime));
         putNew(nextTime);
-    //}
+    }
 
-    setTimeout(loop, 1000);
+    setTimeout(loop, 10);
 
 }
 
-var HOST = "localhost";
-//var HOST = "178.79.186.224";
-var PORT = 4100;
+//var HOST = "localhost";
+var HOST = "178.79.186.224";
+var PORT = 80;
 
 var putNew = function(time) {
 
     var measure = {
-        apiKey: "c684e72c-7f44-4075-a452-5416bd2e74aa",
+        apiKey: "c624343e-2120-49d4-825d-2752775dd119",
         email: "nherment@gmail.com",
-        uid: "e7228c8c-0b5a-4df0-a634-0d7741ee46ac",
+        uid: "ff7c52f6-c138-4980-bb2a-c42beef5b07b",
         time: time,
         value: nextValue()
     }

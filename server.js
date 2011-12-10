@@ -443,7 +443,7 @@ app.put('/sensor', function(req, res) {
                         var sensor = user.sensors[i];
                         if(sensor.name == newSensor.name) {
                             var err = new Error("Sensor ["+sensor.name+"] already exists");
-                            logger.error(err);
+                            logger.info(err);
                             res.send(ErrorUtil.reduce(err));
                             return;
                         }

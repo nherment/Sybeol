@@ -1,14 +1,14 @@
 {
-    "name": "Sybeol",
-    "version": "0.0.2",
-    "private": true,
+    "name"              : "Sybeol",
+    "version"           : "0.0.2",
+    "private"           : true,
     "dependencies": {
-        "express": "",
-        "node-uuid": "",
-        "mail": "",
-        "connect-heroku-redis": "",
-        "mongoose": "",
-        "loggly": "",
-        "log4js": ""
+        "express"       : "",
+        "node-uuid"     : "",
+        "mail"          : "",
+        "mongoose"      : "",
+        "loggly"        : "",
+        "log4js"        : "",
+        "airbrake"      : ""
     }
 }

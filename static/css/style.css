@@ -501,6 +501,7 @@ ul {
     width:150px;
 
     border:1px transparent;
+    text-decoration: none;
 
     text-align:right;
 
@@ -521,6 +522,41 @@ ul {
     background-color: #6596d9;
     color: #FFFFFF;
 }
+
+.topMenuButton {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    background-color:#ddeef6;
+
+    color:#789;
+    font-size:16px;
+
+    width:150px;
+
+    border:1px transparent;
+
+    text-align:right;
+
+    padding:30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+
+    cursor: pointer;
+}
+
+.topMenuButton:hover {
+    background-color: #6596d9;
+    color: #FFFFFF;
+}
+
+.topMenuButtonSelected {
+    background-color: #6596d9;
+    color: #FFFFFF;
+}
+
 
 
 

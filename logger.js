@@ -1,4 +1,8 @@
 
+//---------------------------------- airbrake setup
+
+var airbrake = require('airbrake').createClient("4defd38a1bba13ae16f5b2b2210366b8");
+
 //---------------------------------- log4js setup
 var log4js = require("log4js");
 
@@ -38,6 +42,12 @@ var warn = function(message) {
 var error = function(message) {
     logger.error(message);
     logglyOut("ERROR: " + message);
+
+    airbrake.notify(message, function(err, url) {
+        logger.error(err);
+        logglyOut("ERROR: " + err);
+        // Error has been delivered, url links to the error in airbrake
+    });
 }
 
 var public = new Object();

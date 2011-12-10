@@ -28,8 +28,8 @@
 
     <script type="text/javascript">
 
-        var deviceSelectedTemplate = "<button class=\"menuButton menuButtonSelected\" onclick=\"setSelectedDevice('${name}')\">${name}</button>";
-        var deviceTemplate = "<button class=\"menuButton\" onclick=\"setSelectedDevice('${name}')\">${name}</button>";
+        var deviceSelectedTemplate = "<a class=\"menuButton menuButtonSelected\" onclick=\"setSelectedDevice('${name}')\">${name}</a>";
+        var deviceTemplate = "<a class=\"menuButton\" onclick=\"setSelectedDevice('${name}')\">${name}</a>";
 
         $.template("deviceSelectedTemplate", deviceSelectedTemplate);
         $.template("deviceTemplate", deviceTemplate);

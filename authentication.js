@@ -212,7 +212,7 @@ var sendAccountActiveEmail = function(user) {
         if(e) {
             logger.error("Error sending email to [" + user.email + "]" + e);
         } else {
-            logger.info("Activated notification email sent: " + JSON.stringify(mailOpts));
+            logger.info("'Account activated' notification email sent: " + JSON.stringify(mailOpts));
         }
     });
 }
@@ -227,11 +227,11 @@ var activate = function(email, validationKey, callback) {
             } else if(user) {
                 logger.info("found matching user [" + user.email + "] for activation");
                 if(user.validationKey === validationKey) {
-                    logger.info("Activation key match");
+                    logger.debug("Activation key match for user [" + user.email + "]");
                     user.active = true;
                     user.validationKey = undefined;
                     user.save();
-                    logger.info("User is now active");
+                    logger.info("User [" + user.email + "] is now active");
                     sendAccountActiveEmail(user);
                     callback(null, user);
                 } else {
