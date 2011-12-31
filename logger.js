@@ -1,7 +1,7 @@
 
 //---------------------------------- airbrake setup
 
-var airbrake = require('airbrake').createClient("4defd38a1bba13ae16f5b2b2210366b8");
+//var airbrake = require('airbrake').createClient("4defd38a1bba13ae16f5b2b2210366b8");
 
 //---------------------------------- log4js setup
 var log4js = require("log4js");
