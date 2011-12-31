@@ -55,7 +55,6 @@ UserSchema.virtual('password')
     this._password = password;
     this.salt = this.makeSalt();
     this.validationKey = uuid();
-    this.apiKey = uuid();
     this.hashed_password = this.encryptPassword(password);
 }).get(function() { return this._password; });
 
@@ -145,7 +144,8 @@ var Measure1W = mongoose.model('Measure1W', MeasureSchemaReduce1W);
 var createUser = function(email, password, callback) {
     var usr = new User({
         'email': email,
-        'password': password
+        'password': password,
+        'apiKey': uuid()
     });
     var err;
 

@@ -43,17 +43,17 @@ app.configure(function() {
 /**  *                       USER                          *  **/
 /**  *******************************************************  **/
 
-app.put('/user', function(req, res) {
-    infoIp("receive put request on /user", req);
-    var isJson = req.is('application/json');
-    if(isJson) {
-        logger.info("Creating user with email["+ req.body.email + "]");
-        db.createUser(req.body.email, req.body.password);
-        res.send({ result: "success"});
-    } else {
-        res.send("Expecting Content-Type:application/json");
-    }
-});
+//app.put('/user', function(req, res) {
+//    infoIp("receive put request on /user", req);
+//    var isJson = req.is('application/json');
+//    if(isJson) {
+//        logger.info("Creating user with email["+ req.body.email + "]");
+//        db.createUser(req.body.email, req.body.password);
+//        res.send({ result: "success"});
+//    } else {
+//        res.send("Expecting Content-Type:application/json");
+//    }
+//});
 
 //app.get('/user', function(req, res) {
 //    logger.info("receive get request on /user");
@@ -205,7 +205,7 @@ app.get('/reset/:email', function(req, res) {
 
     var email = req.param("email");
 
-    authSvc.resetPassword(email, function(err){
+    authSvc.resetPassword(email, function(err) {
         if(err) {
             logger.error(err);
             res.send( ErrorUtil.reduce(err) );

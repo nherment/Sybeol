@@ -43,11 +43,11 @@ var error = function(message) {
     logger.error(message);
     logglyOut("ERROR: " + message);
 
-    airbrake.notify(message, function(err, url) {
-        logger.error(err);
-        logglyOut("ERROR: " + err);
-        // Error has been delivered, url links to the error in airbrake
-    });
+//    airbrake.notify(message, function(err, url) {
+//        logger.error(err);
+//        logglyOut("ERROR: " + err);
+//        // Error has been delivered, url links to the error in airbrake
+//    });
 }
 
 var public = new Object();
