@@ -1,7 +1,7 @@
 
 //---------------------------------- airbrake setup
 
-//var airbrake = require('airbrake').createClient("4defd38a1bba13ae16f5b2b2210366b8");
+//var airbrake = require('airbrake').createClient("");
 
 //---------------------------------- log4js setup
 var log4js = require("log4js");
@@ -14,17 +14,17 @@ var logger = log4js.getLogger('sybeol');
 //---------------------------------- Loggly setup
 var loggly = require('loggly');
 var logglyconfig = {
-    subdomain: "sybeol",
+    subdomain: "<loggly subdomain>",
     auth: {
-        username: "nherment",
-        password: "6031769a"
+        username: "<loggly username>",
+        password: "<loggly password>"
     }
 };
 var client = loggly.createClient(logglyconfig);
 
 
 var logglyOut = function(msg) {
-    client.log('32be8efd-0733-4f6d-a898-52ead34af20a', msg);
+    client.log('<loggly key>', msg);
 }
 
 var debug = function(message) {

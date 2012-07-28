@@ -5,3 +5,7 @@ node_modules
 sybeol.log
 .idea/workspace.xml
 out
+
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
